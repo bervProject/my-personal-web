@@ -1,0 +1,43 @@
+<template>
+    <div class="columns is-multiline">
+        <div class="column is-one-quarter" v-for="item in items">
+            <div class="card">
+                <!--
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img :src="item.smallImage" alt="Placeholder image">
+                    </figure>
+                </div>
+                -->
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img class="is-rounded" :src="item.icon" alt="Icon">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-6">{{item.title}}</p>
+                        </div>
+                    </div>
+                    <div class="content">{{item.description}}</div>
+                </div>
+                <footer class="card-footer" v-if="item.repository">
+                    <a :href="item.repository.github" class="card-footer-item" v-if="item.repository.github">Github</a>
+                    <a :href="item.repository.gitlab" class="card-footer-item" v-if="item.repository.gitlab">Gitlab</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  props: {
+    items: Array,
+  },
+})
+export default class PortofolioItem extends Vue {}
+</script>
