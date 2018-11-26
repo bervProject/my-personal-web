@@ -2,7 +2,6 @@ language: node_js
 
 node_js:
   - "10"
-  - "11"
 
 cache:
     directories:
@@ -19,5 +18,6 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   target-branch: gh-pages
+  committer-from-gh: true
   on:
     branch: master
