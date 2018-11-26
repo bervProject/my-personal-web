@@ -1,5 +1,5 @@
 module.exports = {
     baseUrl: process.env.NODE_ENV === 'production'
-      ? '/my-personal=web/'
+      ? '/my-personal-web/'
       : '/'
   }
