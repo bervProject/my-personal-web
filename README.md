@@ -1,4 +1,6 @@
-# my-personal-web
+# My Personal Web
+
+[![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web)
 
 ## Project setup
 ```
