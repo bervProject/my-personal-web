@@ -1,4 +1,6 @@
 <template>
+<div>
+  <h1 class="title">Experience</h1>
     <div class="timeline">
         <header class="timeline-header">
             <span class="tag is-medium is-primary">Now</span>
@@ -15,6 +17,7 @@
             <span class="tag is-medium is-primary">Born</span>
         </header>
     </div>
+</div>
 </template>
 
 <script lang="ts">
