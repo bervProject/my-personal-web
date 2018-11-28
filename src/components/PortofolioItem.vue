@@ -2,18 +2,16 @@
     <div class="columns is-multiline">
         <div class="column is-one-quarter" v-for="item in items">
             <div class="card">
-                <!--
                 <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img :src="item.smallImage" alt="Placeholder image">
+                    <figure class="image is-square">
+                        <img :src="getPic(item.smallImage)" alt="Placeholder image">
                     </figure>
                 </div>
-                -->
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-64x64">
-                                <img class="is-rounded" :src="item.icon" alt="Icon">
+                                <img class="is-rounded" :src="getPic(item.icon)" alt="Icon">
                             </figure>
                         </div>
                         <div class="media-content">
@@ -39,5 +37,9 @@ import { Component, Vue } from 'vue-property-decorator'
     items: Array,
   },
 })
-export default class PortofolioItem extends Vue {}
+export default class PortofolioItem extends Vue {
+    public getPic(url: string) : string {
+        return `${process.env.BASE_URL}${url}`
+    }
+}
 </script>
