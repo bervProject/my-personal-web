@@ -33,6 +33,6 @@
     "sass-loader": "^7.0.1",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.2",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.20"
   }
 }
