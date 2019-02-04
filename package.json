@@ -10,7 +10,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.0",
+    "@fortawesome/fontawesome-free": "^5.7.1",
     "buefy": "^0.7.2",
     "bulma-timeline": "^3.0.0",
     "vue": "^2.5.22",
