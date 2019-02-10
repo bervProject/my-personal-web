@@ -24,6 +24,12 @@ export default new Router({
         import(/* webpackChunkName: "experience" */ './views/Experience.vue')
     },
     {
+      path: '/projects',
+      name: 'projects',
+      component: () =>
+        import(/* webpackChunkName: "projects" */ './views/Projects.vue')
+    },
+    {
       path: '/portofolio',
       name: 'portofolio',
       component: () =>

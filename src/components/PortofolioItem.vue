@@ -1,6 +1,6 @@
 <template>
     <div class="columns is-multiline">
-        <div class="column is-one-quarter" v-for="item in items">
+        <div class="column is-one-quarter" v-for="item in items" v-bind:key="item.id">
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-square">

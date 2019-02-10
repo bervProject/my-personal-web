@@ -5,7 +5,7 @@
       <header class="timeline-header">
         <span class="tag is-medium is-primary">Now</span>
       </header>
-      <div v-for="item in eduData" class="timeline-item">
+      <div v-for="item in eduData" v-bind:key="item.id" class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <p class="heading">{{item.date}}</p>
@@ -27,6 +27,7 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class Education extends Vue {
   public eduData: object[] = [
     {
+      id: 1,
       date: 'August 2014 - July 2018',
       degree: 'Bachelor Degree of Computer Science',
       location: 'Institut Teknologi Bandung (ITB)',
@@ -34,6 +35,7 @@ export default class Education extends Vue {
         'Learning Computer Science. Join in HMIF (Himpunan Mahasiswa Informatika) ITB.',
     },
     {
+      id: 2,
       date: '2011 - 2014',
       degree: 'High School (Science Program)',
       location: 'SMA Negeri 1 Tanjungpandan',

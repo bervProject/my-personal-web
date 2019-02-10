@@ -24,6 +24,7 @@
         <router-link class="navbar-item" to="/education">Education</router-link>
         <router-link class="navbar-item" to="/experience">Experience</router-link>
         <router-link class="navbar-item" to="/portofolio">Portofolio</router-link>
+        <router-link class="navbar-item" to="/projects">Projects</router-link>
         <router-link class="navbar-item" to="/about">About</router-link>
       </div>
     </div>

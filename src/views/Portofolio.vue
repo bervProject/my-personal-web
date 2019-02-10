@@ -29,6 +29,7 @@ import MyHeader from '@/components/MyHeader.vue'
 export default class Portofolio extends Vue {
   public mobileData: object[] = [
     {
+      id: 1,
       title: 'Learn Android',
       description:
         'Mobile Application Example to Learn Programming in Android.',
@@ -39,6 +40,7 @@ export default class Portofolio extends Vue {
       },
     },
     {
+      id: 2,
       title: 'Belitung Information Center',
       description: 'Belitung Information Center using Ionic Framework.',
       smallImage: 'assets/portofolio/02-large.png',
@@ -48,6 +50,7 @@ export default class Portofolio extends Vue {
       },
     },
     {
+      id: 3,
       title: 'You Can Use It',
       description: 'You Can Use It using Starling and FeathersUI.',
       smallImage: 'assets/portofolio/03-large.png',
@@ -57,6 +60,7 @@ export default class Portofolio extends Vue {
       },
     },
     {
+      id: 4,
       title: 'Treasure Hunt',
       description:
         'Treasure Hunt is Android Application. This is looks like porting from iOS Application. This project want to pair with iOS Application that have name Sampoerna Events build by Suitmedia. This project build when internship in Suitmedia.',
@@ -66,6 +70,7 @@ export default class Portofolio extends Vue {
   ]
   public webData: object[] = [
     {
+      id: 5,
       title: 'Tweety',
       description:
         'Tweety build on ASP.NET Framework MVC (Now Use ASP.NET Core MVC) and C#.',
@@ -76,6 +81,7 @@ export default class Portofolio extends Vue {
       },
     },
     {
+      id: 6,
       title: 'Scheduler OP',
       description: 'Scheduler OP build on Django Framework.',
       smallImage: 'assets/portofolio/04-large.png',
@@ -85,6 +91,7 @@ export default class Portofolio extends Vue {
       },
     },
     {
+      id: 7,
       title: 'Bervianto Leo Pratama Jekyll Themes',
       description: 'Themes Jekyll used Bulma for My Jekyll Themes',
       smallImage: 'assets/480x480.png',
@@ -94,6 +101,7 @@ export default class Portofolio extends Vue {
       },
     },
     {
+      id: 8,
       title: 'My Personal Site Vue.js',
       description: 'SPA Used Vue.js to created my personal website.',
       smallImage: 'assets/480x480.png',
@@ -105,6 +113,7 @@ export default class Portofolio extends Vue {
   ]
   public desktopData: object[] = [
     {
+      id: 9,
       title: 'Frog Archiver',
       description: 'Frog Archiver using Qt Framework.',
       smallImage: 'assets/portofolio/05-large.png',
@@ -114,6 +123,7 @@ export default class Portofolio extends Vue {
       },
     },
     {
+      id: 10,
       title: 'Hyperdoku Solver',
       description: 'Hyperdoku Solver build on Java and Java Swing.',
       smallImage: 'assets/portofolio/07-large.png',
