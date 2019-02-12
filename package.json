@@ -14,7 +14,7 @@
     "axios": "^0.18.0",
     "buefy": "^0.7.2",
     "bulma-timeline": "^3.0.1",
-    "vue": "^2.5.22",
+    "vue": "^2.6.5",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.3.0",
     "vue-router": "^3.0.1",
@@ -34,6 +34,6 @@
     "sass-loader": "^7.0.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.3.3",
-    "vue-template-compiler": "^2.5.22"
+    "vue-template-compiler": "^2.6.5"
   }
 }
