@@ -31,10 +31,10 @@ export default class Experience extends Vue {
       job: 'Backend Developer',
       department: 'Xtremax Indonesia',
       description:
-        'Backend Developer.',
+        'Backend Developer using .NET Technology.',
     },
     {
-      date: 'December 2017 - Now',
+      date: 'December 2017 - January 2019',
       job: 'Freelancer (Back-End)',
       department: 'eDaun',
       description: 'Creating API to improve functionality of web.',
