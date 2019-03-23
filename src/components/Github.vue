@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="dataelement">
     <div v-for="data in myData" v-bind:key="data.id" class="card">
       <div class="card-content">
         <p class="title is-4">
@@ -22,8 +22,12 @@ import axios from 'axios'
 })
 export default class Projets extends Vue {
   public myData: object[] = []
+  public loaderComponent: any = null
 
   public mounted() {
+    this.loaderComponent = this.$loading.open({
+      container: this.$refs.dataelement
+    })
     this.loadData()
   }
 
@@ -38,6 +42,9 @@ export default class Projets extends Vue {
         },
       })
       .then(response => {
+        if (this.loaderComponent) {
+          this.loaderComponent.close()
+        }
         this.myData = response.data
       })
   }
