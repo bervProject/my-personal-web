@@ -26,7 +26,6 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-@import '~bulma-timeline';
 @import '~bulma/sass/utilities/_all';
 
 $primary: #e64a19;
@@ -59,4 +58,5 @@ $colors: (
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
+@import '~bulma-timeline/dist/css/bulma-timeline';
 </style>
