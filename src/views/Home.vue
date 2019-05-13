@@ -20,17 +20,14 @@
       <div class="content is-medium">
         <b-taglist>
           <b-tag rounded size="is-medium" type="is-primary">Web & Mobile Developer</b-tag>
-          <b-tag rounded size="is-medium" type="is-info">Cyber Security Enthusiasts</b-tag>
+          <b-tag rounded size="is-medium" type="is-warning">Cyber Security Enthusiasts</b-tag>
           <b-tag rounded size="is-medium" type="is-success">Institut Teknologi Bandung</b-tag>
         </b-taglist>
+        <a class="button is-primary" href="/assets/docs/CV.pdf">Download CV</a>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-
-@Component
-export default class Home extends Vue {}
+<script lang="ts" src="./Home.ts">
 </script>
