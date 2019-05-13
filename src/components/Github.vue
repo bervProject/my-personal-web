@@ -1,12 +1,14 @@
 <template>
-  <div ref="dataelement">
-    <div v-for="data in myData" v-bind:key="data.id" class="card">
-      <div class="card-content">
-        <p class="title is-4">
-          <a v-bind:href="data.svn_url">{{data.name}}</a>
-        </p>
-        <p class="subtitle is-6">Stars : {{data.stargazers_count}}</p>
-        <div class="content">{{data.description}}</div>
+  <div ref="dataelement" class="columns is-multiline">
+    <div v-for="data in myData" v-bind:key="data.id" class="column is-one-third">
+      <div class="card">
+        <div class="card-content">
+          <p class="title is-4">
+            <a v-bind:href="data.svn_url">{{data.name}}</a>
+          </p>
+          <p class="subtitle is-6">Stars : {{data.stargazers_count}}</p>
+          <div class="content">{{data.description}}</div>
+        </div>
       </div>
     </div>
   </div>

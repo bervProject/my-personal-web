@@ -25,38 +25,5 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class App extends Vue {}
 </script>
 
-<style lang="scss">
-@import '~bulma/sass/utilities/_all';
-
-$primary: #e64a19;
-$primary-invert: findColorInvert($primary);
-
-$navbar-background-color: #e64a19;
-$navbar-item-color: $white;
-$navbar-dropdown-arrow: $white;
-$navbar-box-shadow-color: $black;
-$navbar-dropdown-background-color: $primary;
-$navbar-divider-background-color: $black;
-
-$footer-background-color: $primary;
-
-$link: $black;
-$link-invert: $white;
-$link-focus-border: $black;
-
-$colors: (
-    "white": ($white, $black),
-    "black": ($black, $white),
-    "light": ($light, $light-invert),
-    "dark": ($dark, $dark-invert),
-    "primary": ($primary, $primary-invert),
-    "info": ($info, $info-invert),
-    "success": ($success, $success-invert),
-    "warning": ($warning, $warning-invert),
-    "danger": ($danger, $danger-invert)
-);
-
-@import '~bulma';
-@import '~buefy/src/scss/buefy';
-@import '~bulma-timeline/dist/css/bulma-timeline';
+<style lang="scss" src="./App.scss">
 </style>

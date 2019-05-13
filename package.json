@@ -1,7 +1,8 @@
 {
   "name": "my-personal-web",
-  "version": "0.1.0",
-  "private": true,
+  "displayName": "My Personal Web",
+  "description": "My Personal Web using Vue.js",
+  "version": "0.1.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -35,5 +36,24 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.4.5",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "private": true,
+  "author": {
+    "email": "bervianto.leo@gmail.com",
+    "name": "Bervianto Leo Pratama",
+    "url": "https://berviantoleo.github.io"
+  },
+  "license": "MIT",
+  "keywords": ["Portofolio", "Personal Web"],
+  "categories": ["Other"],
+  "maintainers": [{
+    "email": "bervianto.leo@gmail.com",
+    "name": "Bervianto Leo Pratama",
+    "url": "https://berviantoleo.github.io"
+  }],
+  "repository": {    
+    "url": "https://github.com/bervProject/my-personal-web",
+    "type": "git"
+  },
+  "main": "src/main.ts"
 }
