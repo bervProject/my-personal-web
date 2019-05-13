@@ -20,6 +20,9 @@ $link: $black;
 $link-invert: $white;
 $link-focus-border: $black;
 
+$tabs-toggle-link-active-background-color: $primary;
+$tabs-toggle-link-active-border-color : $primary;
+
 $colors: (
     "white": ($white, $black),
     "black": ($black, $white),

@@ -3,7 +3,7 @@
     <b-loading :active.sync="isLoading" :is-full-page="false">
       <b-icon pack="fas" icon="sync-alt" size="is-large" custom-class="fa-spin"></b-icon>
     </b-loading>
-    <div v-for="data in myData" v-bind:key="data.id" class="column is-one-third">
+    <div v-for="data in myData" v-bind:key="data.id" class="column is-half">
       <div class="card">
         <div class="card-content">
           <p class="title is-4">
