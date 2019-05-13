@@ -1,8 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator'
 import PortofolioItem from '@/components/PortofolioItem.vue'
 
-import MyHeader from '@/components/MyHeader.vue'
-
 @Component({
   components: {
     PortofolioItem,
