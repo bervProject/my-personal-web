@@ -3,7 +3,7 @@
         <div class="content has-text-white has-text-centered">
             <p>©
                 <b>My Personal Web</b> by
-                <a href="https://berviantoleo.000webhostapp.com/">Bervianto Leo Pratama</a>.
+                <a href="https://berviantoleo.github.io/">Bervianto Leo Pratama</a>.
             </p>
             <p>
                 The source
