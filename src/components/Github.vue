@@ -1,5 +1,8 @@
 <template>
-  <div ref="dataelement" class="columns is-multiline">
+  <div class="columns is-multiline" style="min-height: 300px">
+    <b-loading :active.sync="isLoading" :is-full-page="false">
+      <b-icon pack="fas" icon="sync-alt" size="is-large" custom-class="fa-spin"></b-icon>
+    </b-loading>
     <div v-for="data in myData" v-bind:key="data.id" class="column is-one-third">
       <div class="card">
         <div class="card-content">
@@ -24,12 +27,10 @@ import axios from 'axios'
 })
 export default class Projets extends Vue {
   public myData: object[] = []
-  public loaderComponent: any = null
+  public isLoading: boolean = false
 
   public mounted() {
-    this.loaderComponent = this.$loading.open({
-      container: this.$refs.dataelement
-    })
+    this.isLoading = true
     this.loadData()
   }
 
@@ -44,10 +45,10 @@ export default class Projets extends Vue {
         },
       })
       .then(response => {
-        if (this.loaderComponent) {
-          this.loaderComponent.close()
-        }
+        this.isLoading = false
         this.myData = response.data
+      }).catch(reason => {
+        this.isLoading = false
       })
   }
 }

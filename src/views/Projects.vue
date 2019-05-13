@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title">Projects</h1>
-    <b-tabs position="is-centered" class="block">
+    <b-tabs position="is-centered" type="is-toggle" size="is-medium" expanded>
       <b-tab-item label="Github - Personal">
         <github url="https://api.github.com/users/berviantoleo/repos"></github>
       </b-tab-item>
