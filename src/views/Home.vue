@@ -23,7 +23,7 @@
           <b-tag rounded size="is-medium" type="is-warning">Cyber Security Enthusiasts</b-tag>
           <b-tag rounded size="is-medium" type="is-success">Institut Teknologi Bandung</b-tag>
         </b-taglist>
-        <a class="button is-primary" :href="`${process.env.BASE_URL}/assets/docs/CV.pdf`">Download CV</a>
+        <a class="button is-primary" :href="getAssets('assets/docs/CV.pdf')">Download CV</a>
       </div>
     </div>
   </div>
