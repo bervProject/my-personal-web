@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1 class="title">Education</h1>
-    <div class="timeline">
+    <div class="timeline is-centered">
       <header class="timeline-header">
         <span class="tag is-medium is-primary">Now</span>
       </header>
-      <div v-for="item in eduData" v-bind:key="item.id" class="timeline-item">
+      <div v-for="item in eduData" v-bind:key="item.id" class="timeline-item is-primary">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <p class="heading">{{item.date}}</p>

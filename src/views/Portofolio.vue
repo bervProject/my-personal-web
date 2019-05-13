@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title">Portofolio</h1>
-    <b-tabs position="is-centered" class="block">
+    <b-tabs position="is-centered" type="is-toggle" expanded>
       <b-tab-item label="Mobile">
         <portofolio-item :items="mobileData"></portofolio-item>
       </b-tab-item>
