@@ -13,8 +13,8 @@ export default class Portofolio extends Vue {
       title: 'Learn Android',
       description:
         'Mobile Application Example to Learn Programming in Android.',
-      smallImage: 'assets/portofolio/01-large.png',
-      icon: 'assets/portofolio/01-small.png',
+      smallImage: 'assets/portofolio/01-large.jpg',
+      icon: 'assets/portofolio/01-small.jpg',
       repository: {
         github: 'https://github.com/bervProject/learn-android',
       },
@@ -23,8 +23,8 @@ export default class Portofolio extends Vue {
       id: 2,
       title: 'Belitung Information Center',
       description: 'Belitung Information Center using Ionic Framework.',
-      smallImage: 'assets/portofolio/02-large.png',
-      icon: 'assets/portofolio/02-small.png',
+      smallImage: 'assets/portofolio/02-large.jpg',
+      icon: 'assets/portofolio/02-small.jpg',
       repository: {
         github: 'https://github.com/bervProject/belitung-information-center',
       },
@@ -33,8 +33,8 @@ export default class Portofolio extends Vue {
       id: 3,
       title: 'You Can Use It',
       description: 'You Can Use It using Starling and FeathersUI.',
-      smallImage: 'assets/portofolio/03-large.png',
-      icon: 'assets/portofolio/03-small.png',
+      smallImage: 'assets/portofolio/03-large.jpg',
+      icon: 'assets/portofolio/03-small.jpg',
       repository: {
         github: 'https://github.com/bervProject/You-Can-Use-It',
       },
@@ -44,8 +44,8 @@ export default class Portofolio extends Vue {
       title: 'Treasure Hunt',
       description:
         'Treasure Hunt is Android Application. This is looks like porting from iOS Application. This project want to pair with iOS Application that have name Sampoerna Events build by Suitmedia. This project build when internship in Suitmedia.',
-      smallImage: 'assets/portofolio/08-large.png',
-      icon: 'assets/portofolio/08-small.png',
+      smallImage: 'assets/portofolio/08-large.jpg',
+      icon: 'assets/portofolio/08-small.jpg',
     },
   ]
   public webData: object[] = [
@@ -54,8 +54,8 @@ export default class Portofolio extends Vue {
       title: 'Tweety',
       description:
         'Tweety build on ASP.NET Framework MVC (Now Use ASP.NET Core MVC) and C#.',
-      smallImage: 'assets/portofolio/06-large.png',
-      icon: 'assets/portofolio/06-small.png',
+      smallImage: 'assets/portofolio/06-large.jpg',
+      icon: 'assets/portofolio/06-small.jpg',
       repository: {
         github: 'https://github.com/berv-uni-project/tweety',
       },
@@ -64,8 +64,8 @@ export default class Portofolio extends Vue {
       id: 6,
       title: 'Scheduler OP',
       description: 'Scheduler OP build on Django Framework.',
-      smallImage: 'assets/portofolio/04-large.png',
-      icon: 'assets/portofolio/04-small.png',
+      smallImage: 'assets/portofolio/04-large.jpg',
+      icon: 'assets/portofolio/04-small.jpg',
       repository: {
         github: 'https://github.com/berv-uni-project/scheduler-op',
       },
@@ -96,8 +96,8 @@ export default class Portofolio extends Vue {
       id: 9,
       title: 'Frog Archiver',
       description: 'Frog Archiver using Qt Framework.',
-      smallImage: 'assets/portofolio/05-large.png',
-      icon: 'assets/portofolio/05-small.png',
+      smallImage: 'assets/portofolio/05-large.jpg',
+      icon: 'assets/portofolio/05-small.jpg',
       repository: {
         github: 'https://github.com/berv-uni-project/Frog-Archiver',
       },
@@ -106,8 +106,8 @@ export default class Portofolio extends Vue {
       id: 10,
       title: 'Hyperdoku Solver',
       description: 'Hyperdoku Solver build on Java and Java Swing.',
-      smallImage: 'assets/portofolio/07-large.png',
-      icon: 'assets/portofolio/07-small.png',
+      smallImage: 'assets/portofolio/07-large.jpg',
+      icon: 'assets/portofolio/07-small.jpg',
       repository: {
         github: 'https://github.com/berv-uni-project/Hyperdoku-Solver',
       },
