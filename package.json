@@ -14,7 +14,7 @@
     "@fortawesome/fontawesome-free": "^5.8.2",
     "axios": "^0.18.0",
     "buefy": "^0.7.6",
-    "bulma-timeline": "^3.0.3",
+    "bulma-timeline": "^3.0.4",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
     "vue-property-decorator": "^8.1.1",
