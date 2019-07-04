@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/chai": "^4.1.0",
     "@types/mocha": "^5.2.7",
-    "@vue/cli-plugin-e2e-cypress": "^3.8.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-typescript": "^3.8.1",
     "@vue/cli-service": "^3.8.4",
