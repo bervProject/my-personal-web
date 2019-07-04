@@ -918,12 +918,12 @@
     webpack ">=4 < 4.29"
     yorkie "^2.0.0"
 
-"@vue/cli-plugin-unit-mocha@^3.8.0":
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-mocha/-/cli-plugin-unit-mocha-3.8.0.tgz#c3fdfd16ca756ee6335970e3dd669b42dad6ecbb"
-  integrity sha512-J+uPJUNsLVOR/mPtqXiQSQf/dgSU7oOyJSgFXB5vX2WOE3V736DHgWB7iR7qG9eCUV0fqcuz/q896VfszfsY0Q==
+"@vue/cli-plugin-unit-mocha@^3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-mocha/-/cli-plugin-unit-mocha-3.9.0.tgz#4fad75c7df06a2190305d591e1992c4f1f126dca"
+  integrity sha512-ukaPvFExcZ3Bw/ERpuVJX6+h29tY2zYYFdOQ6Vv4+MyL/tUfzSoWOB9y065mqe0nBzvRJlhq5FJ8zMYFkoSdow==
   dependencies:
-    "@vue/cli-shared-utils" "^3.8.0"
+    "@vue/cli-shared-utils" "^3.9.0"
     jsdom "^13.2.0"
     jsdom-global "^3.0.2"
     mocha "^5.2.0"
@@ -8699,10 +8699,10 @@ vue-property-decorator@^8.2.1:
     vue "^2.6.10"
     vue-class-component "^7.0.1"
 
-vue-router@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.6.tgz#2e4f0f9cbb0b96d0205ab2690cfe588935136ac3"
-  integrity sha512-Ox0ciFLswtSGRTHYhGvx2L44sVbTPNS+uD2kRISuo8B39Y79rOo0Kw0hzupTmiVtftQYCZl87mwldhh2L9Aquw==
+vue-router@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.7.tgz#b36ca107b4acb8ff5bc4ff824584059c23fcb87b"
+  integrity sha512-utJ+QR3YlIC/6x6xq17UMXeAfxEvXA0VKD3PiSio7hBOZNusA1jXcbxZxVEfJunLp48oonjTepY8ORoIlRx/EQ==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
