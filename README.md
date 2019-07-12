@@ -1,5 +1,7 @@
 # My Personal Web
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I2YXS8)
+
 [![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web?ref=badge_shield)
 
