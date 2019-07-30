@@ -53,24 +53,18 @@ export default class Education extends Vue {
     },
     {
       id: 9,
-      title: 'Google+',
-      icon: 'google-plus',
-      address: 'http://plus.google.com/+BerviantoLeoPratama',
-    },
-    {
-      id: 10,
       title: 'Stack Overflow',
       icon: 'stack-overflow',
       address: 'http://stackoverflow.com/users/6948591/bervianto-leo-pratama',
     },
     {
-      id: 11,
+      id: 10,
       title: 'Steam',
       icon: 'steam',
       address: 'http://steamcommunity.com/id/cyber-name',
     },
     {
-      id: 12,
+      id: 11,
       title: 'Soundcloud',
       icon: 'soundcloud',
       address: 'http://soundcloud.com/bervianto-leo-pratama'
