@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web?ref=badge_shield)
+[![CircleCI](https://circleci.com/gh/bervProject/my-personal-web.svg?style=svg)](https://circleci.com/gh/bervProject/my-personal-web)
 
 ## About
 
