@@ -31,7 +31,7 @@
     "@vue/cli-plugin-unit-mocha": "^4.0.5",
     "@vue/test-utils": "^1.0.0-beta.29",
     "chai": "^4.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.6.4",
