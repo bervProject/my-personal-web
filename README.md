@@ -2,13 +2,22 @@
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I2YXS8)
 
-[![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web?ref=badge_shield)
+
+[![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web)
 [![CircleCI](https://circleci.com/gh/bervProject/my-personal-web.svg?style=svg)](https://circleci.com/gh/bervProject/my-personal-web)
 
 ## About
 
 My Personal Web created by Bervianto Leo Pratama. Using Vue.js, Buefy & Bulma. Using Typecript as base script.
+
+## Next Architecture
+
+![Architecture](images/arch-1.png)
+
+## Next Release
+
+- Use API as data sources
 
 ## LICENSE
 
