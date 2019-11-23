@@ -1,10 +1,10 @@
 @import '~bulma/sass/utilities/_all';
 
-$primary: #0095da;
+$primary: #2fcdf5;
 $primary-invert: findColorInvert($primary);
 
 $navbar-background-color: $primary;
-$navbar-item-color: $white;
+$navbar-item-color: $black;
 $navbar-dropdown-arrow: $white;
 $navbar-box-shadow-color: $black;
 $navbar-dropdown-background-color: $primary;
@@ -22,6 +22,7 @@ $link-focus-border: $black;
 
 $tabs-toggle-link-active-background-color: $primary;
 $tabs-toggle-link-active-border-color : $primary;
+$tabs-toggle-link-active-color: $black;
 
 $colors: (
     "white": ($white, $black),
