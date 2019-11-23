@@ -16,7 +16,7 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   target-branch: gh-pages
-  commit_message: [skip ci] Deploy %{project_name} to %{url}:%{target_branch}
+  commit_message: "[skip ci] Deploy %{project_name} to %{url}:%{target_branch}"
   committer-from-gh: true
   on:
     branch: master
