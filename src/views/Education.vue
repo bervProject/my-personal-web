@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">Education</h1>
+    <h2 class="title">Education</h2>
     <div class="timeline is-centered">
       <header class="timeline-header">
         <span class="tag is-medium is-primary">Now</span>

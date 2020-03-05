@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">Projects</h1>
+    <h2 class="title">Projects</h2>
     <b-tabs position="is-centered" type="is-boxed" size="is-small">
       <b-tab-item label="Github - Personal">
         <github url="https://api.github.com/users/berviantoleo/repos"></github>

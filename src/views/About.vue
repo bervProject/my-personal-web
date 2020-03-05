@@ -1,11 +1,11 @@
 <template>
   <div class="content">
-    <h1>Contact</h1>
+    <h2>Contact</h2>    
     <div class="columns is-multiline">
       <div class="column">
         <div class="card">
           <div class="card-content">
-            <h2>Short Bio</h2>
+            <h3>Short Bio</h3>
             <h5>Name</h5>
             <p>Bervianto Leo Pratama</p>
             <h5>Current Job</h5>
@@ -21,7 +21,7 @@
       <div class="column">
         <div class="card">
           <div class="card-content">
-            <h2>Media Social</h2>
+            <h3>Media Social</h3>
             <p class="buttons are-medium">
               <a href="mailto:bervianto.leo@gmail.com" class="button is-info is-outlined">
                 <span class="icon">
@@ -43,6 +43,10 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="column">
+        <h3>Certification</h3>
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="61a336e9-92a7-4c8c-aeee-a5c07bf3fae5" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
       </div>
     </div>
   </div>

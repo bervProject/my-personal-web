@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">Portofolio</h1>
+    <h2 class="title">Portofolio</h2>
     <b-tabs position="is-centered" type="is-toggle" expanded>
       <b-tab-item label="Mobile">
         <portofolio-item :items="mobileData"></portofolio-item>
