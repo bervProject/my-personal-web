@@ -46,7 +46,7 @@
       </div>
       <div class="column">
         <h3>Certification</h3>
-        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="61a336e9-92a7-4c8c-aeee-a5c07bf3fae5" data-share-badge-host="https://www.youracclaim.com"></div>
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="61a336e9-92a7-4c8c-aeee-a5c07bf3fae5" data-share-badge-host="https://www.youracclaim.com"></div><script type="application/javascript" defer src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
       </div>
     </div>
   </div>
