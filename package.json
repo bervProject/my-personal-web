@@ -13,7 +13,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "axios": "^0.19.2",
-    "buefy": "^0.8.13",
+    "buefy": "^0.8.15",
     "bulma-timeline": "^3.0.4",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
