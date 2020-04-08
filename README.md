@@ -6,9 +6,9 @@
 
 ## Build Status
 
-| Travis | CircleCI |
-|:------:|:--------:|
-| [![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web) | [![CircleCI](https://circleci.com/gh/bervProject/my-personal-web.svg?style=svg)](https://circleci.com/gh/bervProject/my-personal-web) |
+| Travis | CircleCI | Node - Github Action | Docker - Github Action |
+|:------:|:--------:|:--------------------:|:----------------------:|
+| [![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web) | [![CircleCI](https://circleci.com/gh/bervProject/my-personal-web.svg?style=svg)](https://circleci.com/gh/bervProject/my-personal-web) | ![Node CI](https://github.com/bervProject/my-personal-web/workflows/Node%20CI/badge.svg) | ![Docker](https://github.com/bervProject/my-personal-web/workflows/Docker/badge.svg) |
 
 
 ## About
