@@ -1189,7 +1189,7 @@
 
 "@vue/cli-plugin-e2e-cypress@^4.3.1":
   version "4.3.1"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-e2e-cypress/-/cli-plugin-e2e-cypress-4.3.1.tgz#2c39502dc8d197d78a5f0e8ef0d5dde2c9048251"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-e2e-cypress/-/cli-plugin-e2e-cypress-4.3.1.tgz#2c39502dc8d197d78a5f0e8ef0d5dde2c9048251"
   integrity sha512-/7V2jCLBkwPDKLVkkaWZMEBfecQ2W3B8IWk4JI4MTHK2yenIMNsciMotS8XxtpGkNF3HsxDr2LI+onBd6xHDFQ==
   dependencies:
     "@vue/cli-shared-utils" "^4.3.1"
@@ -1221,7 +1221,7 @@
 
 "@vue/cli-plugin-unit-mocha@^4.3.1":
   version "4.3.1"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-unit-mocha/-/cli-plugin-unit-mocha-4.3.1.tgz#174039706a4677402291402daa9610b14d1438ea"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-mocha/-/cli-plugin-unit-mocha-4.3.1.tgz#174039706a4677402291402daa9610b14d1438ea"
   integrity sha512-h6MIgnS+H4N3ETeOUbrJ+3p8Ar9f4dZOB/gywe/PvLS/vhCRmyzoIJnTaehSm5cFUCVs7xFt4LLAdaKSbcjW7g==
   dependencies:
     "@vue/cli-shared-utils" "^4.3.1"
