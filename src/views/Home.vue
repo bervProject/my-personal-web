@@ -1,15 +1,19 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <figure class="image is-16by9">
-        <img src="../assets/images/intro.jpg" alt="Home Image">
-      </figure>
+      <b-carousel>
+        <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+          <figure class="image is-16by9">
+            <img :src="getAssets(carousel.image)" alt="Home Image" />
+          </figure>
+        </b-carousel-item>
+      </b-carousel>
     </div>
     <div class="card-content">
       <div class="media">
         <div class="media-left">
           <figure class="image is-64x64">
-            <img class="is-rounded" src="../assets/images/me.jpg" alt="My image">
+            <img class="is-rounded" src="../assets/images/me.jpg" alt="My image" />
           </figure>
         </div>
         <div class="media-content">
