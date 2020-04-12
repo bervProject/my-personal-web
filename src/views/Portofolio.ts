@@ -74,8 +74,8 @@ export default class Portofolio extends Vue {
       id: 7,
       title: 'Bervianto Leo Pratama Jekyll Themes',
       description: 'Themes Jekyll used Bulma for My Jekyll Themes',
-      smallImage: 'assets/480x480.png',
-      icon: 'assets/480x480.png',
+      smallImage: 'assets/portofolio/09-large.png',
+      icon: 'assets/portofolio/09-large.png',
       repository: {
         github: 'https://github.com/berviantoleo/berviantoleo.github.io',
       },
@@ -84,8 +84,8 @@ export default class Portofolio extends Vue {
       id: 8,
       title: 'My Personal Site Vue.js',
       description: 'SPA Used Vue.js to created my personal website.',
-      smallImage: 'assets/480x480.png',
-      icon: 'assets/480x480.png',
+      smallImage: 'assets/portofolio/10-large.png',
+      icon: 'assets/portofolio/10-large.png',
       repository: {
         github: 'https://github.com/bervProject/my-personal-web',
       },

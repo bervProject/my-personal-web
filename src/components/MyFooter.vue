@@ -19,7 +19,7 @@
       </p>
       <p>
         Version
-        <b>0.1.2</b>
+        <b>0.1.3</b>
       </p>
     </div>
   </footer>

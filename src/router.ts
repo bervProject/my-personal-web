@@ -36,6 +36,12 @@ export default new Router({
         import(/* webpackChunkName: "portofolio" */ './views/Portofolio.vue')
     },
     {
+      path: '/favorite-audio',
+      name: 'favorite-audio',
+      component: () =>
+        import(/* webpackChunkName: "portofolio" */ './views/FavoriteAudio.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
