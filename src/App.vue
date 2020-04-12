@@ -3,7 +3,7 @@
     <my-header></my-header>
     <section class="section">
       <div class="container">
-        <router-view/>
+        <router-view />
       </div>
     </section>
     <my-footer></my-footer>
