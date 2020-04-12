@@ -1,5 +1,16 @@
 <template>
   <div>
+    <b-notification type="is-info">
+      <p>
+        <b>Welcome to Bervianto Leo Pratama's site!</b>
+      </p>
+      <p>
+        Please also visit my another site here:
+        <a
+          href="https://berviantoleo.my.id"
+        >berviantoleo.my.id</a>
+      </p>
+    </b-notification>
     <div class="card">
       <div class="card-image">
         <b-carousel>
