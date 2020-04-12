@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.1.3
+
+- Add Favorite Menu
+- Simplify Menu
+
 ## 0.1.2
 
 - Update dependencies
