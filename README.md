@@ -2,13 +2,11 @@
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I2YXS8)
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web?ref=badge_shield)
-
 ## Build Status
 
-| Travis | CircleCI | Node - Github Action | Docker - Github Action |
-|:------:|:--------:|:--------------------:|:----------------------:|
-| [![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web) | [![CircleCI](https://circleci.com/gh/bervProject/my-personal-web.svg?style=svg)](https://circleci.com/gh/bervProject/my-personal-web) | ![Node CI](https://github.com/bervProject/my-personal-web/workflows/Node%20CI/badge.svg) | ![Docker](https://github.com/bervProject/my-personal-web/workflows/Docker/badge.svg) |
+| Travis | CircleCI | Node - Github Action | Docker - Github Action | License |
+|:------:|:--------:|:--------------------:|:----------------------:|:-------:|
+| [![Build Status](https://travis-ci.org/bervProject/my-personal-web.svg?branch=master)](https://travis-ci.org/bervProject/my-personal-web) | [![CircleCI](https://circleci.com/gh/bervProject/my-personal-web.svg?style=svg)](https://circleci.com/gh/bervProject/my-personal-web) | ![Node CI](https://github.com/bervProject/my-personal-web/workflows/Node%20CI/badge.svg) | ![Docker](https://github.com/bervProject/my-personal-web/workflows/Docker/badge.svg) | [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FbervProject%2Fmy-personal-web?ref=badge_shield) |
 
 
 ## About
