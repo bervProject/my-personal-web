@@ -27,7 +27,7 @@
     "@types/mocha": "^7.0.2",
     "@vue/cli-plugin-babel": "^4.4.5",
     "@vue/cli-plugin-e2e-cypress": "^4.4.5",
-    "@vue/cli-plugin-typescript": "^4.4.4",
+    "@vue/cli-plugin-typescript": "^4.4.5",
     "@vue/cli-plugin-unit-mocha": "^4.4.5",
     "@vue/cli-service": "^4.4.5",
     "@vue/test-utils": "^1.0.3",
