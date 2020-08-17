@@ -9,7 +9,11 @@
           <p class="title is-4">
             <a v-bind:href="data.svn_url">{{data.name}}</a>
           </p>
-          <p class="subtitle is-6">Stars : {{data.stargazers_count}}</p>
+          <p class="subtitle is-6">
+            Stars
+            <b-icon icon="star" type="is-warning"></b-icon>
+            : {{data.stargazers_count}}
+          </p>
           <div class="content">{{data.description}}</div>
         </div>
       </div>

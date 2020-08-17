@@ -19,7 +19,7 @@
       </p>
       <p>
         Version
-        <b>0.1.3</b>
+        <b>{{version}}</b>
       </p>
     </div>
   </footer>

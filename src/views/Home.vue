@@ -15,9 +15,7 @@
       <div class="card-image">
         <b-carousel>
           <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-            <figure class="image is-16by9">
-              <img :src="getAssets(carousel.image)" alt="Home Image" />
-            </figure>
+            <b-image :src="getAssets(carousel.image)" ratio="16by9"></b-image>
           </b-carousel-item>
         </b-carousel>
       </div>
@@ -47,3 +45,4 @@
 
 <script lang="ts" src="./Home.ts">
 </script>
+
