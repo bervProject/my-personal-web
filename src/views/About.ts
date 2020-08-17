@@ -68,6 +68,18 @@ export default class Education extends Vue {
       title: 'Soundcloud',
       icon: 'soundcloud',
       address: 'http://soundcloud.com/bervianto-leo-pratama'
+    },
+    {
+      id: 12,
+      title: 'Medium',
+      icon: 'medium',
+      address: 'https://medium.com/@bervianto.leo'
+    },
+    {
+      id: 13,
+      title: 'Dev',
+      icon: 'dev',
+      address: 'https://dev.to/berviantoleo'
     }
   ]
 }

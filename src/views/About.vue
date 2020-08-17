@@ -15,8 +15,10 @@
             <h5>Interest Technology</h5>
             <p>Web Development & Mobile Development</p>
             <h5>Address</h5>
-            <b-icon pack="fa" icon="home" size="is-small"></b-icon>
-            <span>Bandung</span>
+            <p>
+              <b-icon pack="fa" icon="home" size="is-small"></b-icon>
+              <span>Bandung</span>
+            </p>
           </div>
         </div>
         <div class="column">
