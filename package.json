@@ -16,7 +16,7 @@
     "buefy": "^0.9.1",
     "bulma-timeline": "^3.0.4",
     "sass": "^1.26.10",
-    "vue": "^2.6.11",
+    "vue": "^2.6.12",
     "vue-class-component": "^7.2.5",
     "vue-property-decorator": "^9.0.0",
     "vue-router": "^3.4.3",
@@ -35,7 +35,7 @@
     "sass-loader": "^9.0.3",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.9.7",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "private": true,
   "author": {
