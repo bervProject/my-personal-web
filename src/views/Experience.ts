@@ -14,21 +14,21 @@ export default class Experience extends Vue {
     {
       id: 2,
       date: 'December 2017 - January 2019',
-      job: 'Freelancer (Back-End)',
+      job: 'Backend Developer (Freelancer/Part Time)',
       department: 'eDaun',
       description: 'Creating API to improve functionality of web.',
     },
     {
       id: 3,
       date: 'January 2018 - July 2018',
-      job: 'Android Developer in SIDAS',
-      department: 'Smart City Community and Innovation Center ITB',
+      job: 'Android Developer',
+      department: 'SIDAS (Smart Identity System) - SCCIC (Smart City Community and Innovation Center) ITB',
       description: 'Working on application to improve SIDAS.',
     },
     {
       id: 4,
       date: '29 May 2017 - 04 August 2017',
-      job: 'Mobile Developer Internship',
+      job: 'Mobile Developer (Internship)',
       department: 'Suitmedia',
       description:
         'Working on Android Application and learn how to build creative Android Application.',

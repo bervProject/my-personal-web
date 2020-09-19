@@ -33,9 +33,10 @@
         </div>
         <div class="content is-medium">
           <b-taglist>
-            <b-tag rounded size="is-medium" type="is-primary">Web & Mobile Developer</b-tag>
+            <b-tag rounded size="is-medium" type="is-primary">Backend Developer</b-tag>
             <b-tag rounded size="is-medium" type="is-warning">Cyber Security Enthusiasts</b-tag>
-            <b-tag rounded size="is-medium" type="is-success">Institut Teknologi Bandung</b-tag>
+            <b-tag rounded size="is-medium" type="is-warning">Microservices</b-tag>
+            <b-tag rounded size="is-medium" type="is-dark">Institut Teknologi Bandung</b-tag>
           </b-taglist>
         </div>
       </div>

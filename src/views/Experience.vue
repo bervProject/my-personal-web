@@ -1,23 +1,30 @@
 <template>
-<div>
-  <h2 class="title">Experience</h2>
-    <div class="timeline is-centered">
-        <header class="timeline-header">
-            <span class="tag is-medium is-primary">Now</span>
-        </header>
-        <div v-for="item in eduData" class="timeline-item is-primary" :key="item.id">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <p class="heading">{{item.date}}</p>
-                <p class="title is-4">{{item.job}} @ {{item.department}}</p>
-                <p class="subtitle is-5">{{item.description}}</p>
-            </div>
+  <div>
+    <h2 class="title">Experience</h2>
+    <b-collapse
+      class="card"
+      animation="slide"
+      v-for="(edu, index) of eduData"
+      :key="index"
+      :open="isOpen == index"
+      @open="isOpen = index"
+    >
+      <div slot="trigger" slot-scope="props" class="card-header" role="button">
+        <div class="card-header-title">
+          <div class="content">
+            <div class="title is-4">{{ edu.job }}</div>
+            <div class="subtitle is-5">{{ edu.date }} | {{ edu.department }}</div>
+          </div>
         </div>
-        <header class="timeline-header">
-            <span class="tag is-medium is-primary">Born</span>
-        </header>
-    </div>
-</div>
+        <a class="card-header-icon">
+          <b-icon pack="fa" :icon="props.open ? 'angle-down' : 'angle-up'"></b-icon>
+        </a>
+      </div>
+      <div class="card-content">
+        <div class="content">{{ edu.description }}</div>
+      </div>
+    </b-collapse>
+  </div>
 </template>
 
 <script lang="ts" src="./Experience.ts">
