@@ -12,8 +12,15 @@
       <div slot="trigger" slot-scope="props" class="card-header" role="button">
         <div class="card-header-title">
           <div class="content">
-            <div class="title is-4">{{ edu.job }}</div>
-            <div class="subtitle is-5">{{ edu.date }} | {{ edu.department }}</div>
+            <div class="media">
+              <div class="media-left">
+                <b-icon size="is-medium" pack="fa" icon="briefcase"></b-icon>
+              </div>
+              <div class="media-content">
+                <div class="title is-4">{{ edu.job }}</div>
+                <div class="subtitle is-5">{{ edu.date }} | {{ edu.department }}</div>
+              </div>
+            </div>
           </div>
         </div>
         <a class="card-header-icon">
