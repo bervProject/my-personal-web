@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.2.0
+
+- Change design of Education & Experience to use Collapse
+- Remove `bulma-timeline`
+
 ## 0.1.3
 
 - Add Favorite Menu
