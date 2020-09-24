@@ -28,6 +28,9 @@
         <div class="card-content">
           <div class="content">{{data.description}}</div>
         </div>
+        <footer class="card-footer">
+          <a :href="data.svn_url" class="card-footer-item">Repository</a>
+        </footer>
       </b-collapse>
     </div>
   </div>
