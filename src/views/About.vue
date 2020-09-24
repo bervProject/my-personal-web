@@ -32,6 +32,7 @@
                   <b-tag rounded size="is-small" type="is-dark">Mobile Development</b-tag>
                   <b-tag rounded size="is-small" type="is-dark">Backend Development</b-tag>
                   <b-tag rounded size="is-small" type="is-dark">Microservices</b-tag>
+                  <b-tag rounded size="is-small" type="is-dark">Cloud Computing</b-tag>
                   <b-tag rounded size="is-small" type="is-dark">Cyber Security</b-tag>
                 </b-taglist>
                 <h5>Address</h5>
