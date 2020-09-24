@@ -3,6 +3,9 @@
 $primary: #2fcdf5;
 $primary-invert: findColorInvert($primary);
 
+$red: #cf0c0c;
+$red-invert: findColorInvert($red);
+
 $navbar-background-color: $primary;
 $navbar-item-color: $black;
 $navbar-dropdown-arrow: $white;
@@ -35,7 +38,8 @@ $colors: (
     "info": ($info, $info-invert),
     "success": ($success, $success-invert),
     "warning": ($warning, $warning-invert),
-    "danger": ($danger, $danger-invert)
+    "danger": ($danger, $danger-invert),
+    "red": ($red, $red-invert)
 );
 
 @import '~bulma';

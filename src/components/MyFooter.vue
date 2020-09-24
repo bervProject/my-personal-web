@@ -3,7 +3,8 @@
     <div class="content has-text-black has-text-centered">
       <p>
         ©
-        <b>My Personal Web</b> by
+        <b>My Personal Web</b> made with
+        <b-icon icon="heart" type="is-red"></b-icon>by
         <a href="https://berviantoleo.github.io/">Bervianto Leo Pratama</a>.
       </p>
       <p>
