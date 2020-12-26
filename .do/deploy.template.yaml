@@ -5,4 +5,4 @@ spec:
      branch: master
      repo_clone_url: https://github.com/bervProject/my-personal-web.git
    name: vue-site
-   output_dir: /dist
+   output_dir: dist
