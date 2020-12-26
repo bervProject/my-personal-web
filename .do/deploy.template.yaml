@@ -1,0 +1,8 @@
+spec:
+ name: vue-site
+ static_sites:
+ - git:
+     branch: master
+     repo_clone_url: https://github.com/bervProject/my-personal-web.git
+   name: vue-site
+   output_dir: /dist
