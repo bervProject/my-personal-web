@@ -16,7 +16,11 @@
                 ratio="1by1"
                 rounded="true"
               >
-                <b-skeleton class="skeleton-placeholder" slot="placeholder" height="100%"></b-skeleton>
+                <b-skeleton
+                  class="skeleton-placeholder"
+                  slot="placeholder"
+                  height="100%"
+                ></b-skeleton>
               </b-image>
             </div>
             <div class="column">
@@ -28,12 +32,24 @@
                 <p>Backend Developer</p>
                 <h5>Interest Technology / Interest Topic</h5>
                 <b-taglist>
-                  <b-tag rounded size="is-small" type="is-dark">Web Development</b-tag>
-                  <b-tag rounded size="is-small" type="is-dark">Mobile Development</b-tag>
-                  <b-tag rounded size="is-small" type="is-dark">Backend Development</b-tag>
-                  <b-tag rounded size="is-small" type="is-dark">Microservices</b-tag>
-                  <b-tag rounded size="is-small" type="is-dark">Cloud Computing</b-tag>
-                  <b-tag rounded size="is-small" type="is-dark">Cyber Security</b-tag>
+                  <b-tag rounded size="is-small" type="is-dark"
+                    >Web Development</b-tag
+                  >
+                  <b-tag rounded size="is-small" type="is-dark"
+                    >Mobile Development</b-tag
+                  >
+                  <b-tag rounded size="is-small" type="is-dark"
+                    >Backend Development</b-tag
+                  >
+                  <b-tag rounded size="is-small" type="is-dark"
+                    >Microservices</b-tag
+                  >
+                  <b-tag rounded size="is-small" type="is-dark"
+                    >Cloud Computing</b-tag
+                  >
+                  <b-tag rounded size="is-small" type="is-dark"
+                    >Cyber Security</b-tag
+                  >
                 </b-taglist>
                 <h5>Address</h5>
                 <p>
@@ -48,7 +64,10 @@
           <div class="content">
             <h3 class="title">Social Media</h3>
             <p class="buttons are-small">
-              <a href="mailto:bervianto.leo@gmail.com" class="button is-dark is-outlined">
+              <a
+                href="mailto:bervianto.leo@gmail.com"
+                class="button is-dark is-outlined"
+              >
                 <span class="icon">
                   <b-icon pack="fa" icon="envelope"></b-icon>
                 </span>
@@ -63,7 +82,7 @@
                 <span class="icon">
                   <b-icon pack="fab" :icon="contact.icon"></b-icon>
                 </span>
-                <span>{{contact.title}}</span>
+                <span>{{ contact.title }}</span>
               </a>
             </p>
           </div>
@@ -73,6 +92,12 @@
               data-iframe-width="150"
               data-iframe-height="270"
               data-share-badge-id="61a336e9-92a7-4c8c-aeee-a5c07bf3fae5"
+              data-share-badge-host="https://www.youracclaim.com"
+            ></div>
+            <div
+              data-iframe-width="150"
+              data-iframe-height="270"
+              data-share-badge-id="1ed42ba5-d7fe-4191-a5cb-90f86edcd33a"
               data-share-badge-host="https://www.youracclaim.com"
             ></div>
             <script
