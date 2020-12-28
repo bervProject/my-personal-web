@@ -1,4 +1,4 @@
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Experience extends Vue {
@@ -56,5 +56,5 @@ export default class Experience extends Vue {
       department: 'STEI (Sekolah Teknik Elektro dan Informatika) ITB',
       description: 'Manage mailing list & virtual machine.',
     },
-  ]
+  ];
 }

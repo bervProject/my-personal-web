@@ -1,4 +1,4 @@
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Education extends Vue {
@@ -25,13 +25,13 @@ export default class Education extends Vue {
       id: 4,
       title: 'Medium',
       icon: 'medium',
-      address: 'https://medium.com/@bervianto.leo'
+      address: 'https://medium.com/@bervianto.leo',
     },
     {
       id: 5,
       title: 'Dev',
       icon: 'dev',
-      address: 'https://dev.to/berviantoleo'
+      address: 'https://dev.to/berviantoleo',
     },
     {
       id: 6,
@@ -79,7 +79,7 @@ export default class Education extends Vue {
       id: 13,
       title: 'Soundcloud',
       icon: 'soundcloud',
-      address: 'http://soundcloud.com/bervianto-leo-pratama'
-    }
-  ]
+      address: 'http://soundcloud.com/bervianto-leo-pratama',
+    },
+  ];
 }

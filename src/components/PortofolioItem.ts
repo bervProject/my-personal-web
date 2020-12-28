@@ -1,4 +1,4 @@
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
   props: {
@@ -6,7 +6,7 @@ import { Component, Vue } from 'vue-property-decorator'
   },
 })
 export default class PortofolioItem extends Vue {
-    public getPic(url: string) : string {
-        return `${process.env.BASE_URL}${url}`
-    }
+  public getPic(url: string): string {
+    return `${process.env.BASE_URL}${url}`;
+  }
 }

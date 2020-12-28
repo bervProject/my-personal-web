@@ -7,15 +7,23 @@
     </template>
     <template slot="start">
       <b-navbar-dropdown label="Experience">
-        <b-navbar-item tag="router-link" to="/education">Education</b-navbar-item>
-        <b-navbar-item tag="router-link" to="/experience">Work Experience</b-navbar-item>
+        <b-navbar-item tag="router-link" to="/education"
+          >Education</b-navbar-item
+        >
+        <b-navbar-item tag="router-link" to="/experience"
+          >Work Experience</b-navbar-item
+        >
       </b-navbar-dropdown>
       <b-navbar-dropdown label="My Work">
-        <b-navbar-item tag="router-link" to="/portofolio">Portofolio</b-navbar-item>
+        <b-navbar-item tag="router-link" to="/portofolio"
+          >Portofolio</b-navbar-item
+        >
         <b-navbar-item tag="router-link" to="/projects">Projects</b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-dropdown label="About Me">
-        <b-navbar-item tag="router-link" to="/favorite-audio">Favorite Audio</b-navbar-item>
+        <b-navbar-item tag="router-link" to="/favorite-audio"
+          >Favorite Audio</b-navbar-item
+        >
         <b-navbar-item tag="router-link" to="/about">Contact</b-navbar-item>
       </b-navbar-dropdown>
     </template>
@@ -36,5 +44,3 @@
     </template>
   </b-navbar>
 </template>
-
-

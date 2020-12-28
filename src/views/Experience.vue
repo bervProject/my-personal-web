@@ -48,7 +48,12 @@
       <div class="card-content">
         <div class="content">
           <p>{{ edu.description }}</p>
-          <b-button type="is-info" tag="a" :href="edu.departmentLink" v-if="edu.departmentLink">
+          <b-button
+            type="is-info"
+            tag="a"
+            :href="edu.departmentLink"
+            v-if="edu.departmentLink"
+          >
             Visit Company Page
           </b-button>
         </div>

@@ -42,5 +42,4 @@
   </section>
 </template>
 
-<script lang="ts" src="./FavoriteAudio.ts">
-</script>
+<script lang="ts" src="./FavoriteAudio.ts"></script>

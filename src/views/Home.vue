@@ -6,9 +6,7 @@
       </p>
       <p>
         Please also visit my another site here:
-        <a
-          href="https://berviantoleo.my.id"
-        >berviantoleo.my.id</a>
+        <a href="https://berviantoleo.my.id">berviantoleo.my.id</a>
       </p>
     </b-notification>
     <div class="card">
@@ -23,7 +21,11 @@
         <div class="media">
           <div class="media-left">
             <figure class="image is-64x64">
-              <img class="is-rounded" src="../assets/images/me.jpg" alt="My image" />
+              <img
+                class="is-rounded"
+                src="../assets/images/me.jpg"
+                alt="My image"
+              />
             </figure>
           </div>
           <div class="media-content">
@@ -33,10 +35,18 @@
         </div>
         <div class="content is-medium">
           <b-taglist>
-            <b-tag rounded size="is-medium" type="is-primary">Backend Developer</b-tag>
-            <b-tag rounded size="is-medium" type="is-warning">Cyber Security Enthusiasts</b-tag>
-            <b-tag rounded size="is-medium" type="is-warning">Microservices</b-tag>
-            <b-tag rounded size="is-medium" type="is-dark">Institut Teknologi Bandung</b-tag>
+            <b-tag rounded size="is-medium" type="is-primary"
+              >Backend Developer</b-tag
+            >
+            <b-tag rounded size="is-medium" type="is-warning"
+              >Cyber Security Enthusiasts</b-tag
+            >
+            <b-tag rounded size="is-medium" type="is-warning"
+              >Microservices</b-tag
+            >
+            <b-tag rounded size="is-medium" type="is-dark"
+              >Institut Teknologi Bandung</b-tag
+            >
           </b-taglist>
         </div>
       </div>
@@ -44,6 +54,4 @@
   </div>
 </template>
 
-<script lang="ts" src="./Home.ts">
-</script>
-
+<script lang="ts" src="./Home.ts"></script>

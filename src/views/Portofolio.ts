@@ -1,5 +1,5 @@
-import { Component, Vue } from 'vue-property-decorator'
-import PortofolioItem from '@/components/PortofolioItem.vue'
+import { Component, Vue } from 'vue-property-decorator';
+import PortofolioItem from '@/components/PortofolioItem.vue';
 
 @Component({
   components: {
@@ -47,7 +47,7 @@ export default class Portofolio extends Vue {
       smallImage: 'assets/portofolio/08-large.jpg',
       icon: 'assets/portofolio/08-small.jpg',
     },
-  ]
+  ];
   public webData: object[] = [
     {
       id: 5,
@@ -90,7 +90,7 @@ export default class Portofolio extends Vue {
         github: 'https://github.com/bervProject/my-personal-web',
       },
     },
-  ]
+  ];
   public desktopData: object[] = [
     {
       id: 9,
@@ -112,5 +112,5 @@ export default class Portofolio extends Vue {
         github: 'https://github.com/berv-uni-project/Hyperdoku-Solver',
       },
     },
-  ]
+  ];
 }

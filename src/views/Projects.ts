@@ -1,5 +1,5 @@
-import { Component, Vue } from 'vue-property-decorator'
-import Github from '@/components/Github.vue'
+import { Component, Vue } from 'vue-property-decorator';
+import Github from '@/components/Github.vue';
 
 @Component({
   components: {

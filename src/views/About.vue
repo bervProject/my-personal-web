@@ -112,5 +112,4 @@
   </div>
 </template>
 
-<script lang="ts" src="./About.ts">
-</script>
+<script lang="ts" src="./About.ts"></script>

@@ -9,15 +9,17 @@
         <github url="https://api.github.com/orgs/bervProject/repos"></github>
       </b-tab-item>
       <b-tab-item label="Github - My University Projects">
-        <github url="https://api.github.com/orgs/berv-uni-project/repos"></github>
+        <github
+          url="https://api.github.com/orgs/berv-uni-project/repos"
+        ></github>
       </b-tab-item>
       <b-tab-item label="Github - My Portofolio Projects">
-        <github url="https://api.github.com/orgs/berv-porto-project/repos"></github>
+        <github
+          url="https://api.github.com/orgs/berv-porto-project/repos"
+        ></github>
       </b-tab-item>
     </b-tabs>
   </div>
 </template>
 
-<script lang="ts" src="./Projects.ts">
-</script>
-
+<script lang="ts" src="./Projects.ts"></script>

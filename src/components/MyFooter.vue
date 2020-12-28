@@ -8,23 +8,19 @@
         <a href="https://berviantoleo.github.io/">Bervianto Leo Pratama</a>.
       </p>
       <p>
-        The source
-        code is licensed
-        <a
-          href="http://opensource.org/licenses/mit-license.php"
-        >MIT</a>. The website content
-        is licensed
-        <a
-          href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-        >CC BY NC SA 4.0</a>.
+        The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+        website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+          >CC BY NC SA 4.0</a
+        >.
       </p>
       <p>
         Version
-        <b>{{version}}</b>
+        <b>{{ version }}</b>
       </p>
     </div>
   </footer>
 </template>
 
-<script lang="ts" src="./MyFooter.ts">
-</script>
+<script lang="ts" src="./MyFooter.ts"></script>

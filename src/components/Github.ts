@@ -1,17 +1,17 @@
-import Vue from 'vue'
-import { Component } from 'vue-property-decorator'
-import axios from 'axios'
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+import axios from 'axios';
 
 @Component({
   props: { url: String },
 })
 export default class Projets extends Vue {
-  public myData: object[] = []
-  public isLoading: boolean = false
+  public myData: object[] = [];
+  public isLoading: boolean = false;
 
   public mounted() {
-    this.isLoading = true
-    this.loadData()
+    this.isLoading = true;
+    this.loadData();
   }
 
   public loadData() {
@@ -25,10 +25,11 @@ export default class Projets extends Vue {
         },
       })
       .then(response => {
-        this.isLoading = false
-        this.myData = response.data
-      }).catch(reason => {
-        this.isLoading = false
+        this.isLoading = false;
+        this.myData = response.data;
       })
+      .catch(reason => {
+        this.isLoading = false;
+      });
   }
 }

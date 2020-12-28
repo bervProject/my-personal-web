@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from './views/Home.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
@@ -16,31 +16,33 @@ export default new Router({
       path: '/education',
       name: 'education',
       component: () =>
-        import(/* webpackChunkName: "education" */ './views/Education.vue')
+        import(/* webpackChunkName: "education" */ './views/Education.vue'),
     },
     {
       path: '/experience',
       name: 'experience',
       component: () =>
-        import(/* webpackChunkName: "experience" */ './views/Experience.vue')
+        import(/* webpackChunkName: "experience" */ './views/Experience.vue'),
     },
     {
       path: '/projects',
       name: 'projects',
       component: () =>
-        import(/* webpackChunkName: "projects" */ './views/Projects.vue')
+        import(/* webpackChunkName: "projects" */ './views/Projects.vue'),
     },
     {
       path: '/portofolio',
       name: 'portofolio',
       component: () =>
-        import(/* webpackChunkName: "portofolio" */ './views/Portofolio.vue')
+        import(/* webpackChunkName: "portofolio" */ './views/Portofolio.vue'),
     },
     {
       path: '/favorite-audio',
       name: 'favorite-audio',
       component: () =>
-        import(/* webpackChunkName: "portofolio" */ './views/FavoriteAudio.vue')
+        import(
+          /* webpackChunkName: "portofolio" */ './views/FavoriteAudio.vue'
+        ),
     },
     {
       path: '/about',
@@ -52,4 +54,4 @@ export default new Router({
         import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
   ],
-})
+});
