@@ -13,9 +13,9 @@ $navbar-box-shadow-color: $black;
 $navbar-dropdown-background-color: $primary;
 $navbar-divider-background-color: $black;
 
-$timeline-marker-border: .1em solid $primary;
-$timeline-marker-background-color : $white;
-$timeline-line : .1rem solid $primary;
+$timeline-marker-border: 0.1em solid $primary;
+$timeline-marker-background-color: $white;
+$timeline-line: 0.1rem solid $primary;
 
 $footer-color: true;
 $footer-padding: 1.5rem;
@@ -26,20 +26,50 @@ $link-invert: $white;
 $link-focus-border: $black;
 
 $tabs-toggle-link-active-background-color: $primary;
-$tabs-toggle-link-active-border-color : $primary;
+$tabs-toggle-link-active-border-color: $primary;
 $tabs-toggle-link-active-color: $black;
 
 $colors: (
-    "white": ($white, $black),
-    "black": ($black, $white),
-    "light": ($light, $light-invert),
-    "dark": ($dark, $dark-invert),
-    "primary": ($primary, $primary-invert),
-    "info": ($info, $info-invert),
-    "success": ($success, $success-invert),
-    "warning": ($warning, $warning-invert),
-    "danger": ($danger, $danger-invert),
-    "red": ($red, $red-invert)
+  'white': (
+    $white,
+    $black,
+  ),
+  'black': (
+    $black,
+    $white,
+  ),
+  'light': (
+    $light,
+    $light-invert,
+  ),
+  'dark': (
+    $dark,
+    $dark-invert,
+  ),
+  'primary': (
+    $primary,
+    $primary-invert,
+  ),
+  'info': (
+    $info,
+    $info-invert,
+  ),
+  'success': (
+    $success,
+    $success-invert,
+  ),
+  'warning': (
+    $warning,
+    $warning-invert,
+  ),
+  'danger': (
+    $danger,
+    $danger-invert,
+  ),
+  'red': (
+    $red,
+    $red-invert,
+  ),
 );
 
 @import '~bulma';
