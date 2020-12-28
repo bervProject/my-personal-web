@@ -18,21 +18,43 @@
               </div>
               <div class="media-content">
                 <div class="title is-4">{{ edu.job }}</div>
-                <div class="subtitle is-5">{{ edu.date }} | {{ edu.department }}</div>
+                <div class="subtitle is-5">
+                  {{ edu.department }}
+                </div>
+                <div class="subtitle is-6">
+                  {{ edu.startDate | moment('DD MMMM YYYY') }} -
+                  <template v-if="edu.endDate">
+                    {{ edu.endDate | moment('DD MMMM YYYY') }}
+                  </template>
+                  <template v-else>
+                    Now
+                  </template>
+                  ({{
+                    edu.startDate
+                      | moment('from', edu.endDate ? edu.endDate : 'now', true)
+                  }})
+                </div>
               </div>
             </div>
           </div>
         </div>
         <a class="card-header-icon">
-          <b-icon pack="fa" :icon="props.open ? 'angle-down' : 'angle-up'"></b-icon>
+          <b-icon
+            pack="fa"
+            :icon="props.open ? 'angle-down' : 'angle-up'"
+          ></b-icon>
         </a>
       </div>
       <div class="card-content">
-        <div class="content">{{ edu.description }}</div>
+        <div class="content">
+          <p>{{ edu.description }}</p>
+          <b-button type="is-info" tag="a" :href="edu.departmentLink" v-if="edu.departmentLink">
+            Visit Company Page
+          </b-button>
+        </div>
       </div>
     </b-collapse>
   </div>
 </template>
 
-<script lang="ts" src="./Experience.ts">
-</script>
+<script lang="ts" src="./Experience.ts"></script>

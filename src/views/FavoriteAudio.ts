@@ -39,5 +39,33 @@ export default class FavoriteAudio extends Vue {
       id: 9,
       srcAudio: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/463715610&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
     },
+    {
+      id: 10,
+      srcAudio: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/952664497&color=%23cccfd3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
+    },
+    {
+      id: 11,
+      srcAudio: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/877060252&color=%23cccfd3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
+    },
+    {
+      id: 12,
+      srcAudio: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338436983&color=%23cccfd3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
+    },
+    {
+      id: 13,
+      srcAudio: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/172156106&color=%23cccfd3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
+    }
   ]
+  public currentPage: number = 1;
+  public perPage: number = 6;
+  public perPageSelection: number[] = [6, 9, 12];
+
+  get total() {
+    return this.favAudio.length;
+  }
+
+  get paginatedItems() {
+    const pageNumber = this.currentPage - 1;
+    return this.favAudio.slice(pageNumber * this.perPage, (pageNumber + 1) * this.perPage);
+  }
 }

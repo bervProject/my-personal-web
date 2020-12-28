@@ -1,6 +1,5 @@
-import { Component, Vue } from 'vue-property-decorator'
-
+import { Component, Vue } from 'vue-property-decorator';
 @Component
 export default class MyFooter extends Vue {
-  protected version: string = '0.2.1';
+  protected version: string = process.env.VUE_APP_VERSION || '0';
 }

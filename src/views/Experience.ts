@@ -5,29 +5,36 @@ export default class Experience extends Vue {
   public eduData: object[] = [
     {
       id: 1,
-      date: 'August 2018 - Now',
+      startDate: '2018-08-27',
+      endDate: null,
       job: 'Backend Developer',
+      departmentLink: 'https://xtremax.com',
       department: 'Xtremax Indonesia',
-      description:
-        'Backend Developer using .NET Technology.',
+      description: 'Backend Developer using .NET Technology.',
     },
     {
       id: 2,
-      date: 'December 2017 - January 2019',
+      startDate: '2018-01-01',
+      endDate: '2018-07-31',
+      job: 'Android Developer',
+      department:
+        'SIDAS (Smart Identity System) - SCCIC (Smart City Community and Innovation Center) ITB',
+      description: 'Working on application to improve SIDAS.',
+    },
+    {
+      id: 3,
+      startDate: '2017-12-01',
+      endDate: '2019-01-31',
+      departmentLink: 'https://www.edaun.com/',
       job: 'Backend Developer (Freelancer/Part Time)',
       department: 'eDaun',
       description: 'Creating API to improve functionality of web.',
     },
     {
-      id: 3,
-      date: 'January 2018 - July 2018',
-      job: 'Android Developer',
-      department: 'SIDAS (Smart Identity System) - SCCIC (Smart City Community and Innovation Center) ITB',
-      description: 'Working on application to improve SIDAS.',
-    },
-    {
       id: 4,
-      date: '29 May 2017 - 04 August 2017',
+      startDate: '2017-05-29',
+      endDate: '2017-08-04',
+      departmentLink: 'https://suitmedia.com/',
       job: 'Mobile Developer (Internship)',
       department: 'Suitmedia',
       description:
@@ -35,17 +42,19 @@ export default class Experience extends Vue {
     },
     {
       id: 5,
-      date: 'October 2016 - July 2018',
-      job: 'Network Administrator',
-      department: 'STEI (Sekolah Teknik Elektro dan Informatika) ITB',
-      description: 'Manage mailing list & virtual machine.',
-    },
-    {
-      id: 6,
-      date: 'January 2017 - May 2017',
+      startDate: '2017-01-31',
+      endDate: '2017-05-31',
       job: 'Basic Physics Laboratory Assistant',
       department: 'Pyhsics Laboratory',
       description: 'Teach and manage basic physics practicum.',
+    },
+    {
+      id: 6,
+      startDate: '2016-10-01',
+      endDate: '2018-07-31',
+      job: 'Network Administrator',
+      department: 'STEI (Sekolah Teknik Elektro dan Informatika) ITB',
+      description: 'Manage mailing list & virtual machine.',
     },
   ]
 }
