@@ -13,11 +13,6 @@
           url="https://api.github.com/orgs/berv-uni-project/repos"
         ></github>
       </b-tab-item>
-      <b-tab-item label="Github - My Portofolio Projects">
-        <github
-          url="https://api.github.com/orgs/berv-porto-project/repos"
-        ></github>
-      </b-tab-item>
     </b-tabs>
   </div>
 </template>
