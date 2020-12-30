@@ -31,10 +31,45 @@
           </a>
         </div>
         <div class="card-content">
-          <div class="content">{{ data.description }}</div>
+          <div class="content">
+            <ul>
+              <li>
+                Created At:
+                <b>{{ data.created_at | moment('DD MMMM YYYY, HH:mm:ss') }}</b>
+              </li>
+              <li>
+                Last Update:
+                <b>{{ data.updated_at | moment('DD MMMM YYYY, HH:mm:ss') }}</b>
+              </li>
+            </ul>
+            <p>{{ data.description }}</p>
+            <h4 class="title">
+              Owner Info
+            </h4>
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-128x128">
+                  <img
+                    :alt="data.owner.login"
+                    class="is-rounded"
+                    :src="data.owner.avatar_url"
+                  />
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <a :href="data.owner.html_url">{{ data.owner.login }}</a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
         <footer class="card-footer">
-          <a :href="data.svn_url" class="card-footer-item">Repository</a>
+          <a :href="data.svn_url" class="card-footer-item"
+            ><b-icon pack="fab" icon="github"></b-icon>Repository</a
+          >
         </footer>
       </b-collapse>
     </div>
