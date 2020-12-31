@@ -1,6 +1,6 @@
 spec:
  name: vue-site
- services:
+ static_sites:
  - git:
      branch: master
      repo_clone_url: https://github.com/bervProject/my-personal-web.git
