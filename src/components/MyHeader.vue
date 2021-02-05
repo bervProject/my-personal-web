@@ -6,6 +6,7 @@
       </b-navbar-item>
     </template>
     <template slot="start">
+      <b-navbar-item tag="router-link" to="/blog">Blog</b-navbar-item>
       <b-navbar-dropdown label="Experience">
         <b-navbar-item tag="router-link" to="/education"
           >Education</b-navbar-item
