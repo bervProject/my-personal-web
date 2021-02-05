@@ -6,4 +6,4 @@ import Github from '@/components/Github.vue';
     Github,
   },
 })
-export default class Projets extends Vue {}
+export default class Projects extends Vue {}
