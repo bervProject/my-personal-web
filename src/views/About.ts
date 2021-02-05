@@ -19,7 +19,7 @@ export default class About extends Vue {
       id: 3,
       title: 'Linkedin',
       icon: 'linkedin',
-      address: 'http://www.linkedin.com/in/bervianto-leo-pratama',
+      address: 'https://www.linkedin.com/in/bervianto-leo-pratama',
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ export default class About extends Vue {
       id: 7,
       title: 'Stack Overflow',
       icon: 'stack-overflow',
-      address: 'http://stackoverflow.com/users/6948591/bervianto-leo-pratama',
+      address: 'https://stackoverflow.com/users/6948591/bervianto-leo-pratama',
     },
     {
       id: 8,
@@ -73,13 +73,13 @@ export default class About extends Vue {
       id: 12,
       title: 'Steam',
       icon: 'steam',
-      address: 'http://steamcommunity.com/id/cyber-name',
+      address: 'https://steamcommunity.com/id/cyber-name',
     },
     {
       id: 13,
       title: 'Soundcloud',
       icon: 'soundcloud',
-      address: 'http://soundcloud.com/bervianto-leo-pratama',
+      address: 'https://soundcloud.com/bervianto-leo-pratama',
     },
   ];
 }
