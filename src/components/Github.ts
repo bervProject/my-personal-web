@@ -5,7 +5,7 @@ import axios from 'axios';
 @Component({
   props: { url: String },
 })
-export default class Projets extends Vue {
+export default class Github extends Vue {
   public myData: object[] = [];
   public isLoading: boolean = false;
 
