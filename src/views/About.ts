@@ -25,7 +25,7 @@ export default class About extends Vue {
       id: 4,
       title: 'Medium',
       icon: 'medium',
-      address: 'https://medium.com/@bervianto.leo',
+      address: 'https://berviantoleo.medium.com/',
     },
     {
       id: 5,

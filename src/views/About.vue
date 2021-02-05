@@ -103,7 +103,7 @@
             <script
               type="application/javascript"
               defer
-              src="//cdn.youracclaim.com/assets/utilities/embed.js"
+              src="https://cdn.youracclaim.com/assets/utilities/embed.js"
             ></script>
           </div>
         </div>

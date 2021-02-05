@@ -14,7 +14,7 @@ export default class Blog extends Vue {
       id: 2,
       title: 'Medium',
       description: 'Bervianto Leo Pratama\'s Medium',
-      link: 'https://medium.com/@bervianto.leo',
+      link: 'https://berviantoleo.medium.com/',
       icon: 'medium'
     },
     {
