@@ -2,7 +2,7 @@
   <div>
     <b-notification type="is-info">
       <p>
-        <b>Welcome to Bervianto Leo Pratama's site!</b>
+        <strong>Welcome to Bervianto Leo Pratama's site!</strong>
       </p>
       <p>
         Please also visit my another site here:

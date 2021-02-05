@@ -30,7 +30,8 @@
             <iframe
               width="100%"
               height="166"
-              scrolling="no"
+              :title="`soundcloud-${item.id}`"
+              style="overflow:hidden;border: 0px;"
               frameborder="no"
               allow="autoplay"
               :src="item.srcAudio"
