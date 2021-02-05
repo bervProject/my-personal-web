@@ -32,7 +32,6 @@
               height="166"
               :title="`soundcloud-${item.id}`"
               style="overflow:hidden;border: 0px;"
-              frameborder="no"
               allow="autoplay"
               :src="item.srcAudio"
             ></iframe>
