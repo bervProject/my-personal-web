@@ -67,7 +67,7 @@ export default class About extends Vue {
       id: 11,
       title: 'Instagram',
       icon: 'instagram',
-      address: 'http://www.instagram.com/bervianto.leo',
+      address: 'https://www.instagram.com/bervianto.leo',
     },
     {
       id: 12,
