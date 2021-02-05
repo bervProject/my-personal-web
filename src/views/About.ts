@@ -1,7 +1,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class Education extends Vue {
+export default class About extends Vue {
   public contacts: object[] = [
     {
       id: 1,
