@@ -2,7 +2,7 @@
   <b-navbar fixed-top type="is-primary" spaced wrapper-class="container">
     <template slot="brand">
       <b-navbar-item tag="router-link" to="/">
-        <img src="../assets/my-logo.png" />
+        <img src="../assets/my-logo.png" alt="website logo" />
       </b-navbar-item>
     </template>
     <template slot="start">

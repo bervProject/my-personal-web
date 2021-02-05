@@ -6,22 +6,22 @@
           <div class="content has-text-black has-text-centered">
             <p>
               ©
-              <b>My Personal Web</b> made with
+              <strong>My Personal Web</strong> made with
               <b-icon icon="heart" type="is-red"></b-icon>by
-              <a href="https://berviantoleo.github.io/">Bervianto Leo Pratama</a
+              <a href="https://berviantoleo.my.id/">Bervianto Leo Pratama</a
               >.
             </p>
             <p>
               The source code is licensed
-              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+              <a href="https://opensource.org/licenses/mit-license.php">MIT</a>.
               The website content is licensed
-              <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
                 >CC BY NC SA 4.0</a
               >.
             </p>
             <p>
               Version
-              <b>{{ version }}</b>
+              <strong>{{ version }}</strong>
             </p>
           </div>
         </div>

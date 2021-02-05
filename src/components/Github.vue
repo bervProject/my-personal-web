@@ -35,11 +35,11 @@
             <ul>
               <li>
                 Created At:
-                <b>{{ data.created_at | moment('DD MMMM YYYY, HH:mm:ss') }}</b>
+                <strong>{{ data.created_at | moment('DD MMMM YYYY, HH:mm:ss') }}</strong>
               </li>
               <li>
                 Last Update:
-                <b>{{ data.updated_at | moment('DD MMMM YYYY, HH:mm:ss') }}</b>
+                <strong>{{ data.updated_at | moment('DD MMMM YYYY, HH:mm:ss') }}</strong>
               </li>
             </ul>
             <p>{{ data.description }}</p>
