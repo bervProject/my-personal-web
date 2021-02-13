@@ -24,7 +24,7 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.14",
+    "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.0",
     "@types/vue-moment": "^4.0.2",
     "@vue/cli-plugin-babel": "^4.5.11",
