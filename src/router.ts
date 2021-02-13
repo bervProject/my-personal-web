@@ -19,12 +19,6 @@ export default new Router({
         import(/* webpackChunkName: "blog" */ './views/Blog.vue'),
     },
     {
-      path: '/education',
-      name: 'education',
-      component: () =>
-        import(/* webpackChunkName: "education" */ './views/Education.vue'),
-    },
-    {
       path: '/experience',
       name: 'experience',
       component: () =>
