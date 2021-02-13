@@ -10,24 +10,25 @@ export default class Portofolio extends Vue {
   public mobileData: object[] = [
     {
       id: 1,
-      title: 'Learn Android',
-      description:
-        'Mobile Application Example to Learn Programming in Android.',
-      smallImage: 'assets/portofolio/01-large.jpg',
-      icon: 'assets/portofolio/01-small.jpg',
+      title: 'RGB Counter',
+      icon: 'assets/portofolio/11-small.png',
+      smallImage: 'assets/portofolio/11-small.png',
+      description: 'Counting RGB colour in your image',
       repository: {
-        github: 'https://github.com/bervProject/learn-android',
-      },
+        github: 'https://github.com/bervProject/RGBCounter',
+        playstore: 'web.id.berviantoleo.rgbcounter'
+      }
     },
     {
       id: 2,
-      title: 'Belitung Information Center',
-      description: 'Belitung Information Center using Ionic Framework.',
-      smallImage: 'assets/portofolio/02-large.jpg',
-      icon: 'assets/portofolio/02-small.jpg',
+      title: 'RSA ECCEG',
+      icon: 'assets/portofolio/12-small.png',
+      smallImage: 'assets/portofolio/12-small.png',
+      description: 'RSA and ECCEG Implementation for Example in Android',
       repository: {
-        github: 'https://github.com/bervProject/belitung-information-center',
-      },
+        github: 'https://github.com/berv-uni-project/rsa-ecceg-implementation',
+        playstore: 'id.my.berviantoleo.ecceg_rsa_app'
+      }
     },
     {
       id: 3,
@@ -46,6 +47,28 @@ export default class Portofolio extends Vue {
         'Treasure Hunt is Android Application. This is looks like porting from iOS Application. This project want to pair with iOS Application that have name Sampoerna Events build by Suitmedia. This project build when internship in Suitmedia.',
       smallImage: 'assets/portofolio/08-large.jpg',
       icon: 'assets/portofolio/08-small.jpg',
+    },
+
+    {
+      id: 5,
+      title: 'Learn Android',
+      description:
+        'Mobile Application Example to Learn Programming in Android.',
+      smallImage: 'assets/portofolio/01-large.jpg',
+      icon: 'assets/portofolio/01-small.jpg',
+      repository: {
+        github: 'https://github.com/bervProject/learn-android',
+      },
+    },
+    {
+      id: 6,
+      title: 'Belitung Information Center',
+      description: 'Belitung Information Center using Ionic Framework.',
+      smallImage: 'assets/portofolio/02-large.jpg',
+      icon: 'assets/portofolio/02-small.jpg',
+      repository: {
+        github: 'https://github.com/bervProject/belitung-information-center',
+      },
     },
   ];
   public webData: object[] = [

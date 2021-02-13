@@ -34,20 +34,62 @@
           </div>
         </div>
         <div class="content is-medium">
-          <b-taglist>
-            <b-tag rounded size="is-medium" type="is-primary"
-              >Backend Developer</b-tag
-            >
-            <b-tag rounded size="is-medium" type="is-warning"
-              >Cyber Security Enthusiasts</b-tag
-            >
-            <b-tag rounded size="is-medium" type="is-warning"
-              >Microservices</b-tag
-            >
-            <b-tag rounded size="is-medium" type="is-dark"
-              >Institut Teknologi Bandung</b-tag
-            >
-          </b-taglist>
+          <div class="columns is-multiline">
+            <div class="column">
+              <h4 class="title">Certification</h4>
+              <div class="columns">
+                <div class="column">
+                  <div
+                    data-iframe-width="150"
+                    data-iframe-height="270"
+                    data-share-badge-id="61a336e9-92a7-4c8c-aeee-a5c07bf3fae5"
+                    data-share-badge-host="https://www.youracclaim.com"
+                  ></div>
+                </div>
+                <div class="column">
+                  <div
+                    data-iframe-width="150"
+                    data-iframe-height="270"
+                    data-share-badge-id="1ed42ba5-d7fe-4191-a5cb-90f86edcd33a"
+                    data-share-badge-host="https://www.youracclaim.com"
+                  ></div>
+                </div>
+              </div>
+              <script
+                type="application/javascript"
+                defer
+                src="https://cdn.youracclaim.com/assets/utilities/embed.js"
+              ></script>
+            </div>
+            <div class="column">
+              <h4 class="title">Who am I?</h4>
+              <b-taglist>
+                <b-tag rounded size="is-medium" type="is-primary"
+                  >Backend Developer</b-tag
+                >
+                <b-tag rounded size="is-medium" type="is-warning"
+                  >Cyber Security Enthusiasts</b-tag
+                >
+                <b-tag rounded size="is-medium" type="is-warning"
+                  >Microservices</b-tag
+                >
+                <b-tag rounded size="is-medium" type="is-dark"
+                  >Institut Teknologi Bandung</b-tag
+                >
+              </b-taglist>
+            </div>
+            <div class="column">
+              <h5 class="subtitle">Donate</h5>
+              <a href="https://ko-fi.com/I2I2YXS8" target="_blank"
+                ><img
+                  height="36"
+                  style="border: 0px; height: 36px"
+                  src="https://cdn.ko-fi.com/cdn/kofi1.png?v=2"
+                  border="0"
+                  alt="Buy Me a Coffee at ko-fi.com"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
