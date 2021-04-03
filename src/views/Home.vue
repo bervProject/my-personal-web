@@ -35,33 +35,25 @@
         </div>
         <div class="content is-medium">
           <div class="columns is-multiline">
-            <div class="column">
+            <div class="column is-6">
               <h4 class="title">Certification</h4>
-              <div class="columns">
-                <div class="column">
+              <div class="columns is-multiline">
+                <div v-for="cert of certId" :key="cert" class="column is-4">
                   <div
                     data-iframe-width="150"
                     data-iframe-height="270"
-                    data-share-badge-id="61a336e9-92a7-4c8c-aeee-a5c07bf3fae5"
-                    data-share-badge-host="https://www.youracclaim.com"
-                  ></div>
-                </div>
-                <div class="column">
-                  <div
-                    data-iframe-width="150"
-                    data-iframe-height="270"
-                    data-share-badge-id="1ed42ba5-d7fe-4191-a5cb-90f86edcd33a"
-                    data-share-badge-host="https://www.youracclaim.com"
+                    :data-share-badge-id="cert"
+                    data-share-badge-host="https://www.credly.com"
                   ></div>
                 </div>
               </div>
               <script
                 type="application/javascript"
                 defer
-                src="https://cdn.youracclaim.com/assets/utilities/embed.js"
+                src="https://cdn.credly.com/assets/utilities/embed.js"
               ></script>
             </div>
-            <div class="column">
+            <div class="column is-6">
               <h4 class="title">Who am I?</h4>
               <b-taglist>
                 <b-tag rounded size="is-medium" type="is-primary"
@@ -78,7 +70,7 @@
                 >
               </b-taglist>
             </div>
-            <div class="column">
+            <div class="column is-4">
               <h5 class="subtitle">Donate</h5>
               <a href="https://ko-fi.com/I2I2YXS8" target="_blank"
                 ><img

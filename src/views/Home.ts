@@ -10,6 +10,12 @@ export default class Home extends Vue {
     { image: 'assets/home/intro-5.jpg' },
   ];
 
+  public certId = [
+    "61a336e9-92a7-4c8c-aeee-a5c07bf3fae5",
+    "1ed42ba5-d7fe-4191-a5cb-90f86edcd33a",
+    "1b8f8bd9-3dd9-41cc-8cd3-697b27280cfc"
+  ]
+
   public getAssets(url: string): string {
     return `${process.env.BASE_URL}${url}`;
   }
