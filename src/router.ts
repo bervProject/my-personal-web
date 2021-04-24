@@ -37,6 +37,12 @@ export default new Router({
         import(/* webpackChunkName: "portofolio" */ './views/Portofolio.vue'),
     },
     {
+      path: '/songs',
+      name: 'songs',
+      component: () =>
+        import(/* webpackChunkName: "songs" */ './views/Songs.vue'),
+    },
+    {
       path: '/favorite-audio',
       name: 'favorite-audio',
       component: () =>

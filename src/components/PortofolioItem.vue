@@ -29,13 +29,13 @@
             :href="item.repository.github"
             class="card-footer-item"
             v-if="item.repository.github"
-            ><b-icon pack="fab" icon="github" size="is-small"></b-icon>Github</a
+            ><b-button icon-pack="fab" icon-left="github">Github</b-button></a
           >
           <a
             :href="item.repository.gitlab"
             class="card-footer-item"
             v-if="item.repository.gitlab"
-            >Gitlab</a
+            ><b-button icon-pack="fab" icon-left="gitlab">Gitlab</b-button></a
           >
           <a
             class="card-footer-item"

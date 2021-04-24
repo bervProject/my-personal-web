@@ -1,9 +1,9 @@
 <template>
-  <footer class="footer">
+  <footer class="footer has-background-white-ter">
     <div class="container">
       <div class="columns">
         <div class="column">
-          <div class="content has-text-black has-text-centered">
+          <div class="content has-text-centered">
             <p>
               ©
               <strong>My Personal Web</strong> made with
@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="content has-text-black has-text-centered">
+          <div class="content has-text-centered">
             <p>
               <a here="https://buefy.org/">
                 #MadeWithBuefy

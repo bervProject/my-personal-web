@@ -1,5 +1,5 @@
 <template>
-  <b-navbar fixed-top type="is-white" wrapper-class="container">
+  <b-navbar fixed-top shadow type="is-white" wrapper-class="container">
     <template slot="brand">
       <b-navbar-item tag="router-link" to="/">
         <img src="../assets/my-logo.png" alt="website logo" />
@@ -22,6 +22,7 @@
         >
         <b-navbar-item tag="router-link" to="/about">Contact</b-navbar-item>
       </b-navbar-dropdown>
+      <b-navbar-item tag="router-link" to="/songs">Songs Recommendation</b-navbar-item>
       <b-navbar-item tag="div">
         <div class="buttons">
           <b-button

@@ -6,25 +6,6 @@ $primary-invert: findColorInvert($primary);
 $red: #cf0c0c;
 $red-invert: findColorInvert($red);
 
-$navbar-background-color: $primary;
-$navbar-item-color: $black;
-$navbar-dropdown-arrow: $white;
-$navbar-box-shadow-color: $black;
-$navbar-dropdown-background-color: $primary;
-$navbar-divider-background-color: $black;
-
-$timeline-marker-border: 0.1em solid $primary;
-$timeline-marker-background-color: $white;
-$timeline-line: 0.1rem solid $primary;
-
-$footer-color: true;
-$footer-padding: 1.5rem;
-$footer-background-color: $primary;
-
-$link: $black;
-$link-invert: $white;
-$link-focus-border: $black;
-
 $tabs-toggle-link-active-background-color: $primary;
 $tabs-toggle-link-active-border-color: $primary;
 $tabs-toggle-link-active-color: $black;
