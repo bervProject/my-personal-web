@@ -1,7 +1,7 @@
-FROM node:alpine as build
+FROM node:14-alpine3.13 as build
 WORKDIR /app
-RUN apk update && apk add yarn python g++ make && rm -rf /var/cache/apk/*
-COPY package.json package.json
+RUN apk update && apk add yarn python3 g++ make && rm -rf /var/cache/apk/*
+COPY package.json yarn.lock ./
 RUN yarn
 COPY . .
 RUN IS_DOCKER=true yarn build
