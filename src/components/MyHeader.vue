@@ -1,12 +1,11 @@
 <template>
-  <b-navbar fixed-top shadow type="is-white" wrapper-class="container">
+  <b-navbar fixed-top centered shadow type="is-white" wrapper-class="container">
     <template slot="brand">
       <b-navbar-item tag="router-link" to="/">
         <img src="../assets/my-logo.png" alt="website logo" />
       </b-navbar-item>
     </template>
-    <template slot="end">
-      <b-navbar-item tag="router-link" to="/blog">Blog</b-navbar-item>
+    <template slot="start">
       <b-navbar-item tag="router-link" to="/experience"
         >Experience</b-navbar-item
       >
@@ -22,7 +21,11 @@
         >
         <b-navbar-item tag="router-link" to="/about">Contact</b-navbar-item>
       </b-navbar-dropdown>
+      <b-navbar-item tag="router-link" to="/blog">Blog</b-navbar-item>
       <b-navbar-item tag="router-link" to="/songs">Songs Recommendation</b-navbar-item>
+      <b-navbar-item tag="router-link" to="/donate">Donate</b-navbar-item>
+    </template>
+    <template slot="end">
       <b-navbar-item tag="div">
         <div class="buttons">
           <b-button

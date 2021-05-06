@@ -19,6 +19,12 @@ export default new Router({
         import(/* webpackChunkName: "blog" */ './views/Blog.vue'),
     },
     {
+      path: '/donate',
+      name: 'donate',
+      component: () =>
+        import(/* webpackChunkName: "blog" */ './views/Donate.vue'),
+    },
+    {
       path: '/experience',
       name: 'experience',
       component: () =>
