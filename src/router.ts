@@ -22,7 +22,7 @@ export default new Router({
       path: '/donate',
       name: 'donate',
       component: () =>
-        import(/* webpackChunkName: "blog" */ './views/Donate.vue'),
+        import(/* webpackChunkName: "donate" */ './views/Donate.vue'),
     },
     {
       path: '/experience',
