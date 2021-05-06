@@ -8,10 +8,10 @@
           v-for="(source, index) in trackData"
           :src="source"
           :key="index"
+          :title="`Spotify ${index}`"
           width="300"
           height="380"
-          frameborder="0"
-          allowtransparency="true"
+          style="background-color: transparent; border: 0px;"
           allow="encrypted-media"
         >
         </iframe>
@@ -24,8 +24,8 @@
           height="315"
           :src="source"
           :key="index"
-          title="YouTube video player"
-          frameborder="0"
+          :title="`YouTube video player ${index}`"
+          style="border: 0px;"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
