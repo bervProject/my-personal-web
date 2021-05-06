@@ -18,7 +18,7 @@ export default class Experience extends Vue {
       id: 2,
       startDate: '2018-01-01T00:00:00+07:00',
       endDate: '2018-07-31T00:00:00+07:00',
-      job: 'Android Developer',
+      job: 'Android Developer (Part Time)',
       department:
         'SIDAS (Smart Identity System) - SCCIC (Smart City Community and Innovation Center) ITB',
       description: 'Working on application to improve SIDAS.',

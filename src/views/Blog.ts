@@ -25,13 +25,6 @@ export default class Blog extends Vue {
       icon: 'dev'
     },
     {
-      id: 4,
-      title: 'Catatan Bervi',
-      description: 'Personal things, experience, etc.',
-      link: 'https://personal-blog.berviantoleo.my.id/',
-      icon: 'blogger'
-    },
-    {
       id: 5,
       title: 'Google Sites',
       description: 'Berv Google Sites',

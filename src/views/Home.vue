@@ -70,17 +70,6 @@
                 >
               </b-taglist>
             </div>
-            <div class="column is-4">
-              <h5 class="subtitle">Donate</h5>
-              <a href="https://ko-fi.com/I2I2YXS8" target="_blank"
-                ><img
-                  height="36"
-                  style="border: 0px; height: 36px"
-                  src="https://cdn.ko-fi.com/cdn/kofi1.png?v=2"
-                  border="0"
-                  alt="Buy Me a Coffee at ko-fi.com"
-              /></a>
-            </div>
           </div>
         </div>
       </div>

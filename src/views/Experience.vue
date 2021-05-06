@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2 class="title">Experience</h2>
-    <div class="columns">
-      <div class="column">
+    <div class="columns is-multiline">
+      <div class="column is-12">
         <h3 class="subtitle">Work Experience</h3>
         <b-collapse
           class="card"
@@ -34,9 +34,9 @@
                       {{ edu.department }}
                     </div>
                     <div class="subtitle is-6">
-                      {{ edu.startDate | moment('DD MMMM YYYY') }} -
+                      {{ edu.startDate | moment('MMMM YYYY') }} -
                       <template v-if="edu.endDate">
-                        {{ edu.endDate | moment('DD MMMM YYYY') }}
+                        {{ edu.endDate | moment('MMMM YYYY') }}
                       </template>
                       <template v-else> Now </template>
                       ({{
