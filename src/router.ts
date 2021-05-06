@@ -53,7 +53,7 @@ export default new Router({
       name: 'favorite-audio',
       component: () =>
         import(
-          /* webpackChunkName: "portofolio" */ './views/FavoriteAudio.vue'
+          /* webpackChunkName: "favorite-audio" */ './views/FavoriteAudio.vue'
         ),
     },
     {
