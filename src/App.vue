@@ -1,12 +1,12 @@
 <template>
   <div>
-    <my-header></my-header>
+    <my-header />
     <section class="section">
       <div class="container">
         <router-view />
       </div>
     </section>
-    <my-footer></my-footer>
+    <my-footer />
   </div>
 </template>
 

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import axios from 'axios';
+import moment from 'moment';
 
 @Component({
   props: { url: String },
@@ -31,5 +32,9 @@ export default class Github extends Vue {
       .catch(reason => {
         this.isLoading = false;
       });
+  }
+
+  showComplete(date: string): string {
+    return moment(date).format('DD MMMM YYYY, HH:mm:ss');
   }
 }

@@ -1,9 +1,14 @@
 <template>
   <div>
     <section class="section">
-      <h2 class="title">Soundcloud</h2>
+      <h2 class="title">
+        Soundcloud
+      </h2>
       <b-field label="Item">
-        <b-select v-model="perPage" expanded>
+        <b-select
+          v-model="perPage"
+          expanded
+        >
           <option
             v-for="option in perPageSelection"
             :key="option"
@@ -14,16 +19,15 @@
         </b-select>
       </b-field>
       <b-pagination
+        v-model="currentPage"
         order="is-centered"
         :total="total"
-        v-model="currentPage"
         :per-page="perPage"
-      >
-      </b-pagination>
+      />
       <div class="columns is-multiline">
         <div
-          :key="item.id"
           v-for="item in paginatedItems"
+          :key="item.id"
           class="column is-one-third"
         >
           <div class="box">
@@ -34,18 +38,20 @@
               style="overflow: hidden; border: 0px"
               allow="autoplay"
               :src="item.srcAudio"
-            ></iframe>
+            />
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <h3 class="title">Tune in</h3>
+      <h3 class="title">
+        Tune in
+      </h3>
       <iframe
         title="tunein"
         src="https://tunein.com/embed/player/s163092/"
         style="width: 100%; height: 100px; overflow: hidden; border: 0px"
-      ></iframe>
+      />
     </section>
   </div>
 </template>

@@ -1,45 +1,62 @@
 <template>
-  <div class="columns is-multiline" style="min-height: 300px">
-    <b-loading :active.sync="isLoading" :is-full-page="false">
+  <div
+    class="columns is-multiline"
+    style="min-height: 300px"
+  >
+    <b-loading
+      v-model:active="isLoading"
+      :is-full-page="false"
+    >
       <b-icon
         pack="fas"
         icon="sync-alt"
         size="is-large"
         custom-class="fa-spin"
-      ></b-icon>
+      />
     </b-loading>
-    <div v-for="data in myData" v-bind:key="data.id" class="column is-half">
-      <b-collapse class="card" animation="slide" aria-id="contentIdForA11y3">
-        <div
-          slot="trigger"
-          slot-scope="props"
-          class="card-header"
-          role="button"
-          aria-controls="contentIdForA11y3"
-        >
-          <div class="card-header-title">
-            <p class="title is-4">
-              <a v-bind:href="data.svn_url">
-                {{ data.name }} |
-                <b-icon icon="star" type="is-warning"></b-icon>
-                : {{ data.stargazers_count }}
-              </a>
-            </p>
+    <div
+      v-for="data in myData"
+      :key="data.id"
+      class="column is-half"
+    >
+      <b-collapse
+        class="card"
+        animation="slide"
+        aria-id="contentIdForA11y3"
+      >
+        <template #trigger="props">
+          <div
+            class="card-header"
+            role="button"
+            aria-controls="contentIdForA11y3"
+          >
+            <div class="card-header-title">
+              <p class="title is-4">
+                <a :href="data.svn_url">
+                  {{ data.name }} |
+                  <b-icon
+                    icon="star"
+                    type="is-warning"
+                  />
+                  : {{ data.stargazers_count }}
+                </a>
+              </p>
+            </div>
+            <a class="card-header-icon">
+              <b-icon :icon="props.open ? 'angle-down' : 'angle-up'" />
+            </a>
           </div>
-          <a class="card-header-icon">
-            <b-icon :icon="props.open ? 'angle-down' : 'angle-up'"></b-icon>
-          </a>
-        </div>
+        </template>
         <div class="card-content">
           <div class="content">
             <ul>
               <li>
                 Created At:
-                <strong>{{ data.created_at | moment('DD MMMM YYYY, HH:mm:ss') }}</strong>
+                <strong>{{ showComplete(data.created_at) }}</strong>
               </li>
               <li>
                 Last Update:
-                <strong>{{ data.updated_at | moment('DD MMMM YYYY, HH:mm:ss') }}</strong>
+                <strong>{{ showComplete(data.updated_at) }}</strong>
               </li>
             </ul>
             <p>{{ data.description }}</p>
@@ -53,7 +70,7 @@
                     :alt="data.owner.login"
                     class="is-rounded"
                     :src="data.owner.avatar_url"
-                  />
+                  >
                 </p>
               </figure>
               <div class="media-content">
@@ -67,9 +84,13 @@
           </div>
         </div>
         <footer class="card-footer">
-          <a :href="data.svn_url" class="card-footer-item"
-            ><b-icon pack="fab" icon="github"></b-icon>Repository</a
-          >
+          <a
+            :href="data.svn_url"
+            class="card-footer-item"
+          ><b-icon
+            pack="fab"
+            icon="github"
+          />Repository</a>
         </footer>
       </b-collapse>
     </div>

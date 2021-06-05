@@ -12,8 +12,14 @@
     <div class="card">
       <div class="card-image">
         <b-carousel>
-          <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-            <b-image :src="getAssets(carousel.image)" ratio="16by9"></b-image>
+          <b-carousel-item
+            v-for="(carousel, i) in carousels"
+            :key="i"
+          >
+            <b-image
+              :src="getAssets(carousel.image)"
+              ratio="16by9"
+            />
           </b-carousel-item>
         </b-carousel>
       </div>
@@ -25,52 +31,52 @@
                 class="is-rounded"
                 src="../assets/images/me.jpg"
                 alt="My image"
-              />
+              >
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Bervianto Leo Pratama</p>
-            <p class="subtitle is-6">@berviantoleo</p>
+            <p class="title is-4">
+              Bervianto Leo Pratama
+            </p>
+            <p class="subtitle is-6">
+              @berviantoleo
+            </p>
           </div>
         </div>
         <div class="content is-medium">
-          <div class="columns is-multiline">
-            <div class="column is-6">
-              <h4 class="title">Certification</h4>
-              <div class="columns is-multiline">
-                <div v-for="cert of certId" :key="cert" class="column is-4">
-                  <div
-                    data-iframe-width="150"
-                    data-iframe-height="270"
-                    :data-share-badge-id="cert"
-                    data-share-badge-host="https://www.credly.com"
-                  ></div>
-                </div>
-              </div>
-              <script
-                type="application/javascript"
-                defer
-                src="https://cdn.credly.com/assets/utilities/embed.js"
-              ></script>
-            </div>
-            <div class="column is-6">
-              <h4 class="title">Who am I?</h4>
-              <b-taglist>
-                <b-tag rounded size="is-medium" type="is-primary"
-                  >Backend Developer</b-tag
-                >
-                <b-tag rounded size="is-medium" type="is-warning"
-                  >Cyber Security Enthusiasts</b-tag
-                >
-                <b-tag rounded size="is-medium" type="is-warning"
-                  >Microservices</b-tag
-                >
-                <b-tag rounded size="is-medium" type="is-dark"
-                  >Institut Teknologi Bandung</b-tag
-                >
-              </b-taglist>
-            </div>
-          </div>
+          <h4 class="title">
+            Who am I?
+          </h4>
+          <b-taglist>
+            <b-tag
+              rounded
+              size="is-medium"
+              type="is-primary"
+            >
+              Backend Developer
+            </b-tag>
+            <b-tag
+              rounded
+              size="is-medium"
+              type="is-warning"
+            >
+              Cyber Security Enthusiasts
+            </b-tag>
+            <b-tag
+              rounded
+              size="is-medium"
+              type="is-warning"
+            >
+              Microservices
+            </b-tag>
+            <b-tag
+              rounded
+              size="is-medium"
+              type="is-dark"
+            >
+              Institut Teknologi Bandung
+            </b-tag>
+          </b-taglist>
         </div>
       </div>
     </div>

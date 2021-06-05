@@ -1,4 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator';
+import moment, { months } from 'moment';
 
 @Component
 export default class Experience extends Vue {
@@ -78,4 +79,14 @@ export default class Experience extends Vue {
         'Science Program. Join in OSIS (Organisasi Siswa Intra Sekolah) as Technology, Information and Communication as Staff at August 2011 - July 2012 also as Leader at August 2012 - July 2013.',
     },
   ];
+
+  showMonthYearOnly(date: string) : string
+  {
+    return moment(date).format("MMMM YYYY");
+  }
+
+  showAgo(startDate: string, endDate: string | undefined) : string
+  {
+    return moment(startDate).from(endDate ? endDate : new Date(), true);
+  }
 }
