@@ -6,7 +6,7 @@
     <div class="columns">
       <div class="column is-6">
         <h3 class="subtitle">
-          Certification <b>(Role Based)</b>
+          Certification <strong>(Role Based)</strong>
         </h3>
         <div class="columns is-multiline">
           <div
@@ -25,7 +25,7 @@
       </div>
       <div class="column is-6">
         <h3 class="subtitle">
-          Certification <b>(Fundamental)</b>
+          Certification <strong>(Fundamental)</strong>
         </h3>
         <div class="columns is-multiline">
           <div
