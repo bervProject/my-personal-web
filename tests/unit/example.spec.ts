@@ -1,13 +1,10 @@
-import { expect } from 'chai';
 import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import MyHeader from '../../src/components/MyHeader.vue';
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).to.include(msg);
+describe('MyHeader.vue', () => {
+  it('Render correctly', () => {
+    const msg = 'Experience';
+    const wrapper = shallowMount(MyHeader);
+    expect(wrapper.text()).toContain(msg);
   });
 });
