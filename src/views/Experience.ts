@@ -82,7 +82,7 @@ export default class Experience extends Vue {
 
   showMonthYearOnly(date: string) : string
   {
-    return moment(date).format("MMMM YYYY");
+    return moment(date).format('MMMM YYYY');
   }
 
   showAgo(startDate: string, endDate: string | undefined) : string
