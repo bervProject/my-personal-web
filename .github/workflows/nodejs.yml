@@ -34,6 +34,8 @@ jobs:
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
   docker-build:
     runs-on: ubuntu-20.04
+    needs: build
+    if: ${{ github.event_name == 'pull_request' }}
     steps:
       - uses: actions/checkout@v2
       - name: Run tests
@@ -42,7 +44,7 @@ jobs:
   # See also https://docs.docker.com/docker-hub/builds/
   push:
     # Ensure test job passes before pushing image.
-    needs: docker-build
+    needs: build
     runs-on: ubuntu-20.04
     if: github.event_name == 'push'
     steps:
