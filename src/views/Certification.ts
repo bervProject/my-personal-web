@@ -8,6 +8,7 @@ export default class Certification extends Vue {
   ];
 
   public certIdFundamental = [
+    'b717580f-f8bd-4c9b-aeb7-2e55a638537d',
     '19d48561-2052-4ce9-8210-e957bfcda5a9',
     '61a336e9-92a7-4c8c-aeee-a5c07bf3fae5',
   ]
