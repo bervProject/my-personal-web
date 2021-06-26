@@ -3,6 +3,9 @@
     <h2 class="title">
       Certification
     </h2>
+    <h3 class="subtitle">
+      <a href="https://www.credly.com/users/bervianto-leo-pratama">See more</a>
+    </h3>
     <div class="columns">
       <div class="column is-6">
         <h3 class="subtitle">
