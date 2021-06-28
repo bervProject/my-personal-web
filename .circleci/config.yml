@@ -1,15 +1,20 @@
-version: 2
+version: 2.1
+orbs:
+  node: circleci/node@4.5.1
 jobs:
-  build:
+  test:
     branches:
       ignore:
         - gh-pages
-    machine: true
     steps:
       - checkout
-      # ... steps for building/testing app ...
-      - run: |
-          TAG=0.1.$CIRCLE_BUILD_NUM
-          docker build -t berviantoleo/my-personal-web:$TAG .     
-          # docker login -u $DOCKER_USER -p $DOCKER_PASS         # (4)
-          # docker push berviantoleo/flutter-docker:$TAG
+      - node/install:
+          lts: true
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          command: yarn run lint
+          name: Run YARN lint
+      - run:
+          command: yarn run build
+          name: Run YARN build
