@@ -6,6 +6,9 @@ jobs:
     branches:
       ignore:
         - gh-pages
+    executor:
+      name: node/default
+      tag: '13'
     steps:
       - checkout
       - node/install:
