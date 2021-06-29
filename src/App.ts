@@ -8,5 +8,6 @@ import { Component, Vue } from 'vue-property-decorator';
     MyHeader,
     MyFooter,
   },
+  name: "App"
 })
 export default class App extends Vue {}

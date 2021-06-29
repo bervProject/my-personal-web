@@ -1,6 +1,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+@Component({
+  name: 'Blog'
+})
 export default class Blog extends Vue {
   public blogs: object[] = [
     {

@@ -13,6 +13,8 @@ module.exports = {
     ".*\\.(vue)$": "vue-jest",
     "^.+\\.tsx?$": "ts-jest"
   },
+  "collectCoverage": true,
+  "collectCoverageFrom": ["**/src/**/*.{ts,js,vue}", "!**/node_modules/**"],
   "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   "testURL": "http://localhost/"
 }

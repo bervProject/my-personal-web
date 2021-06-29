@@ -4,7 +4,7 @@
     style="min-height: 300px"
   >
     <b-loading
-      v-model:active="isLoading"
+      v-model="isLoading"
       :is-full-page="false"
     >
       <b-icon

@@ -23,13 +23,16 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - name: yarn, yarn build, yarn test
-      run: |
-        yarn
-        yarn lint
-        yarn build
-      env:
-        CI: true
+    - name: Yarn Install
+      run: yarn --frozen-lockfile
+    - name: Lint
+      run: yarn lint
+    - name: Build
+      run: yarn build
+    - name: Unit Test
+      run: yarn test:unit
+    - name: E2E Test
+      run: yarn test:e2e --headless
   # Run tests.
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
   docker-build:

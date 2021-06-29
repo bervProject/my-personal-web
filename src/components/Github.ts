@@ -5,6 +5,7 @@ import moment from 'moment';
 
 @Component({
   props: { url: String },
+  name: 'Github'
 })
 export default class Github extends Vue {
   public myData: object[] = [];

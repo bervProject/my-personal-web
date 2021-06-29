@@ -1,6 +1,10 @@
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+@Component(
+  {
+    name: 'FavoriteAudio'
+  }
+)
 export default class FavoriteAudio extends Vue {
   public favAudio: object[] = [
     {

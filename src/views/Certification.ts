@@ -1,6 +1,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+@Component({
+  name: 'Certification'
+})
 export default class Certification extends Vue {
   public certIdRoleBased = [
     '1b8f8bd9-3dd9-41cc-8cd3-697b27280cfc',

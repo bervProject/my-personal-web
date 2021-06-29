@@ -1,6 +1,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
+  name: 'Songs'
 })
 export default class Songs extends Vue {
   public trackData : string[] = [

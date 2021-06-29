@@ -1,7 +1,9 @@
 import { Component, Vue } from 'vue-property-decorator';
 import moment, { months } from 'moment';
 
-@Component
+@Component({
+  name: 'Experience'
+})
 export default class Experience extends Vue {
   public isOpen: number = 0;
   public isOpen1: number = 0;

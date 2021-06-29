@@ -1,9 +1,10 @@
 module.exports = {
+  plugins: ['cypress'],
   extends: [
-    // add more generic rulesets here, such as:
-    // 'eslint:recommended',
-    'plugin:vue/vue3-recommended',
-    // 'plugin:vue/recommended' // Use this if you are using Vue.js 2.x.
+    'plugin:vue/essential',
+    'eslint:recommended',
+    '@vue/typescript',
+    'plugin:cypress/recommended'
   ],
   rules: {
     // override/add rules settings here, such as:
@@ -13,5 +14,9 @@ module.exports = {
   parserOptions: {
     parser: "@typescript-eslint/parser",
     sourceType: "module"
+  },
+  env: {
+    node: true,
+    jest: true
   }
 }
