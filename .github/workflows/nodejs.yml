@@ -68,7 +68,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            berviantoleo/$IMAGE_NAME
+            berviantoleo/${IMAGE_NAME}
             ghcr.io/${{ github.repository }}
       - name: Build and push Docker images
         uses: docker/build-push-action@v2
