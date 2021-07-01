@@ -5,8 +5,8 @@
         <strong>Welcome to Bervianto Leo Pratama's site!</strong>
       </p>
       <p>
-        Please also visit my another site here:
-        <a href="https://berviantoleo.my.id">berviantoleo.my.id</a>
+        Contact me
+        <a href="mailto:bervianto.leo@gmail.com">here</a>
       </p>
     </b-notification>
     <div class="card">
