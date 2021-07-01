@@ -1,13 +1,14 @@
-import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import axios from 'axios';
 import moment from 'moment';
+import { mixins } from 'vue-class-component';
+import { ImageModalMixins } from '@/mixins';
 
 @Component({
   props: { url: String },
   name: 'Github'
 })
-export default class Github extends Vue {
+export default class Github extends mixins(ImageModalMixins) {
   public myData: object[] = [];
   public isLoading: boolean = false;
 

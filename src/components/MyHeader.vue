@@ -97,10 +97,5 @@
   </b-navbar>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-@Component({
-  name: 'MyHeader',
-})
-export default class MyHeader extends Vue {}
+<script lang="ts" src="./MyHeader.ts">
 </script>

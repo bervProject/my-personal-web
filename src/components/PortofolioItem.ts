@@ -1,4 +1,6 @@
-import { Component, Vue } from 'vue-property-decorator';
+import { Component } from 'vue-property-decorator';
+import { mixins } from 'vue-class-component';
+import { ImageMixins, ImageModalMixins } from '@/mixins';
 
 @Component({
   props: {
@@ -6,8 +8,5 @@ import { Component, Vue } from 'vue-property-decorator';
   },
   name: 'PortofolioItem'
 })
-export default class PortofolioItem extends Vue {
-  public getPic(url: string): string {
-    return `${process.env.BASE_URL}${url}`;
-  }
+export default class PortofolioItem extends mixins(ImageMixins, ImageModalMixins) {
 }

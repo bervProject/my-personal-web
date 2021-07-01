@@ -65,7 +65,7 @@
             </h4>
             <article class="media">
               <figure class="media-left">
-                <p class="image is-128x128">
+                <p class="image is-128x128" @click="showImageModal(data.owner.avatar_url)">
                   <img
                     :alt="data.owner.login"
                     class="is-rounded"

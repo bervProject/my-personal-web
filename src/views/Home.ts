@@ -1,9 +1,10 @@
-import { Component, Vue } from 'vue-property-decorator';
-
+import { Component } from 'vue-property-decorator';
+import { mixins } from 'vue-class-component';
+import { ImageModalMixins, ImageMixins } from '@/mixins';
 @Component({
   name: 'Home'
 })
-export default class Home extends Vue {
+export default class Home extends mixins(ImageModalMixins, ImageMixins) {
   public carousels = [
     { image: 'assets/home/intro.jpg' },
     { image: 'assets/home/intro-2.jpg' },
@@ -12,7 +13,4 @@ export default class Home extends Vue {
     { image: 'assets/home/intro-5.jpg' },
   ];
 
-  public getAssets(url: string): string {
-    return `${process.env.BASE_URL}${url}`;
-  }
 }

@@ -7,9 +7,9 @@
     >
       <div class="card">
         <div class="card-image">
-          <figure class="image is-square">
+          <figure class="image is-square" @click="showImageModal(item.smallImage)">
             <img
-              :src="getPic(item.smallImage)"
+              :src="getAssets(item.smallImage)"
               alt="Placeholder image"
             >
           </figure>
@@ -17,10 +17,10 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-64x64">
+              <figure class="image is-64x64" @click="showImageModal(item.icon)">
                 <img
                   class="is-rounded"
-                  :src="getPic(item.icon)"
+                  :src="getAssets(item.icon)"
                   alt="Icon"
                 >
               </figure>

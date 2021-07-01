@@ -11,7 +11,7 @@ export default class Experience extends Vue {
     {
       id: 1,
       startDate: '2018-08-27T00:00:00+07:00',
-      endDate: undefined,
+      endDate: '2021-06-25T00:00:00+07:00',
       job: 'Backend Developer',
       departmentLink: 'https://xtremax.com',
       department: 'Xtremax Indonesia',
@@ -50,7 +50,7 @@ export default class Experience extends Vue {
       startDate: '2017-01-31T00:00:00+07:00',
       endDate: '2017-05-31T00:00:00+07:00',
       job: 'Basic Physics Laboratory Assistant',
-      department: 'Pyhsics Laboratory',
+      department: 'Pyhsics Laboratory ITB',
       description: 'Teach and manage basic physics practicum.',
     },
     {
