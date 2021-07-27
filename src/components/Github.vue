@@ -58,6 +58,9 @@
                 Last Update:
                 <strong>{{ showComplete(data.updated_at) }}</strong>
               </li>
+              <li>
+                Fork: <b-icon pack="fas" icon="check" type="is-success" v-if="data.fork" /> <b-icon v-else pack="fas" icon="times" type="is-danger" />
+              </li>
             </ul>
             <p>{{ data.description }}</p>
             <h4 class="title">
