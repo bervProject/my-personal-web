@@ -9,7 +9,7 @@ export default class Experience extends Vue {
   public isOpen1: number = 0;
   public workData: object[] = [
     {
-      id: 0,
+      id: 7,
       startDate: '2021-07-05T00:00:00+07:00',
       endDate: null,
       job: 'Software Engineer',
@@ -18,7 +18,7 @@ export default class Experience extends Vue {
       description: 'Software Engineer focus tech using .NET',
     },
     {
-      id: 1,
+      id: 6,
       startDate: '2018-08-27T00:00:00+07:00',
       endDate: '2021-06-25T00:00:00+07:00',
       job: 'Backend Developer',
@@ -27,7 +27,7 @@ export default class Experience extends Vue {
       description: 'Backend Developer using .NET Technology.',
     },
     {
-      id: 2,
+      id: 5,
       startDate: '2018-01-01T00:00:00+07:00',
       endDate: '2018-07-31T00:00:00+07:00',
       job: 'Android Developer (Part Time)',
@@ -36,7 +36,7 @@ export default class Experience extends Vue {
       description: 'Working on application to improve SIDAS.',
     },
     {
-      id: 3,
+      id: 4,
       startDate: '2017-12-01T00:00:00+07:00',
       endDate: '2019-01-31T00:00:00+07:00',
       departmentLink: 'https://www.edaun.com/',
@@ -45,7 +45,7 @@ export default class Experience extends Vue {
       description: 'Creating API to improve functionality of web.',
     },
     {
-      id: 4,
+      id: 3,
       startDate: '2017-05-29T00:00:00+07:00',
       endDate: '2017-08-04T00:00:00+07:00',
       departmentLink: 'https://suitmedia.com/',
@@ -55,7 +55,7 @@ export default class Experience extends Vue {
         'Working on Android Application and learn how to build creative Android Application.',
     },
     {
-      id: 5,
+      id: 2,
       startDate: '2017-01-31T00:00:00+07:00',
       endDate: '2017-05-31T00:00:00+07:00',
       job: 'Basic Physics Laboratory Assistant',
@@ -63,7 +63,7 @@ export default class Experience extends Vue {
       description: 'Teach and manage basic physics practicum.',
     },
     {
-      id: 6,
+      id: 1,
       startDate: '2016-10-01T00:00:00+07:00',
       endDate: '2018-07-31T00:00:00+07:00',
       job: 'Network Administrator',
@@ -74,7 +74,7 @@ export default class Experience extends Vue {
 
   public eduData: object[] = [
     {
-      id: 1,
+      id: 2,
       date: 'August 2014 - July 2018',
       degree: 'Bachelor Degree of Computer Science',
       location: 'Institut Teknologi Bandung (ITB)',
@@ -82,7 +82,7 @@ export default class Experience extends Vue {
         'Learning Computer Science. Join in HMIF (Himpunan Mahasiswa Informatika) ITB.',
     },
     {
-      id: 2,
+      id: 1,
       date: '2011 - 2014',
       degree: 'High School (Science Program)',
       location: 'SMA Negeri 1 Tanjungpandan',
