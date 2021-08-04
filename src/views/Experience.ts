@@ -9,6 +9,15 @@ export default class Experience extends Vue {
   public isOpen1: number = 0;
   public workData: object[] = [
     {
+      id: 0,
+      startDate: '2021-07-05T00:00:00+07:00',
+      endDate: null,
+      job: 'Software Engineer',
+      departmentLink: 'https://mitrais.com',
+      department: 'Mitrais',
+      description: 'Software Engineer focus tech using .NET',
+    },
+    {
       id: 1,
       startDate: '2018-08-27T00:00:00+07:00',
       endDate: '2021-06-25T00:00:00+07:00',
