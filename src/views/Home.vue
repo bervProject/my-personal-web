@@ -10,17 +10,6 @@
       </p>
     </b-notification>
     <div class="card">
-      <div class="card-image">
-        <b-carousel pause-info-type="is-black">
-          <b-carousel-item
-            v-for="(carousel, i) in carousels"
-            :key="i"
-            @click="showImageModal(carousel.image)"
-          >
-            <b-image :src="getAssets(carousel.image)" ratio="16by9" />
-          </b-carousel-item>
-        </b-carousel>
-      </div>
       <div class="card-content">
         <div class="media">
           <div class="media-left">
@@ -54,6 +43,19 @@
             </b-tag>
           </b-taglist>
         </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <b-carousel pause-info-type="is-black">
+          <b-carousel-item
+            v-for="(carousel, i) in carousels"
+            :key="i"
+            @click="showImageModal(carousel.image)"
+          >
+            <b-image :src="getAssets(carousel.image)" ratio="16by9" />
+          </b-carousel-item>
+        </b-carousel>
       </div>
     </div>
   </div>
