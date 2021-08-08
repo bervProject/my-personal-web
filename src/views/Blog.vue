@@ -6,6 +6,7 @@
     <b-table
       :data="blogs"
       :columns="columns"
+      :loading="isLoading"
     >
       <b-table-column
         v-slot="props"
