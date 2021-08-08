@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from "axios";
 
-const publicUrl = "http://my-json-server.typicode.com";
+const publicUrl = "https://my-json-server.typicode.com";
 
 async function get(servicesUrl: string): Promise<AxiosResponse> {
   const url = new URL(servicesUrl, publicUrl);
