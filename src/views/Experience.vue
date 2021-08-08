@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h2 class="title">
-      Experience
-    </h2>
+    <h2 class="title">Experience</h2>
+    <b-loading :is-full-page="false" v-model="isLoading">
+      <b-icon pack="fas" icon="sync-alt" size="is-large" custom-class="fa-spin">
+      </b-icon>
+    </b-loading>
     <div class="columns is-multiline">
-      <div class="column is-12">
-        <h3 class="subtitle">
-          Work Experience
-        </h3>
+      <div class="column is-6">
+        <h3 class="subtitle">Work Experience</h3>
         <b-collapse
           v-for="(edu, index) of workData"
           :key="index"
@@ -17,19 +17,12 @@
           @open="isOpen = index"
         >
           <template #trigger="props">
-            <div
-              class="card-header"
-              role="button"
-            >
+            <div class="card-header" role="button">
               <div class="card-header-title">
                 <div class="content">
                   <div class="media">
                     <div class="media-left">
-                      <b-icon
-                        size="is-medium"
-                        pack="fa"
-                        icon="briefcase"
-                      />
+                      <b-icon size="is-medium" pack="fa" icon="briefcase" />
                     </div>
                     <div class="media-content">
                       <div class="title is-4">
@@ -43,9 +36,7 @@
                         <template v-if="edu.endDate">
                           {{ showMonthYearOnly(edu.endDate) }}
                         </template>
-                        <template v-else>
-                          Now
-                        </template>
+                        <template v-else> Now </template>
                         ({{ showAgo(edu.startDate, edu.endDate) }})
                       </div>
                     </div>
@@ -76,9 +67,7 @@
         </b-collapse>
       </div>
       <div class="column">
-        <h3 class="subtitle">
-          Education
-        </h3>
+        <h3 class="subtitle">Education</h3>
         <b-collapse
           v-for="(edu, index) of eduData"
           :key="index"
@@ -88,10 +77,7 @@
           @open="isOpen1 = index"
         >
           <template #trigger="props">
-            <div
-              class="card-header"
-              role="button"
-            >
+            <div class="card-header" role="button">
               <div class="card-header-title">
                 <div class="content">
                   <div class="media">

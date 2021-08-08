@@ -8,7 +8,7 @@ export default class Blog extends Vue {
   public blogs: object[] = []
   public isLoading: boolean = false;
 
-  mounted() {
+  mounted(): void {
     this.isLoading = true;
     get("berviantoleo/bervdata/blogs").then(result => {
       this.blogs = result.data;
