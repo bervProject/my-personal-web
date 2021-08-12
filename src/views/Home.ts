@@ -1,8 +1,12 @@
 import { Component } from 'vue-property-decorator';
 import { mixins } from 'vue-class-component';
 import { ImageModalMixins, ImageMixins } from '@/mixins';
+import VerseRandom from '../components/VerseRandom.vue';
 @Component({
-  name: 'Home'
+  name: 'Home',
+  components: {
+    VerseRandom
+  }
 })
 export default class Home extends mixins(ImageModalMixins, ImageMixins) {
   public carousels = [

@@ -58,6 +58,7 @@
         </b-carousel>
       </div>
     </div>
+    <verse-random></verse-random>
   </div>
 </template>
 
