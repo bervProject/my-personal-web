@@ -5,7 +5,10 @@ import PortofolioItem from '@/components/PortofolioItem.vue';
   components: {
     PortofolioItem,
   },
-  name: 'Portofolio'
+  name: 'Portofolio',
+  metaInfo: {
+    title: 'Portofolio'
+  },
 })
 export default class Portofolio extends Vue {
   public mobileData: object[] = [

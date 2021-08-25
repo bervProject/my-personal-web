@@ -1,7 +1,10 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'About'
+  name: 'About',
+  metaInfo: {
+    title: 'About Me'
+  },
 })
 export default class About extends Vue {
   public contacts: object[] = [

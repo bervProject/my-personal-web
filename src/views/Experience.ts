@@ -3,7 +3,10 @@ import moment from 'moment';
 import { get } from '@/services';
 
 @Component({
-  name: 'Experience'
+  name: 'Experience',
+  metaInfo: {
+    title: 'Experiences'
+  },
 })
 export default class Experience extends Vue {
   public isOpen: number = 0;

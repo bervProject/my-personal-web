@@ -1,7 +1,10 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'Songs'
+  name: 'Songs',
+  metaInfo: {
+    title: 'Songs'
+  },
 })
 export default class Songs extends Vue {
   public trackData : string[] = [

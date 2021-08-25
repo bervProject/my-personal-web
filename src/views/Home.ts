@@ -6,7 +6,13 @@ import VerseRandom from '../components/VerseRandom.vue';
   name: 'Home',
   components: {
     VerseRandom
-  }
+  },
+  metaInfo: {
+    title: 'Home',
+    meta: [
+      { name: 'description', content: 'Bervianto Leo Pratama\'s Personal Website.' },
+    ]
+  },
 })
 export default class Home extends mixins(ImageModalMixins, ImageMixins) {
   public carousels = [

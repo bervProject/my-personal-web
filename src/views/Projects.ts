@@ -5,6 +5,9 @@ import Github from '@/components/Github.vue';
   components: {
     Github,
   },
-  name: 'Projects'
+  name: 'Projects',
+  metaInfo: {
+    title: 'Projects'
+  },
 })
 export default class Projects extends Vue {}

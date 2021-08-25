@@ -2,7 +2,10 @@ import { get } from '@/services';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'Blog'
+  name: 'Blog',
+  metaInfo: {
+    title: 'My Blogs'
+  },
 })
 export default class Blog extends Vue {
   public blogs: object[] = []

@@ -2,7 +2,10 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component(
   {
-    name: 'FavoriteAudio'
+    name: 'FavoriteAudio',
+    metaInfo: {
+      title: 'Favorite Audio'
+    },
   }
 )
 export default class FavoriteAudio extends Vue {
