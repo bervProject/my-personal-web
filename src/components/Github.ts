@@ -11,6 +11,8 @@ import { ImageModalMixins } from '@/mixins';
 export default class Github extends mixins(ImageModalMixins) {
   public myData: object[] = [];
   public isLoading: boolean = false;
+  public openedDetails: Array<object> = [];
+  public showDetailIcon: boolean = true;
 
   public mounted() {
     this.isLoading = true;
