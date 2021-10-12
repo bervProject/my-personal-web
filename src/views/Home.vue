@@ -2,12 +2,15 @@
   <div>
     <b-notification type="is-info">
       <p>
-        <strong>Welcome to Bervianto Leo Pratama's site!</strong>
+        <strong>{{
+          $t('home.welcome', { name: 'Bervianto Leo Pratama' })
+        }}</strong>
       </p>
-      <p>
-        Contact me
-        <a href="mailto:bervianto.leo@gmail.com">here</a>
-      </p>
+      <p
+        v-html="
+          $t('home.contactme', { email: 'mailto:bervianto.leo@gmail.com' })
+        "
+      ></p>
     </b-notification>
     <div class="card">
       <div class="card-content">
@@ -27,7 +30,7 @@
           </div>
         </div>
         <div class="content is-medium">
-          <h4 class="title">Who am I?</h4>
+          <h4 class="title">{{ $t('home.whoami') }}</h4>
           <b-taglist>
             <b-tag rounded size="is-medium" type="is-primary">
               Backend Developer
