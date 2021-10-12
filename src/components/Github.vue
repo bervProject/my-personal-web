@@ -55,7 +55,7 @@
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img :src="props.row.owner.avatar_url" />
+              <img alt="Github Avatar" :src="props.row.owner.avatar_url" />
             </p>
           </figure>
           <div class="media-content">
