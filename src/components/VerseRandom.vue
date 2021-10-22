@@ -1,5 +1,8 @@
 <template>
   <div class="card">
+    <div class="card-header">
+      <h3 class="card-header-title">{{ $t('common.todayverse') }}</h3>
+    </div>
     <div class="card-content">
       <div class="content">
         <h2 v-if="haveData" class="title">

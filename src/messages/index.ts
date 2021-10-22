@@ -1,9 +1,18 @@
 const messages = {
   en: {
+    common: {
+      todayverse: 'Today Verse',
+      gallery: 'Gallery'
+    },
+    experience: {
+      education: 'Education',
+      visitcompanypage: 'Visit Company Page',
+      workexperience: 'Work Experience'
+    },
     home: {
-      welcome: 'Welcome to {name}\'s site!',
+      welcome: "Welcome to {name}'s site!",
       whoami: 'Who am I?',
-      contactme: 'Contact me <a href="{email}"> here </a>'
+      contactme: 'Contact me <a href="{email}"> here </a>',
     },
     navigation: {
       aboutme: 'About Me',
@@ -12,13 +21,22 @@ const messages = {
       donate: 'Donate',
       experience: 'Experience',
       others: 'Others',
-    }
+    },
   },
   id: {
+    common: {
+      todayverse: 'Ayat Hari Ini',
+      gallery: 'Galeri'
+    },
+    experience: {
+      education: 'Edukasi',
+      visitcompanypage: 'Kunjungi Laman Perusahaan',
+      workexperience: 'Pengalaman Berkerja'
+    },
     home: {
       welcome: 'Selamat datang ke website {name}',
       whoami: 'Siapa saya?',
-      contactme: 'Hubungi saya <a href="{email}"> di sini </a>'
+      contactme: 'Hubungi saya <a href="{email}"> di sini </a>',
     },
     navigation: {
       aboutme: 'Tentang Saya',
@@ -26,9 +44,9 @@ const messages = {
       contact: 'Kontak',
       donate: 'Donasi',
       experience: 'Pengalaman',
-      others: 'Lainnya'
-    }
-  }
-}
+      others: 'Lainnya',
+    },
+  },
+};
 
 export default messages;

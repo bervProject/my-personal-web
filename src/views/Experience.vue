@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h2 class="title">Experience</h2>
+    <h2 class="title">{{ $t('navigation.experience') }}</h2>
     <b-loading :is-full-page="false" v-model="isLoading">
       <b-icon pack="fas" icon="sync-alt" size="is-large" custom-class="fa-spin">
       </b-icon>
     </b-loading>
     <div class="columns is-multiline">
       <div class="column is-6">
-        <h3 class="subtitle">Work Experience</h3>
+        <h3 class="subtitle">{{ $t('experience.workexperience') }}</h3>
         <b-collapse
           v-for="(edu, index) of workData"
           :key="index"
@@ -60,14 +60,14 @@
                 tag="a"
                 :href="edu.departmentLink"
               >
-                Visit Company Page
+                {{ $t('experience.visitcompanypage') }}
               </b-button>
             </div>
           </div>
         </b-collapse>
       </div>
       <div class="column">
-        <h3 class="subtitle">Education</h3>
+        <h3 class="subtitle">{{ $t('experience.education') }}</h3>
         <b-collapse
           v-for="(edu, index) of eduData"
           :key="index"
