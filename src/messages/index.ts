@@ -1,6 +1,10 @@
 const messages = {
   en: {
     common: {
+      announcement: 'Announcement',
+      certification: 'Certification',
+      donate: 'Donate',
+      seemore: 'See More',
       todayverse: 'Today Verse',
       gallery: 'Gallery'
     },
@@ -16,15 +20,25 @@ const messages = {
     },
     navigation: {
       aboutme: 'About Me',
+      blog: 'Blog',
       certification: 'Certification',
       contact: 'Contact',
       donate: 'Donate',
       experience: 'Experience',
+      favoritesong: 'Favorite Songs',
+      mywork: 'My Work',
+      songrecommendation: 'Songs Recommendation',
+      portofolio: 'Portofolio',
+      projects: 'Projects',
       others: 'Others',
     },
   },
   id: {
     common: {
+      announcement: 'Pengumuman',
+      certification: 'Sertifikasi',
+      donate: 'Donasi',
+      seemore: 'Lihat Lebih Lanjut',
       todayverse: 'Ayat Hari Ini',
       gallery: 'Galeri'
     },
@@ -40,11 +54,17 @@ const messages = {
     },
     navigation: {
       aboutme: 'Tentang Saya',
+      blog: 'Blog',
       certification: 'Sertifikasi',
       contact: 'Kontak',
       donate: 'Donasi',
       experience: 'Pengalaman',
+      favoritesong: 'Lagu Favorit',
+      mywork: 'Karya Saya',
       others: 'Lainnya',
+      songrecommendation: 'Rekomendasi Lagu',
+      portofolio: 'Portofolio',
+      projects: 'Proyek',
     },
   },
 };

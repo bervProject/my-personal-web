@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h2 class="title">Certification</h2>
+    <h2 class="title">{{ $t('common.certification') }}</h2>
     <div class="columns">
       <div class="column is-6">
         <div class="card">
           <div class="card-header">
-            <div class="card-header-title">Certification (Role Based)</div>
+            <div class="card-header-title">
+              {{ $t('common.certification') }} (Role Based)
+            </div>
           </div>
           <div class="card-content">
             <div class="columns is-multiline">
@@ -27,7 +29,7 @@
             <a
               class="card-footer-item"
               href="https://www.credly.com/users/bervianto-leo-pratama"
-              >See more</a
+              >{{ $t('common.seemore') }}</a
             >
           </footer>
         </div>
@@ -35,7 +37,9 @@
       <div class="column is-6">
         <div class="card">
           <div class="card-header">
-            <div class="card-header-title">Certification (Fundamental)</div>
+            <div class="card-header-title">
+              {{ $t('common.certification') }} (Fundamental)
+            </div>
           </div>
           <div class="card-content">
             <div class="columns is-multiline">

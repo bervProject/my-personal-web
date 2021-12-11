@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="title">
-      Donate
+      {{ $t('common.donate') }}
     </h2>
     <iframe
       src="https://ko-fi.com/berviantoleo/?hidefeed=true&widget=true&embed=true&preview=true"
