@@ -33,6 +33,11 @@ export default class Experience extends Vue {
     })
   }
 
+  getDomain(link: string): string {
+    const urlData = new URL(link);
+    return urlData.hostname;
+  }
+
   showMonthYearOnly(date: string): string {
     return moment(date).format('MMMM YYYY');
   }

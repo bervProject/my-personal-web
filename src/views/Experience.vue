@@ -56,11 +56,17 @@
               <p>{{ edu.description }}</p>
               <b-button
                 v-if="edu.departmentLink"
+                outlined
                 type="is-info"
                 tag="a"
                 :href="edu.departmentLink"
               >
-                {{ $t('experience.visitcompanypage') }}
+              <span class="icon is-small">
+                <img v-if="edu.departmentLink" height="16" width="16" :src='`http://www.google.com/s2/favicons?domain=${getDomain(edu.departmentLink)}`' />
+              </span>
+              <span>
+              {{ $t('experience.visitcompanypage') }}
+              </span>
               </b-button>
             </div>
           </div>
