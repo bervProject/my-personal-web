@@ -28,14 +28,11 @@
                   <h5>Name</h5>
                   <p>Bervianto Leo Pratama</p>
                   <h5>Current Job</h5>
-                  <p>Backend Developer</p>
+                  <p>Software Engineer</p>
                   <h5>Interest Technology / Interest Topic</h5>
                   <b-taglist>
                     <b-tag rounded size="is-small" type="is-dark">
                       Web Development
-                    </b-tag>
-                    <b-tag rounded size="is-small" type="is-dark">
-                      Mobile Development
                     </b-tag>
                     <b-tag rounded size="is-small" type="is-dark">
                       Backend Development
@@ -50,11 +47,6 @@
                       Cyber Security
                     </b-tag>
                   </b-taglist>
-                  <h5>Address</h5>
-                  <p>
-                    <b-icon pack="fa" icon="home" size="is-small" />
-                    <span>Bandung</span>
-                  </p>
                 </div>
               </div>
             </div>
