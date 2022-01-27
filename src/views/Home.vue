@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="columns is-multiline">
-      <div class="column is-6">
+      <div class="column is-12">
         <div class="card">
           <div class="card-header">
             <h4 class="card-header-title">{{ $t('home.whoami') }}</h4>
@@ -61,24 +61,6 @@
             </b-carousel>
           </div>
         </div>
-      </div>
-      <div class="column is-6">
-        <h2 class="title">{{ $t('common.announcement') }}</h2>
-        <div class="card" v-if="!isLoading && announcements.length == 0">
-          <div class="card-content">
-            <div class="has-text-centered">
-              <b-icon icon="inbox" size="is-large" />
-              <h3 class="subtitle">Not have any announcement yet.</h3>
-            </div>
-          </div>
-        </div>
-        <b-notification
-          v-for="(announcement, index) in announcements"
-          :key="index"
-          :type="`is-${announcement.level}`"
-        >
-          <p>{{ announcement.main }}</p>
-        </b-notification>
       </div>
     </div>
   </div>
