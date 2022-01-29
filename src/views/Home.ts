@@ -1,7 +1,6 @@
 import { Component } from 'vue-property-decorator';
 import { mixins } from 'vue-class-component';
 import { ImageModalMixins, ImageMixins } from '@/mixins';
-import { get } from '@/services';
 import VerseRandom from '../components/VerseRandom.vue';
 @Component({
   name: 'Home',

@@ -68,5 +68,4 @@
   </div>
 </template>
 
-<script lang="ts" src="./Certification.ts">
-</script>
+<script lang="ts" src="./Certification.ts" />

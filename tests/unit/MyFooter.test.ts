@@ -1,6 +1,5 @@
 import messages from '../../src/messages';
-import { shallowMount } from '@vue/test-utils';
-import { createLocalVue } from '@vue/test-utils';
+import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Buefy from 'buefy';
 import VueI18n from 'vue-i18n';
 // create an extended `Vue` constructor
