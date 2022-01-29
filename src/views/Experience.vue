@@ -6,124 +6,97 @@
       </b-icon>
     </b-loading>
     <div class="columns is-multiline">
-      <div class="column is-6">
+      <div class="column is-12">
         <h3 class="subtitle">{{ $t('experience.workexperience') }}</h3>
-        <b-collapse
-          v-for="(edu, index) of workData"
-          :key="index"
-          class="card"
-          animation="slide"
-          :open="isOpen == index"
-          @open="isOpen = index"
-        >
-          <template #trigger="props">
-            <div class="card-header" role="button">
-              <div class="card-header-title">
-                <div class="content">
-                  <div class="media">
-                    <div class="media-left">
-                      <b-icon size="is-medium" pack="fa" icon="briefcase" />
-                    </div>
-                    <div class="media-content">
-                      <div class="title is-4">
-                        {{ edu.job }}
-                      </div>
-                      <div class="subtitle is-5">
-                        {{ edu.department }}
-                      </div>
-                      <div class="subtitle is-6">
-                        {{ showMonthYearOnly(edu.startDate) }} -
-                        <template v-if="edu.endDate">
-                          {{ showMonthYearOnly(edu.endDate) }}
-                        </template>
-                        <template v-else> Now </template>
-                        ({{ showAgo(edu.startDate, edu.endDate) }})
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="card-header-icon">
-                <b-icon
-                  pack="fa"
-                  :icon="props.open ? 'angle-down' : 'angle-up'"
-                />
-              </a>
-            </div>
-          </template>
-          <div class="card-content">
+        <b-table :data="workData" detailed detail-key="id">
+          <b-table-column field="job" label="Job Name" v-slot="props">
+            {{ props.row.job }}
+          </b-table-column>
+          <b-table-column
+            field="department"
+            label="Company Name"
+            v-slot="props"
+          >
+            {{ props.row.department }}
+          </b-table-column>
+          <b-table-column field="startDate" label="Start Date" v-slot="props">
+            {{ showMonthYearOnly(props.row.startDate) }}
+          </b-table-column>
+          <b-table-column field="endDate" label="End Date" v-slot="props">
+            <template v-if="props.row.endDate">
+              {{ showMonthYearOnly(props.row.endDate) }}
+            </template>
+            <template v-else> Now </template>
+          </b-table-column>
+          <template #detail="props">
             <div class="content">
-              <p>{{ edu.description }}</p>
+              <p>{{ props.row.description }}</p>
               <b-button
-                v-if="edu.departmentLink"
+                v-if="props.row.departmentLink"
                 outlined
                 type="is-info"
                 tag="a"
-                :href="edu.departmentLink"
+                :href="props.row.departmentLink"
               >
-              <span class="icon is-small">
-                <img
-                  v-if="edu.departmentLink"
-                  height="16"
-                  width="16"
-                  alt="logo"
-                  :src='`http://www.google.com/s2/favicons?domain=${getDomain(edu.departmentLink)}`' />
-              </span>
-              <span>
-              {{ $t('experience.visitcompanypage') }}
-              </span>
+                <span class="icon is-small">
+                  <img
+                    v-if="props.row.departmentLink"
+                    height="16"
+                    width="16"
+                    alt="logo"
+                    :src="`http://www.google.com/s2/favicons?domain=${getDomain(
+                      props.row.departmentLink
+                    )}`"
+                  />
+                </span>
+                <span>
+                  {{ $t('experience.visitcompanypage') }}
+                </span>
               </b-button>
             </div>
-          </div>
-        </b-collapse>
+          </template>
+        </b-table>
       </div>
-      <div class="column">
+      <div class="column is-12">
         <h3 class="subtitle">{{ $t('experience.education') }}</h3>
-        <b-collapse
-          v-for="(edu, index) of eduData"
-          :key="index"
-          class="card"
-          animation="slide"
-          :open="isOpen1 == index"
-          @open="isOpen1 = index"
-        >
-          <template #trigger="props">
-            <div class="card-header" role="button">
-              <div class="card-header-title">
-                <div class="content">
-                  <div class="media">
-                    <div class="media-left">
-                      <b-icon
-                        size="is-medium"
-                        pack="fa"
-                        icon="graduation-cap"
-                      />
-                    </div>
-                    <div class="media-content">
-                      <div class="title is-4">
-                        {{ edu.degree }}
-                      </div>
-                      <div class="subtitle is-5">
-                        {{ edu.date }} | {{ edu.location }}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="card-header-icon">
-                <b-icon
-                  pack="fa"
-                  :icon="props.open ? 'angle-down' : 'angle-up'"
-                />
-              </a>
+        <b-table :data="eduData" detailed detail-key="id">
+          <b-table-column field="degree" label="Degree" v-slot="props">
+            {{ props.row.degree }}
+          </b-table-column>
+          <b-table-column field="location" label="Institution" v-slot="props">
+            {{ props.row.location }}
+          </b-table-column>
+          <b-table-column field="date" label="Date" v-slot="props">
+            {{ props.row.date }}
+          </b-table-column>
+          <template #detail="props">
+            <div class="content">
+              <p>{{ props.row.description }}</p>
+              <b-button
+                v-if="props.row.departmentLink"
+                outlined
+                type="is-info"
+                tag="a"
+                :href="props.row.departmentLink"
+              >
+                <span class="icon is-small">
+                  <img
+                    v-if="props.row.departmentLink"
+                    height="16"
+                    width="16"
+                    alt="logo"
+                    :src="`http://www.google.com/s2/favicons?domain=${getDomain(
+                      props.row.departmentLink
+                    )}`"
+                  />
+                </span>
+                <span>
+                  {{ $t('experience.visitcompanypage') }}
+                </span>
+              </b-button>
             </div>
           </template>
-          <div class="card-content">
-            <div class="content">
-              {{ edu.description }}
-            </div>
-          </div>
-        </b-collapse>
+        </b-table>
       </div>
     </div>
   </div>
