@@ -10,6 +10,7 @@ const messages = {
     },
     experience: {
       education: 'Education',
+      research_list: 'Research List',
       visitcompanypage: 'Visit Company Page',
       workexperience: 'Work Experience'
     },

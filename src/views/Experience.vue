@@ -98,6 +98,22 @@
           </template>
         </b-table>
       </div>
+      <div class="column is-12">
+        <h3 class="subtitle">{{ $t('experience.research_list') }}</h3>
+        <b-table :data="researchData">
+          <b-table-column field="degree" label="Title" v-slot="props">
+            {{ props.row.title }}
+          </b-table-column>
+          <b-table-column field="asbtract" label="Abstract" v-slot="props">
+            <a :href="props.row.abstract">{{ props.row.abstract }}</a>
+          </b-table-column>
+          <b-table-column field="paper" label="Paper" v-slot="props">
+            <a :href="props.row.paper">{{ props.row.paper }}</a>
+          </b-table-column>
+          <b-table-column field="publishDate" label="Publish Date">
+          </b-table-column>
+        </b-table>
+      </div>
     </div>
   </div>
 </template>

@@ -19,22 +19,63 @@
               </div>
               <div class="media-content">
                 <p class="title is-4">Bervianto Leo Pratama</p>
-                <p class="subtitle is-6">@berviantoleo</p>
+                <p class="subtitle is-6">A person who loves to code as arts</p>
               </div>
             </div>
             <div class="content is-medium">
+              <h6 class="title">
+                Focus Topics
+              </h6>
               <b-taglist>
                 <b-tag rounded size="is-medium" type="is-primary">
-                  Backend Developer
+                  Backend Development
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-warning">
-                  Cyber Security Enthusiasts
+                <b-tag rounded size="is-medium" type="is-primary">
+                  DevOps
                 </b-tag>
                 <b-tag rounded size="is-medium" type="is-warning">
                   Microservices
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-dark">
-                  Institut Teknologi Bandung
+                <b-tag rounded size="is-medium" type="is-warning">
+                  Cloud Computing
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-success">
+                  Cyber Security
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-success">
+                  DevSecOps
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-secondary">
+                  Software Architecture
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-secondary">
+                  Cloud Architecture
+                </b-tag>
+              </b-taglist>
+              <h6 class="title">
+                Technology Stacks
+              </h6>
+              <b-taglist>
+                <b-tag rounded size="is-medium" type="is-primary">
+                  .NET
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-primary">
+                  SQL Server
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-warning">
+                  PostgreSQL
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-warning">
+                  Node.js
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-success">
+                  Python
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-success">
+                  MySQL
+                </b-tag>
+                <b-tag rounded size="is-medium" type="is-secondary">
+                  Elixir
                 </b-tag>
               </b-taglist>
             </div>

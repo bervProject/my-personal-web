@@ -14,12 +14,21 @@ export default class Experience extends Vue {
   public isLoading: boolean = false;
   public workData: object[] = [];
   public eduData: object[] = [];
+  public researchData: object[] = [
+    {
+      "id": 1,
+      "title": "Pembangunan Web Service Audio Watermarking",
+      "abstract": "https://digilib.itb.ac.id/index.php/gdl/view/26088",
+      "paper": "https://informatika.stei.itb.ac.id/~rinaldi.munir/TA/Makalah_TA_Bervianto.pdf"
+    }
+  ];
 
   mounted(): void {
     this.isLoading = true;
     const experiencePromise = get("berviantoleo/bervdata/experiences");
     const eduPromise = get("berviantoleo/bervdata/educations");
-    Promise.allSettled([experiencePromise, eduPromise]).then((result) => {
+    const researchPromise = get("berviantoleo/bervdata/researchList");
+    Promise.allSettled([experiencePromise, eduPromise, researchPromise]).then((result) => {
       const experienceData = result[0];
       if (experienceData.status === 'fulfilled') {
         this.workData = experienceData.value.data;
