@@ -19,6 +19,7 @@ export default class Certification extends Vue {
     'b717580f-f8bd-4c9b-aeb7-2e55a638537d',
     '19d48561-2052-4ce9-8210-e957bfcda5a9',
     '61a336e9-92a7-4c8c-aeee-a5c07bf3fae5',
-    'db08e5b1-091c-4d20-a66b-40fa19ad5810'
+    'db08e5b1-091c-4d20-a66b-40fa19ad5810',
+    '10cc90ee-4f61-4622-830d-29cc869d5890'
   ]
 }
