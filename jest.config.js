@@ -13,11 +13,11 @@ module.exports = {
     "<rootDir>/node_modules/"
   ],
   "transform": {
-    ".*\\.(vue)$": "vue-jest",
     "^.+\\.tsx?$": "ts-jest"
   },
+  "transformIgnorePatterns": ['/node_modules/'],
   "collectCoverage": true,
   "collectCoverageFrom": ["**/src/**/*.{ts,js,vue}", "!**/node_modules/**"],
-  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-  "testURL": "http://localhost/"
+  "testURL": "http://localhost/",
+  "preset": '@vue/cli-plugin-unit-jest/presets/typescript-and-babel'
 }
