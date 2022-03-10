@@ -1,8 +1,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 @Component({
-  name: 'Donate',
+  name: 'DonatePage',
   metaInfo: {
     title: 'Donate Here'
   },
 })
-export default class Donate extends Vue { }
+export default class DonatePage extends Vue { }

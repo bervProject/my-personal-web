@@ -1,12 +1,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'Certification',
+  name: 'CertificationPage',
   metaInfo: {
     title: 'Certification List'
   },
 })
-export default class Certification extends Vue {
+export default class CertificationPage extends Vue {
   public certIdRoleBased = [
     '1b8f8bd9-3dd9-41cc-8cd3-697b27280cfc',
     '6e0ef431-09a7-4c11-9e31-d4032e7d8fed',

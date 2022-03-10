@@ -75,4 +75,4 @@
   </section>
 </template>
 
-<script lang="ts" src="./Github.ts"></script>
+<script lang="ts" src="./GithubList.ts"></script>

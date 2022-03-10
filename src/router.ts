@@ -12,43 +12,43 @@ export default new Router({
       path: '/',
       name: 'home',
       component: () =>
-        import(/* webpackChunkName: "home" */ './views/Home.vue'),
+        import(/* webpackChunkName: "home" */ './views/HomePage.vue'),
     },
     {
       path: '/blog',
       name: 'blog',
       component: () =>
-        import(/* webpackChunkName: "blog" */ './views/Blog.vue'),
+        import(/* webpackChunkName: "blog" */ './views/BlogPage.vue'),
     },
     {
       path: '/donate',
       name: 'donate',
       component: () =>
-        import(/* webpackChunkName: "donate" */ './views/Donate.vue'),
+        import(/* webpackChunkName: "donate" */ './views/DonatePage.vue'),
     },
     {
       path: '/experience',
       name: 'experience',
       component: () =>
-        import(/* webpackChunkName: "experience" */ './views/Experience.vue'),
+        import(/* webpackChunkName: "experience" */ './views/ExperiencePage.vue'),
     },
     {
       path: '/projects',
       name: 'projects',
       component: () =>
-        import(/* webpackChunkName: "projects" */ './views/Projects.vue'),
+        import(/* webpackChunkName: "projects" */ './views/ProjectsPage.vue'),
     },
     {
       path: '/portofolio',
       name: 'portofolio',
       component: () =>
-        import(/* webpackChunkName: "portofolio" */ './views/Portofolio.vue'),
+        import(/* webpackChunkName: "portofolio" */ './views/PortofolioPage.vue'),
     },
     {
       path: '/songs',
       name: 'songs',
       component: () =>
-        import(/* webpackChunkName: "songs" */ './views/Songs.vue'),
+        import(/* webpackChunkName: "songs" */ './views/SongsPage.vue'),
     },
     {
       path: '/favorite-audio',
@@ -61,20 +61,14 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ './views/About.vue'),
+        import(/* webpackChunkName: "about" */ './views/AboutPage.vue'),
     },
     {
       path: '/certification',
       name: 'certification',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "certification" */ './views/Certification.vue'),
+        import(/* webpackChunkName: "certification" */ './views/CertificationPage.vue'),
     },
   ],
 });

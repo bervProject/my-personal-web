@@ -1,12 +1,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'Songs',
+  name: 'SongsPage',
   metaInfo: {
     title: 'Songs'
   },
 })
-export default class Songs extends Vue {
+export default class SongsPage extends Vue {
   public trackData : string[] = [
     'https://open.spotify.com/embed/track/3NyxWuYU0s2GA6oZgDRQep',
     'https://open.spotify.com/embed/track/4eO2k6hVljgRNs61OcRV7g',

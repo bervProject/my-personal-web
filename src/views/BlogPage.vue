@@ -39,5 +39,5 @@
   </section>
 </template>
 
-<script src="./Blog.ts">
+<script src="./BlogPage.ts">
 </script>

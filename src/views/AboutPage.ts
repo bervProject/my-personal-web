@@ -2,12 +2,12 @@ import { Component, Vue } from 'vue-property-decorator';
 import { get } from '@/services';
 
 @Component({
-  name: 'About',
+  name: 'AboutPage',
   metaInfo: {
     title: 'About Me',
   },
 })
-export default class About extends Vue {
+export default class AboutPage extends Vue {
   public contacts: object[] = [];
   public isLoading: boolean = false;
 

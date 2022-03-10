@@ -12,6 +12,6 @@
   </div>
 </template>
 
-<script lang="ts" src="./Donate.ts">
+<script lang="ts" src="./DonatePage.ts">
 
 </script>

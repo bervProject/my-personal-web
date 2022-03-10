@@ -3,12 +3,12 @@ import moment from 'moment';
 import { get } from '@/services';
 
 @Component({
-  name: 'Experience',
+  name: 'ExperiencePage',
   metaInfo: {
     title: 'Experiences'
   },
 })
-export default class Experience extends Vue {
+export default class ExperiencePage extends Vue {
   public isOpen: number = 0;
   public isOpen1: number = 0;
   public isLoading: boolean = false;

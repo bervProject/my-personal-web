@@ -107,4 +107,4 @@
   </div>
 </template>
 
-<script lang="ts" src="./Home.ts"></script>
+<script lang="ts" src="./HomePage.ts"></script>

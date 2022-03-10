@@ -2,7 +2,9 @@ const messages = {
   en: {
     common: {
       announcement: 'Announcement',
+      active_certification: 'Active Certification',
       certification: 'Certification',
+      certification_history: 'Certification History',
       donate: 'Donate',
       seemore: 'See More',
       todayverse: 'Today Verse',
@@ -37,7 +39,9 @@ const messages = {
   id: {
     common: {
       announcement: 'Pengumuman',
+      active_certification: 'Sertifikasi Aktif',
       certification: 'Sertifikasi',
+      certification_history: 'Riwayat Sertifikasi',
       donate: 'Donasi',
       seemore: 'Lihat Lebih Lanjut',
       todayverse: 'Ayat Hari Ini',

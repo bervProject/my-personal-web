@@ -2,12 +2,12 @@ import { get } from '@/services';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
-  name: 'Blog',
+  name: 'BlogPage',
   metaInfo: {
     title: 'My Blogs'
   },
 })
-export default class Blog extends Vue {
+export default class BlogPage extends Vue {
   public blogs: object[] = []
   public isLoading: boolean = false;
 

@@ -39,5 +39,5 @@
   </div>
 </template>
 
-<script lang="ts" src="./Songs.ts">
+<script lang="ts" src="./SongsPage.ts">
 </script>

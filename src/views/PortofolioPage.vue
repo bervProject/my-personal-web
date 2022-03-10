@@ -21,4 +21,4 @@
   </div>
 </template>
 
-<script lang="ts" src="./Portofolio.ts"></script>
+<script lang="ts" src="./PortofolioPage.ts"></script>

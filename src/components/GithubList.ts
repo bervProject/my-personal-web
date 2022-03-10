@@ -6,9 +6,9 @@ import { ImageModalMixins } from '@/mixins';
 
 @Component({
   props: { url: String },
-  name: 'Github'
+  name: 'GithubList'
 })
-export default class Github extends mixins(ImageModalMixins) {
+export default class GithubList extends mixins(ImageModalMixins) {
   public myData: object[] = [];
   public isLoading: boolean = false;
   public openedDetails: Array<object> = [];

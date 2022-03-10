@@ -118,4 +118,4 @@
   </div>
 </template>
 
-<script lang="ts" src="./Experience.ts"></script>
+<script lang="ts" src="./ExperiencePage.ts"></script>
