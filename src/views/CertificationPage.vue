@@ -10,8 +10,10 @@
       <div class="card-content">
         <div class="columns">
           <div class="column is-6">
-            <h4 class="subtitle">{{ $t('common.certification') }} (Role Based)</h4>
-            <div class="columns is-multiline">
+            <h4 class="subtitle">
+              {{ $t('common.certification') }} (Role Based)
+            </h4>
+            <div class="columns is-multiline is-centered">
               <div
                 v-for="cert of certIdRoleBased"
                 :key="cert"
@@ -27,8 +29,10 @@
             </div>
           </div>
           <div class="column is-6">
-            <h4 class="subtitle">{{ $t('common.certification') }} (Fundamental)</h4>
-            <div class="columns is-multiline">
+            <h4 class="subtitle">
+              {{ $t('common.certification') }} (Fundamental)
+            </h4>
+            <div class="columns is-multiline is-centered">
               <div
                 v-for="cert of certIdFundamental"
                 :key="cert"
@@ -42,14 +46,17 @@
                 />
               </div>
               <div class="column is-4">
-                <a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/49384407">
-                  <b-image
-                    src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49384407"
-                    alt="Google Cloud Digital Leder"
-                    ratio="1by1"
-                    rounded
-                  ></b-image>
-                </a>
+                <div style="width: 150px">
+                  <a
+                    href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/49384407"
+                  >
+                    <b-image
+                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49384407"
+                      alt="Google Cloud Digital Leder"
+                      ratio="150by150"
+                    ></b-image>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
