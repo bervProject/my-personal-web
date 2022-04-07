@@ -41,6 +41,16 @@
                   data-share-badge-host="https://www.credly.com"
                 />
               </div>
+              <div class="column is-4">
+                <a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/49384407">
+                  <b-image
+                    src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49384407"
+                    alt="Google Cloud Digital Leder"
+                    ratio="1by1"
+                    rounded
+                  ></b-image>
+                </a>
+              </div>
             </div>
           </div>
         </div>
