@@ -59,7 +59,8 @@ jobs:
     - uses: actions/download-artifact@v3
       with:
         name: deployment
-        path: ./dist
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
