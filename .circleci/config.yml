@@ -1,12 +1,8 @@
 version: 2.1
 orbs:
-  node: circleci/node@4.5.1
+  node: circleci/node@5.0.2
 jobs:
   test:
-    filters:
-      branches:
-        only:
-          - main
     executor: node/default
     steps:
       - checkout
@@ -22,3 +18,11 @@ jobs:
       - run:
           command: yarn run build
           name: Run YARN build
+workflows:
+  test_app:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only:
+                - main
