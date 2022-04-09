@@ -11,6 +11,24 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Yarn Install
+        run: yarn --frozen-lockfile
+      - name: Build
+        run: yarn build
+      - uses: actions/upload-artifact@v3
+        if: ${{ github.event_name == 'push' }}
+        with:
+          name: deployment
+          path: dist/*
+  test:
+    runs-on: ubuntu-20.04
+    if: ${{ github.event_name == 'pull_request' }}
     strategy:
       matrix:
         node-version: [16.x, 17.x]
@@ -24,12 +42,28 @@ jobs:
       run: yarn --frozen-lockfile
     - name: Lint
       run: yarn lint
-    - name: Build
-      run: yarn build
     - name: Unit Test
       run: yarn test:unit
     - name: E2E Test
       run: yarn test:e2e --headless
+    - uses: actions/upload-artifact@v3
+      if: ${{ matrix.node-version == '16.x' }}
+      with:
+        name: test-videos
+        path: test/e2e/videos/*
+  publish:
+    runs-on: ubuntu-20.04
+    needs: build
+    if: ${{ github.event_name == 'push' }}
+    steps:
+    - uses: actions/download-artifact@v3
+      with:
+        name: deployment
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
   docker-build:
     runs-on: ubuntu-20.04
     needs: build
