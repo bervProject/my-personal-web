@@ -4,7 +4,7 @@
       <div class="column is-12">
         <div class="card">
           <div class="card-header">
-            <h4 class="card-header-title">{{ $t('home.whoami') }}</h4>
+            <h4 class="card-header-title"><b-icon icon="user" />{{ $t('home.whoami') }}</h4>
           </div>
           <div class="card-content">
             <div class="media">
@@ -19,7 +19,7 @@
               </div>
               <div class="media-content">
                 <p class="title is-4">Bervianto Leo Pratama</p>
-                <p class="subtitle is-6">A person who loves to code as arts</p>
+                <p class="subtitle is-6">I'm a Software Engineer. A person who loves to code as arts.</p>
               </div>
             </div>
             <div class="content is-medium">
@@ -27,28 +27,28 @@
                 Focus Topics
               </h6>
               <b-taglist>
-                <b-tag rounded size="is-medium" type="is-primary">
+                <b-tag icon="code" rounded size="is-medium" type="is-primary">
                   Backend Development
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-primary">
+                <b-tag icon="user-check" rounded size="is-medium" type="is-primary">
                   DevOps
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-warning">
+                <b-tag icon="docker" icon-pack="fab" rounded size="is-medium" type="is-warning">
                   Microservices
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-warning">
+                <b-tag icon="cloud" rounded size="is-medium" type="is-warning">
                   Cloud Computing
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-success">
+                <b-tag icon="lock" rounded size="is-medium" type="is-success">
                   Cyber Security
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-success">
+                <b-tag icon="user-check" rounded size="is-medium" type="is-success">
                   DevSecOps
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-secondary">
+                <b-tag icon="pen" icon-pack="fas" rounded size="is-medium" type="is-secondary">
                   Software Architecture
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-secondary">
+                <b-tag icon="cloud" rounded size="is-medium" type="is-secondary">
                   Cloud Architecture
                 </b-tag>
               </b-taglist>
@@ -56,22 +56,22 @@
                 Technology Stacks
               </h6>
               <b-taglist>
-                <b-tag rounded size="is-medium" type="is-primary">
+                <b-tag icon="microsoft" icon-pack="fab" rounded size="is-medium" type="is-primary">
                   .NET
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-primary">
+                <b-tag icon="database" rounded size="is-medium" type="is-primary">
                   SQL Server
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-warning">
+                <b-tag icon="database" rounded size="is-medium" type="is-warning">
                   PostgreSQL
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-warning">
+                <b-tag icon="node-js" icon-pack="fab" rounded size="is-medium" type="is-warning">
                   Node.js
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-success">
+                <b-tag icon="python" icon-pack="fab" rounded size="is-medium" type="is-success">
                   Python
                 </b-tag>
-                <b-tag rounded size="is-medium" type="is-success">
+                <b-tag icon="database" rounded size="is-medium" type="is-success">
                   MySQL
                 </b-tag>
                 <b-tag rounded size="is-medium" type="is-secondary">

@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <h3 class="card-header-title">{{ $t('common.todayverse') }}</h3>
+      <h3 class="card-header-title"><b-icon icon="book" pack="fa-solid"/>{{ $t('common.todayverse') }}</h3>
     </div>
     <div class="card-content">
       <div class="content">
