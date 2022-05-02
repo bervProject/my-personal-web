@@ -1,10 +1,14 @@
 import { get } from '@/services';
 import { Component, Vue } from 'vue-property-decorator';
+import DevToPost from '@/components/DevToPost.vue';
 
 @Component({
   name: 'BlogPage',
   metaInfo: {
     title: 'My Blogs'
+  },
+  components: {
+    DevToPost,
   },
 })
 export default class BlogPage extends Vue {

@@ -36,6 +36,10 @@
         {{ props.row.description }}
       </b-table-column>
     </b-table>
+    <h2 class="title">
+      Dev.to Posts
+    </h2>
+    <dev-to-post username="berviantoleo"/>
   </section>
 </template>
 
