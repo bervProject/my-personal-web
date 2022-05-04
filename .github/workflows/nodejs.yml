@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        node-version: ['16.x', '18.x']
+        node-version: ['16.x', '17.x']
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
@@ -32,7 +32,7 @@ jobs:
     if: ${{ github.event_name == 'pull_request' }}
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [16.x, 17.x]
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
