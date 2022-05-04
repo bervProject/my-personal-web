@@ -44,7 +44,7 @@ jobs:
     - name: Lint
       run: yarn lint
     - name: Unit Test
-      run: yarn test:unit
+      run: yarn test:unit -ci
     - name: E2E Test
       run: yarn test:e2e --headless
     - uses: actions/upload-artifact@v3

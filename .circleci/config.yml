@@ -19,7 +19,7 @@ jobs:
           command: yarn build
           name: Build
       - run:
-          command: yarn test:unit
+          command: yarn test:unit -ci
           name: Unit Test
       - codecov/upload
 workflows:
