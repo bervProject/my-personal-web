@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.2
+  codecov: codecov/codecov@3.2.2
 jobs:
   test:
     executor: node/default
@@ -12,11 +13,15 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run:
-          command: yarn run lint
-          name: Run YARN lint
+          command: yarn lint
+          name: Lint
       - run:
-          command: yarn run build
-          name: Run YARN build
+          command: yarn build
+          name: Build
+      - run:
+          command: yarn test:unit
+          name: Unit Test
+      - codecov/upload
 workflows:
   test_app:
     jobs:
