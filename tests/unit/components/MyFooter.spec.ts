@@ -1,4 +1,4 @@
-import messages from '../../src/messages';
+import messages from '@/messages';
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Buefy from 'buefy';
 import VueI18n from 'vue-i18n';
@@ -12,7 +12,7 @@ const i18n = new VueI18n({
   messages, // set locale messages
 });
 
-import MyFooter from '../../src/components/MyFooter.vue';
+import MyFooter from '@/components/MyFooter.vue';
 
 describe('MyFooter.vue', () => {
   it('Render correctly the version', () => {

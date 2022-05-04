@@ -5,7 +5,6 @@
     </h2>
     <b-table
       :data="blogs"
-      :columns="columns"
       :loading="isLoading"
     >
       <b-table-column
@@ -43,5 +42,5 @@
   </section>
 </template>
 
-<script src="./BlogPage.ts">
+<script lang="ts" src="./BlogPage.ts">
 </script>

@@ -15,7 +15,7 @@
                   :src="require('@/assets/images/me.jpg')"
                   alt="My Image"
                   ratio="1by1"
-                  rounded="true"
+                  rounded
                 >
                   <template #placeholder>
                     <b-skeleton class="skeleton-placeholder" height="100%" />

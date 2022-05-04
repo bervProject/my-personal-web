@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Buefy from 'buefy';
 import VueI18n from 'vue-i18n';
-import messages from '../../src/messages';
+import messages from '@/messages';
 
 // create an extended `Vue` constructor
 const localVue = createLocalVue()
@@ -14,16 +14,21 @@ const i18n = new VueI18n({
   messages, // set locale messages
 });
 
-import MyHeader from '../../src/components/MyHeader.vue';
+import ImageContainer from '@/components/ImageContainer.vue';
 
-describe('MyHeader.vue', () => {
+describe('ImageContainer.vue', () => {
   it('Render correctly', () => {
-    const msg = 'Experience';
-    const wrapper = shallowMount(MyHeader, {
+    const wrapper = shallowMount(ImageContainer, {
       localVue,
       i18n,
       stubs: ['router-link', 'router-view']
     });
-    expect(wrapper.text()).toContain(msg);
+    const figure = wrapper.find('figure');
+    expect(figure.exists()).toBe(true);
+    expect(figure.classes()).toStrictEqual(['image']);
+
+    const img = wrapper.find('img');
+    expect(img.exists()).toBe(true);
+    expect(img.attributes()['alt']).toBe('Image Container');
   });
 });
