@@ -7,7 +7,6 @@ import messages from '@/messages';
 const localVue = createLocalVue()
 // install plugins as normal
 localVue.use(Buefy);
-localVue.use(Buefy);
 localVue.use(VueI18n);
 const i18n = new VueI18n({
   locale: 'en', // set locale
