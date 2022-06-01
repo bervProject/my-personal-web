@@ -12,7 +12,8 @@ export default class CertificationPage extends Vue {
     '1ed42ba5-d7fe-4191-a5cb-90f86edcd33a',
     '2cd65f68-a006-4f1c-914d-b118cc92aced',
     'f204be34-986a-4a8f-9459-6bba9717043c',
-    '81219e7e-d090-4e00-b541-47f0443b6bea'
+    '81219e7e-d090-4e00-b541-47f0443b6bea',
+    '675aece2-ca13-4995-959b-a799c3ed913b'
   ];
 
   public certIdFundamental = [
