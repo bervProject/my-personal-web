@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="columns is-multiline">
-      <div class="column is-12">
+      <div class="column is-8">
         <div class="card">
           <div class="card-header">
             <h4 class="card-header-title"><b-icon icon="user" />{{ $t('home.whoami') }}</h4>
@@ -82,10 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="column is-6">
-        <verse-random></verse-random>
-      </div>
-      <div class="column is-6">
+      <div class="column is-4">
         <div class="card">
           <div class="card-header">
             <h4 class="card-header-title">{{ $t('common.gallery') }}</h4>
