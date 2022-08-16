@@ -81,27 +81,6 @@
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="column">
-          <a
-            class="twitter-timeline"
-            href="https://twitter.com/berviantoleo?ref_src=twsrc%5Etfw"
-            data-width="300"
-            data-height="400"
-            data-tweet-limit="3"
-            >Tweets by berviantoleo</a
-          >
-          <script
-            async
-            type="application/javascript"
-            defer
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 

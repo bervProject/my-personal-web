@@ -33,12 +33,5 @@ describe('AboutPage.vue', () => {
       titles.push(title.text());
     });
     expect(titles).toStrictEqual(['Short Bio', 'Social Media']);
-
-    const scriptTag = wrapper.find('script');
-    expect(scriptTag.exists()).toBe(true);
-    const scriptAttr = scriptTag.attributes();
-    expect(scriptAttr['src']).toBe('https://platform.twitter.com/widgets.js');
-    expect(scriptAttr['charset']).toEqual('utf-8');
-    expect(scriptAttr['type']).toEqual('application/javascript');
   });
 });
