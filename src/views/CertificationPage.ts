@@ -25,4 +25,9 @@ export default class CertificationPage extends Vue {
     '139efff2-33e3-4cb9-89fd-0177103e92c5',
     'f1a161be-cb69-4a92-aa18-bf414836249d'
   ];
+
+  public accredibles = [
+    '49384407',
+    '57646449'
+  ];
 }
