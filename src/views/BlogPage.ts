@@ -1,4 +1,4 @@
-import { get } from '@/services';
+import services from '@/services';
 import { Component, Vue } from 'vue-property-decorator';
 import DevToPost from '@/components/DevToPost.vue';
 
@@ -17,8 +17,8 @@ export default class BlogPage extends Vue {
 
   mounted(): void {
     this.isLoading = true;
-    get("berviantoleo/bervdata/blogs").then(result => {
-      this.blogs = result.data;
+    services.get("classes/Blog").then(result => {
+      this.blogs = result.data.results;
     }).catch(err => {
       console.error(err);
     }).finally(() => {

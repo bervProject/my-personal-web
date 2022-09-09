@@ -1,6 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator';
 import moment from 'moment';
-import { get } from '@/services';
+import services from '@/services';
 
 @Component({
   name: 'ExperiencePage',
@@ -14,28 +14,25 @@ export default class ExperiencePage extends Vue {
   public isLoading: boolean = false;
   public workData: object[] = [];
   public eduData: object[] = [];
-  public researchData: object[] = [
-    {
-      "id": 1,
-      "title": "Pembangunan Web Service Audio Watermarking",
-      "abstract": "https://digilib.itb.ac.id/index.php/gdl/view/26088",
-      "paper": "https://informatika.stei.itb.ac.id/~rinaldi.munir/TA/Makalah_TA_Bervianto.pdf"
-    }
-  ];
+  public researchData: object[] = [];
 
   mounted(): void {
     this.isLoading = true;
-    const experiencePromise = get("berviantoleo/bervdata/experiences");
-    const eduPromise = get("berviantoleo/bervdata/educations");
-    const researchPromise = get("berviantoleo/bervdata/researchList");
+    const experiencePromise = services.get("classes/Experience");
+    const eduPromise = services.get("classes/Education");
+    const researchPromise = services.get("classes/Research");
     Promise.allSettled([experiencePromise, eduPromise, researchPromise]).then((result) => {
       const experienceData = result[0];
       if (experienceData.status === 'fulfilled') {
-        this.workData = experienceData.value.data;
+        this.workData = experienceData.value.data.results;
       }
       const eduData = result[1];
       if (eduData.status === 'fulfilled') {
-        this.eduData = eduData.value.data;
+        this.eduData = eduData.value.data.results;
+      }
+      const researchData = result[2];
+      if (researchData.status === 'fulfilled') {
+        this.researchData = researchData.value.data.results;
       }
     }).finally(() => {
       this.isLoading = false;

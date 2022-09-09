@@ -1,5 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator';
-import { get } from '@/services';
+import services from '@/services';
 
 @Component({
   name: 'AboutPage',
@@ -13,9 +13,9 @@ export default class AboutPage extends Vue {
 
   mounted(): void {
     this.isLoading = true;
-    get('berviantoleo/bervdata/contacts')
+    services.get('classes/Contact')
       .then(result => {
-        this.contacts = result.data;
+        this.contacts = result.data.results;
       })
       .catch(err => {
         console.error(err);
