@@ -68,14 +68,11 @@
                 <b-tag icon="node-js" icon-pack="fab" rounded size="is-medium" type="is-warning">
                   Node.js
                 </b-tag>
-                <b-tag icon="python" icon-pack="fab" rounded size="is-medium" type="is-success">
-                  Python
+                <b-tag rounded size="is-medium" type="is-secondary">
+                  Golang
                 </b-tag>
                 <b-tag icon="database" rounded size="is-medium" type="is-success">
                   MySQL
-                </b-tag>
-                <b-tag rounded size="is-medium" type="is-secondary">
-                  Elixir
                 </b-tag>
               </b-taglist>
             </div>
