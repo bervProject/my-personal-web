@@ -1,4 +1,4 @@
-FROM node:18-alpine3.15 as build
+FROM node:19-alpine3.15 as build
 WORKDIR /app
 RUN apk update && apk add yarn python3 g++ make && rm -rf /var/cache/apk/*
 COPY package.json yarn.lock ./
