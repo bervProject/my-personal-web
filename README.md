@@ -14,13 +14,20 @@
 
 My Personal Web created by Bervianto Leo Pratama. Using Vue.js, Buefy & Bulma. Using Typecript as base script.
 
-## Next Architecture
+## Architecture
 
-![Architecture](images/arch-1.png)
+```mermaid
+flowchart LR
+    0[Database] --> A[API]
+    A --> B[Frontend - Vue]
+    A --> C[Frontend - Admin]
+```
 
-## Next Release
+## Next Roadmap
 
-- Use API as data sources
+- [ ] Upgrade Vue.js
+- [ ] Increate Unit Test (55% Coverage)
+- [ ] Increate E2E Test (1-3 pages)
 
 ## Donate
 
@@ -32,7 +39,8 @@ See in [RELEASE.md](RELEASE.md)
 
 ## LICENSE
 
-The source code is licensed [MIT](http://opensource.org/licenses/mit-license.php). The website content is licensed [CC BY NC SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+- The source code is licensed [MIT](http://opensource.org/licenses/mit-license.php).
+- The website content is licensed [CC BY NC SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ```markdown
 Copyright (c) 2018 Bervianto Leo Pratama
