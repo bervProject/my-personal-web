@@ -24,7 +24,7 @@
     "sass": "^1.55.0",
     "vue": "^2.7.10",
     "vue-class-component": "^7.2.6",
-    "vue-i18n": "^8.27.2",
+    "vue-i18n": "^8.28.2",
     "vue-meta": "^2.4.0",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.6.5",
