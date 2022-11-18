@@ -70,5 +70,11 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "certification" */ './views/CertificationPage.vue'),
     },
+    {
+      path: '/speaking',
+      name: 'speaking',
+      component: () =>
+        import(/* webpackChunkName: "speakers" */ './views/SpeakingHistoryPage.vue'),
+    },
   ],
 });

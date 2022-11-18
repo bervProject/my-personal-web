@@ -16,6 +16,9 @@
         <b-navbar-item tag="router-link" to="/projects">
           {{ $t('navigation.projects') }}
         </b-navbar-item>
+        <b-navbar-item tag="router-link" to="/speaking">
+          {{ $t('navigation.speaking') }}
+        </b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-dropdown :label="$t('navigation.aboutme')">
         <b-navbar-item tag="router-link" to="/certification">
