@@ -25,15 +25,17 @@ describe('HomePage.vue', () => {
 
     expect(wrapper.text()).toContain('Who am I?');
 
-    const allSubtitles = wrapper.findAll('h6');
+    const allSubtitles = wrapper.findAll('h4');
 
     const subtitles : string[] = [];
 
     allSubtitles.wrappers.forEach(subtitle => {
-      expect(subtitle.classes()).toStrictEqual(['title']);
-      subtitles.push(subtitle.text());
+      if (subtitle.classes().includes('title'))
+      {
+        subtitles.push(subtitle.text());        
+      }
     });
 
-    expect(subtitles).toStrictEqual(['Focus Topics', 'Technology Stacks']);
+    expect(subtitles).toStrictEqual(['Communities', 'Contributions', 'Focus Topics', 'Technology Stacks']);
   });
 });
