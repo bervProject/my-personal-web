@@ -8,7 +8,7 @@
     <div class="columns is-multiline">
       <div class="column is-12">
         <h3 class="subtitle">{{ $t('experience.workexperience') }}</h3>
-        <b-table :data="workData" detailed detail-key="id">
+        <b-table :data="workData" detailed detail-key="objectId">
           <b-table-column field="job" label="Job Name" v-slot="props">
             {{ props.row.job }}
           </b-table-column>
@@ -59,7 +59,7 @@
       </div>
       <div class="column is-12">
         <h3 class="subtitle">{{ $t('experience.education') }}</h3>
-        <b-table :data="eduData" detailed detail-key="id">
+        <b-table :data="eduData" detailed detail-key="objectId">
           <b-table-column field="degree" label="Degree" v-slot="props">
             {{ props.row.degree }}
           </b-table-column>

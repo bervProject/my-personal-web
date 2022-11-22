@@ -18,8 +18,8 @@ export default class ExperiencePage extends Vue {
 
   mounted(): void {
     this.isLoading = true;
-    const experiencePromise = services.get("classes/Experience");
-    const eduPromise = services.get("classes/Education");
+    const experiencePromise = services.get("classes/Experience?order=-startDate");
+    const eduPromise = services.get("classes/Education?order=-startDate");
     const researchPromise = services.get("classes/Research");
     Promise.allSettled([experiencePromise, eduPromise, researchPromise]).then((result) => {
       const experienceData = result[0];
