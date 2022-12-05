@@ -6,6 +6,7 @@ module.exports = {
     "vue"
   ],
   "moduleNameMapper": {
+    "axios": "axios/dist/node/axios.cjs",
     "^@/(.*)$": "<rootDir>/src/$1"
   },
   "testPathIgnorePatterns": [
