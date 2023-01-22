@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './components/Header';
 import { Outlet } from 'react-router-dom';
 import { Section } from 'react-bulma-components';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Section>
         <Outlet />
       </Section>
+      <Footer />
     </div>
   );
 }

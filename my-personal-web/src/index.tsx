@@ -8,6 +8,9 @@ import App from './App';
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
 import Experience from './pages/Experience';
+import Certification from './pages/Certification';
+import PublicSpeaking from './pages/PublicSpeaking';
+import Blog from './pages/Blog';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
       {
         path: "experience",
         element: <Experience />
+      },
+      {
+        path: "certification",
+        element: <Certification />
+      },
+      {
+        path: "public-speaking",
+        element: <PublicSpeaking />
+      },
+      {
+        path: "blog",
+        element: <Blog />
       }
     ]
   },

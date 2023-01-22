@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Button, Navbar } from 'react-bulma-components';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../assets/my-logo.png';
@@ -10,12 +11,17 @@ const {
   Dropdown: NavbarDropdown,
   Link: NavbarLink,
   Container: NavbarContainer,
-  Divider: NavbarDivider,
 } = Navbar;
 
 export default function Header() {
+  const [isBurgerActive, setIsBurgerActive] = useState(false);
+
+  function clickBurgerHandler() {
+    setIsBurgerActive(!isBurgerActive);
+  }
+
   return (
-    <Navbar color="primary" fixed="top">
+    <Navbar active={isBurgerActive} color="primary" fixed="top">
       <NavbarBrand>
         <Link to="/" className="navbar-item">
           <img
@@ -25,7 +31,7 @@ export default function Header() {
             width="28"
           />
         </Link>
-        <NavbarBurger />
+        <NavbarBurger onClick={clickBurgerHandler} />
       </NavbarBrand>
       <NavbarMenu>
         <NavbarContainer>
@@ -40,15 +46,63 @@ export default function Header() {
               >
                 Experience
               </NavLink>
-              <NavbarItem href="#">Subitem 2</NavbarItem>
-              <NavbarDivider />
-              <NavbarItem href="#">After divider</NavbarItem>
+              <NavLink
+                to="/certification"
+                className={({ isActive }) =>
+                  [isActive ? 'active' : '', 'navbar-item'].join(' ')
+                }
+              >
+                Certification
+              </NavLink>
             </NavbarDropdown>
           </NavbarItem>
-          <NavbarItem href="#">Second</NavbarItem>
+          <NavbarItem href="#" hoverable>
+            <NavbarLink>Community</NavbarLink>
+            <NavbarDropdown>
+              <NavLink
+                to="/public-speaking"
+                className={({ isActive }) =>
+                  [isActive ? 'active' : '', 'navbar-item'].join(' ')
+                }
+              >
+                Public Speaking Histories
+              </NavLink>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  [isActive ? 'active' : '', 'navbar-item'].join(' ')
+                }
+              >
+                Blog
+              </NavLink>
+            </NavbarDropdown>
+          </NavbarItem>
+          <NavbarItem href="#" hoverable>
+            <NavbarLink>About</NavbarLink>
+            <NavbarDropdown>
+              <NavLink
+                to="/hobbies"
+                className={({ isActive }) =>
+                  [isActive ? 'active' : '', 'navbar-item'].join(' ')
+                }
+              >
+                Hobbies
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  [isActive ? 'active' : '', 'navbar-item'].join(' ')
+                }
+              >
+                Contact
+              </NavLink>
+            </NavbarDropdown>
+          </NavbarItem>
         </NavbarContainer>
         <NavbarContainer align="right">
-          <NavbarItem href="https://github.com/bervProject/my-personal-web"><Button color="dark">Github</Button></NavbarItem>
+          <NavbarItem href="https://github.com/bervProject/my-personal-web">
+            <Button color="dark">Github</Button>
+          </NavbarItem>
         </NavbarContainer>
       </NavbarMenu>
     </Navbar>

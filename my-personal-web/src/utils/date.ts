@@ -7,4 +7,8 @@ function showMonthYearOnly(date: string): string {
   return '';
 }
 
-export { showMonthYearOnly };
+function showDate(date: string) {
+  return moment(date, "MM-DD-YYYY").format("MMMM Do YYYY");
+}
+
+export { showMonthYearOnly, showDate };
