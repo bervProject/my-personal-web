@@ -20,7 +20,7 @@ export default function Certification() {
   return (
     <Container>
       <Heading>Certification</Heading>
-      <a href="https://www.credly.com/users/bervianto-leo-pratama" target="_blank">
+      <a href="https://www.credly.com/users/bervianto-leo-pratama" target="_blank" rel="noreferrer">
         <Button color="primary">Credly Profile</Button>
       </a>
       <Section>
@@ -68,7 +68,7 @@ export default function Certification() {
             {accredibles.map((data) => (
               <a
                 href={`https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/${data}`}
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <Image
                   size="16"

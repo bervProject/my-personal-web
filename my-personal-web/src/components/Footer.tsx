@@ -41,7 +41,7 @@ export default function Footer() {
               <p>
                 <a
                   href="https://github.com/bervProject/my-personal-web"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <Button color="primary">Github</Button>
                 </a>

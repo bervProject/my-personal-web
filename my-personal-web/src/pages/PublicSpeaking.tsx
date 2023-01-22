@@ -22,7 +22,7 @@ export default function PublicSpeaking() {
               <td>{data.topics}</td>
               <td>{showDate(data.date)}</td>
               <td>
-                <a href={data.link} target="_blank">
+                <a href={data.link} target="_blank" rel="noreferrer">
                   <Button color="primary">Visit</Button>
                 </a>
               </td>
@@ -32,7 +32,7 @@ export default function PublicSpeaking() {
       </Table>
       <a
         href="https://berviantoleo.notion.site/Speaker-Experiences-e2a28dba41c94e158d5dc3d901d8bb17"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         <Button color="link">More Details</Button>
       </a>

@@ -94,8 +94,8 @@ export default function Experience() {
           {researchExperience.map((data: any) => (
             <tr>
               <td>{data.title}</td>
-              <td><a href={data.abstract ?? "#"} target="_blank">{data.abstract}</a></td>
-              <td><a href={data.paper ?? "#"} target="_blank">{data.paper}</a></td>
+              <td><a href={data.abstract ?? "#"} target="_blank" rel="noreferrer">{data.abstract}</a></td>
+              <td><a href={data.paper ?? "#"} target="_blank" rel="noreferrer">{data.paper}</a></td>
               <td>{data.publishDate}</td>
             </tr>
           ))}

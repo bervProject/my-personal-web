@@ -47,7 +47,7 @@ export default function DevTo({ username }: { username: string }) {
               </CardContent>
               <CardFooter>
                 <CardFooterItem>
-                  <a href={data.link} target="_blank">
+                  <a href={data.link} target="_blank" rel="noreferrer">
                     <Button color="primary">Link</Button>
                   </a>
                 </CardFooterItem>
@@ -56,7 +56,7 @@ export default function DevTo({ username }: { username: string }) {
           </Column>
         ))}
       </Columns>
-      <a href={`https://dev.to/${username}`} target="_blank">
+      <a href={`https://dev.to/${username}`} target="_blank" rel="noreferrer">
         <Button color="primary" fullwidth>See More</Button>
       </a>
     </Section>

@@ -42,7 +42,7 @@ export default function Blog() {
               <td>{data.title}</td>
               <td>{data.description}</td>
               <td>
-                <a href={data.link} target="_blank">
+                <a href={data.link} target="_blank" rel="noreferrer">
                   <Button color="primary">Link</Button>
                 </a>
               </td>
