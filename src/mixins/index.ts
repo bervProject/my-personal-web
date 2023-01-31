@@ -4,7 +4,7 @@ import ImageContainer from '@/components/ImageContainer.vue';
 
 @Component
 export class ImageModalMixins extends Vue {
-  public showImageModal(url: string): void {
+  public showImageModal(this: any, url: string): void {
     this.$buefy.modal.open({
       parent: this,
       component: ImageContainer,
