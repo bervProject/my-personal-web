@@ -13,9 +13,9 @@ const i18n = new VueI18n({
   messages, // set locale messages
 });
 
-import HomePage from '@/views/HomePage.vue';
+import HomePage from '@/views/CommunityPage.vue';
 
-describe('HomePage.vue', () => {
+describe('CommunityPage.vue', () => {
   it('Render correctly', () => {
     const wrapper = shallowMount(HomePage, {
       localVue,
@@ -23,7 +23,7 @@ describe('HomePage.vue', () => {
       stubs: ['router-link', 'router-view']
     });
 
-    expect(wrapper.text()).toContain('Who am I?');
+    expect(wrapper.text()).toContain('Community');
 
     const allSubtitles = wrapper.findAll('h4');
 
@@ -36,6 +36,6 @@ describe('HomePage.vue', () => {
       }
     });
 
-    expect(subtitles).toStrictEqual(['Focus Topics', 'Technology Stacks']);
+    expect(subtitles).toStrictEqual(['Community', 'Contributions']);
   });
 });
