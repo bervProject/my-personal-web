@@ -16,8 +16,16 @@
         <b-navbar-item tag="router-link" to="/projects">
           {{ $t('navigation.projects') }}
         </b-navbar-item>
-        <b-navbar-item tag="router-link" to="/speaking">
+      </b-navbar-dropdown>
+      <b-navbar-dropdown :label="$t('navigation.community')">
+        <b-navbar-item tag="router-link" to="/community">
+          {{ $t('navigation.community') }}
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" to="/community/speaking">
           {{ $t('navigation.speaking') }}
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" to="/community/blog">
+          {{ $t('navigation.blog') }}
         </b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-dropdown :label="$t('navigation.aboutme')">
@@ -29,9 +37,6 @@
         </b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-dropdown :label="$t('navigation.others')">
-        <b-navbar-item tag="router-link" to="/blog">
-          {{ $t('navigation.blog') }}
-        </b-navbar-item>
         <b-navbar-item tag="router-link" to="/donate">
           {{ $t('navigation.donate') }}
         </b-navbar-item>

@@ -24,34 +24,6 @@
               <div class="columns is-multiline">
                 <div class="column is-6">
                   <h4 class="title">
-                    Communities
-                  </h4>
-                  <div class="columns is-multiline">
-                    <div class="column is-6">
-                      <a target="_blank"
-                        href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=bervianto%2Bleo%2Bpratama&cb-cards.q_operator=AND">
-                        <figure class="image is-2by1">
-                          <img src="../assets/images/community.png" alt="Community Builder" />
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="column is-6">
-                  <h4 class="title">
-                    Contributions
-                  </h4>
-                  <ul>
-                    <li>
-                      <a target="_blank" href="https://www.dicoding.com/academies/428">Course Contributor - Belajar Implementasi CI/CD - Dicoding</a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://www.dicoding.com/users/berviantoleo">External Code Reviewer - Dicoding</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="column is-6">
-                  <h4 class="title">
                     Focus Topics
                   </h4>
                   <b-taglist>

@@ -34,7 +34,8 @@ const messages = {
       portofolio: 'Portofolio',
       projects: 'Projects',
       others: 'Others',
-      speaking: 'Public Speaking Histories'
+      speaking: 'Public Speaking Histories',
+      community: 'Community',
     },
   },
   id: {
@@ -71,7 +72,8 @@ const messages = {
       songrecommendation: 'Rekomendasi Lagu',
       portofolio: 'Portofolio',
       projects: 'Proyek',
-      speaking: 'Riwayat Pembicara'
+      speaking: 'Riwayat Pembicara',
+      community: 'Komunitas'
     },
   },
 };

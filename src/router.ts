@@ -15,7 +15,7 @@ export default new Router({
         import(/* webpackChunkName: "home" */ './views/HomePage.vue'),
     },
     {
-      path: '/blog',
+      path: '/community/blog',
       name: 'blog',
       component: () =>
         import(/* webpackChunkName: "blog" */ './views/BlogPage.vue'),
@@ -71,10 +71,16 @@ export default new Router({
         import(/* webpackChunkName: "certification" */ './views/CertificationPage.vue'),
     },
     {
-      path: '/speaking',
+      path: '/community/speaking',
       name: 'speaking',
       component: () =>
         import(/* webpackChunkName: "speakers" */ './views/SpeakingHistoryPage.vue'),
+    },
+    {
+      path: '/community',
+      name: 'community',
+      component: () =>
+        import(/* webpackChunkName: "community" */ './views/CommunityPage.vue'),
     },
   ],
 });
