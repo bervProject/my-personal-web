@@ -19,6 +19,13 @@ module.exports = {
   "transformIgnorePatterns": ['/node_modules/'],
   "collectCoverage": true,
   "collectCoverageFrom": ["**/src/**/*.{ts,js,vue}", "!**/node_modules/**"],
-  "testURL": "http://localhost/",
+  "testEnvironmentOptions": {
+    url: "http://localhost/",
+  },
+  globals: {
+    'ts-jest': {
+      babelConfig: true,
+    },
+  },
   "preset": '@vue/cli-plugin-unit-jest/presets/typescript-and-babel'
 }
