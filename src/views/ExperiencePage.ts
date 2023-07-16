@@ -1,21 +1,29 @@
-import { Component, Vue } from 'vue-property-decorator';
 import moment from 'moment';
 import services from '@/services';
+import { defineComponent } from 'vue';
 
-@Component({
+export default defineComponent({
   name: 'ExperiencePage',
   metaInfo: {
     title: 'Experiences'
   },
-})
-export default class ExperiencePage extends Vue {
-  public isOpen: number = 0;
-  public isOpen1: number = 0;
-  public isLoading: boolean = false;
-  public workData: object[] = [];
-  public eduData: object[] = [];
-  public researchData: object[] = [];
-
+  data() : {
+    isOpen: number,
+    isOpen1: number,
+    isLoading: boolean,
+    workData: object[],
+    eduData: object[],
+    researchData: object[]
+  } {
+    return {
+      isOpen: 0,
+      isOpen1: 0,
+      isLoading: false,
+      workData: [],
+      eduData: [],
+      researchData: [],
+    }
+  },
   mounted(): void {
     this.isLoading = true;
     const experiencePromise = services.get("classes/Experience?order=-startDate");
@@ -37,18 +45,17 @@ export default class ExperiencePage extends Vue {
     }).finally(() => {
       this.isLoading = false;
     })
+  },
+  methods: {
+    getDomain(link: string): string {
+      const urlData = new URL(link);
+      return urlData.hostname;
+    },
+    showMonthYearOnly(date: string): string {
+      return moment(date).format('MMMM YYYY');
+    },
+    showAgo(startDate: string, endDate: string | undefined): string {
+      return moment(startDate).from(endDate ? endDate : new Date(), true);
+    },
   }
-
-  getDomain(link: string): string {
-    const urlData = new URL(link);
-    return urlData.hostname;
-  }
-
-  showMonthYearOnly(date: string): string {
-    return moment(date).format('MMMM YYYY');
-  }
-
-  showAgo(startDate: string, endDate: string | undefined): string {
-    return moment(startDate).from(endDate ? endDate : new Date(), true);
-  }
-}
+});

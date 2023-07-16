@@ -1,44 +1,46 @@
-import { Component } from 'vue-property-decorator';
 import axios from 'axios';
 import moment from 'moment';
-import { mixins } from 'vue-class-component';
-import { ImageModalMixins } from '@/mixins';
+import { defineComponent } from 'vue';
 
-@Component({
+export default defineComponent({
   props: { url: String },
-  name: 'GithubList'
-})
-export default class GithubList extends mixins(ImageModalMixins) {
-  public myData: object[] = [];
-  public isLoading: boolean = false;
-  public openedDetails: Array<object> = [];
-  public showDetailIcon: boolean = true;
-
-  public mounted() {
+  name: 'GithubList',
+  data() {
+    return {
+      myData: [],
+      isLoading: false,
+      openedDetails: [],
+      showDetailIcon: true,
+    }
+  },
+  mounted() {
     this.isLoading = true;
     this.loadData();
+  },
+  methods: {
+    loadData() {
+      if (!this.url) {
+        return;
+      }
+      axios
+        .get(this.url, {
+          headers: {
+            Accept: 'application/vnd.github.v3+json',
+          },
+          params: {
+            per_page: 100,
+          },
+        })
+        .then(response => {
+          this.isLoading = false;
+          this.myData = response.data;
+        })
+        .catch(reason => {
+          this.isLoading = false;
+        });
+    },
+    showComplete(date: string): string {
+      return moment(date).format('DD MMMM YYYY, HH:mm:ss');
+    }
   }
-
-  public loadData() {
-    axios
-      .get(this.$props.url, {
-        headers: {
-          Accept: 'application/vnd.github.v3+json',
-        },
-        params: {
-          per_page: 100,
-        },
-      })
-      .then(response => {
-        this.isLoading = false;
-        this.myData = response.data;
-      })
-      .catch(reason => {
-        this.isLoading = false;
-      });
-  }
-
-  showComplete(date: string): string {
-    return moment(date).format('DD MMMM YYYY, HH:mm:ss');
-  }
-}
+});

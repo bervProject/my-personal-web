@@ -39,11 +39,6 @@
                 </ul>
             </div>
         </div>
-        <script
-          type="application/javascript"
-          defer
-          src="https://cdn.credly.com/assets/utilities/embed.js"
-        />
     </div>
 </template>
 

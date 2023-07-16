@@ -55,3 +55,9 @@ $colors: (
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
+
+.main {
+  margin-left: 230px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}

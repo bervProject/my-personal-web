@@ -7,7 +7,7 @@
             <p>
               ©
               <strong>My Personal Web</strong> made with
-              <b-icon icon="heart" type="is-red" />by
+              <o-icon pack="fas" icon="heart" variant="red" />by
               <a href="https://berviantoleo.my.id/">Bervianto Leo Pratama</a>.
             </p>
             <p>
@@ -27,9 +27,6 @@
         <div class="column">
           <div class="content has-text-centered">
             <p>
-              <a here="https://buefy.org/"> #MadeWithBuefy </a>
-            </p>
-            <p>
               <a href="https://bulma.io">
                 <img
                   src="https://bulma.io/images/made-with-bulma--black.png"
@@ -39,6 +36,15 @@
                 />
               </a>
             </p>
+            <o-button
+              icon-pack="fab"
+              icon-left="github"
+              variant="light"
+              tag="a"
+              href="https://github.com/bervProject/my-personal-web"
+            >
+              <strong>Github</strong>
+            </o-button>
           </div>
         </div>
       </div>

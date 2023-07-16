@@ -7,9 +7,9 @@
     >
       <div class="card">
         <div class="card-image">
-          <figure class="image is-square" @click="showImageModal(item.smallImage)">
+          <figure class="image is-square">
             <img
-              :src="getAssets(item.smallImage)"
+              :src="item.smallImage"
               alt="Placeholder image"
             >
           </figure>
@@ -17,10 +17,10 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-64x64" @click="showImageModal(item.icon)">
+              <figure class="image is-64x64">
                 <img
                   class="is-rounded"
-                  :src="getAssets(item.icon)"
+                  :src="item.icon"
                   alt="Icon"
                 >
               </figure>
@@ -43,18 +43,18 @@
             v-if="item.repository.github"
             :href="item.repository.github"
             class="card-footer-item"
-          ><b-button
+          ><o-button
             icon-pack="fab"
             icon-left="github"
-          >Github</b-button></a>
+          >Github</o-button></a>
           <a
             v-if="item.repository.gitlab"
             :href="item.repository.gitlab"
             class="card-footer-item"
-          ><b-button
+          ><o-button
             icon-pack="fab"
             icon-left="gitlab"
-          >Gitlab</b-button></a>
+          >Gitlab</o-button></a>
           <a
             v-if="item.repository.playstore"
             class="card-footer-item"

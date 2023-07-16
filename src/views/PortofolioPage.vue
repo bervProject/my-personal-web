@@ -3,21 +3,21 @@
     <h2 class="title">
       Portofolio
     </h2>
-    <b-tabs
-      position="is-centered"
-      type="is-toggle"
+    <o-tabs
+      position="centered"
+      type="toggle"
       expanded
     >
-      <b-tab-item label="Mobile">
+      <o-tab-item label="Mobile">
         <portofolio-item :items="mobileData" />
-      </b-tab-item>
-      <b-tab-item label="Web">
+      </o-tab-item>
+      <o-tab-item label="Web">
         <portofolio-item :items="webData" />
-      </b-tab-item>
-      <b-tab-item label="Desktop">
+      </o-tab-item>
+      <o-tab-item label="Desktop">
         <portofolio-item :items="desktopData" />
-      </b-tab-item>
-    </b-tabs>
+      </o-tab-item>
+    </o-tabs>
   </div>
 </template>
 

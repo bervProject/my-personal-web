@@ -1,15 +1,14 @@
-import MyHeader from '@/components/MyHeader.vue';
 import MyFooter from '@/components/MyFooter.vue';
-
-import { Component, Vue } from 'vue-property-decorator';
+import SideBar from '@/components/SideBar.vue';
+import { defineComponent } from 'vue';
 
 const allTitle = 'Bervianto Leo Pratama\'s Website';
 const allDescription = 'Bervianto Leo Pratama\'s Personal Website.';
 const imageSite = `${process.env.BASE_URL}assets/my-logo.png`
-@Component({
+export default defineComponent({
   components: {
-    MyHeader,
     MyFooter,
+    SideBar,
   },
   name: "App",
   metaInfo: {
@@ -27,5 +26,4 @@ const imageSite = `${process.env.BASE_URL}assets/my-logo.png`
       { name: 'twitter:image:alt', content: 'Bervianto Leo\'s Image Site' }
     ]
   },
-})
-export default class App extends Vue {}
+});
