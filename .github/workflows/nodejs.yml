@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Yarn Install
-        run: yarn --frozen-lockfile
+        run: yarn install --immutable
       - name: Build
         run: yarn build
       - uses: actions/upload-artifact@v3
@@ -40,7 +40,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Yarn Install
-      run: yarn --frozen-lockfile
+      run: yarn install --immutable
     - name: Lint
       run: yarn lint
     - name: Unit Test
