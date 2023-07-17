@@ -12,6 +12,7 @@ jobs:
           install-yarn: true
       - node/install-packages:
           pkg-manager: yarn-berry
+          override-ci-command: corepack enable && corepack prepare yarn@stable --activate && yarn --immutable
       - run:
           command: yarn lint
           name: Lint
