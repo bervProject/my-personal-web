@@ -20,7 +20,7 @@ jobs:
           command: yarn build
           name: Build
       - run:
-          command: yarn test:unit -ci
+          command: yarn test:unit --ci --maxWorkers=2
           name: Unit Test
       - codecov/upload
 workflows:
