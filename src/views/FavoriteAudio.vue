@@ -18,9 +18,9 @@
           </option>
         </o-select>
       </o-field>
-      <b-pagination
-        v-model="currentPage"
-        order="is-centered"
+      <o-pagination
+        v-model:current="currentPage"
+        order="centered"
         :total="total"
         :per-page="perPage"
       />

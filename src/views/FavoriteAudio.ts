@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: 'FavoriteAudio',
@@ -78,10 +78,15 @@ export default defineComponent({
           srcAudio: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1066587745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
         }
       ],
-      currentPage: 1,
       perPage: 6,
       perPageSelection: [6, 9, 12],
     };
+  },
+  setup() {
+    const currentPage = ref(1);
+    return {
+      currentPage,
+    }
   },
   computed: {
     total() {

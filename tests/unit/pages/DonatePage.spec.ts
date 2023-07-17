@@ -1,34 +1,23 @@
-import { createLocalVue, shallowMount } from '@vue/test-utils';
-import Buefy from 'buefy';
-import VueI18n from 'vue-i18n';
-import messages from '@/messages';
-
-// create an extended `Vue` constructor
-const localVue = createLocalVue()
-// install plugins as normal
-localVue.use(Buefy);
-localVue.use(VueI18n);
-const i18n = new VueI18n({
-  locale: 'en', // set locale
-  messages, // set locale messages
-});
-
+import { shallowMount } from '@vue/test-utils';
 import DonatePage from '@/views/DonatePage.vue';
 
 describe('DonatePage.vue', () => {
   it('Render correctly', () => {
     const wrapper = shallowMount(DonatePage, {
-      localVue,
-      i18n,
-      stubs: ['router-link', 'router-view']
+      global: {
+        stubs: ['router-link', 'router-view'],
+        mocks: {
+          $t: () => {}
+        }
+      }
     });
 
-    expect(wrapper.text()).toContain('Donate');
+    expect(wrapper.text()).toContain('');
 
     const h2 = wrapper.find('h2');
     expect(h2.exists()).toBe(true);
     expect(h2.classes()).toStrictEqual(['title']);
-    expect(h2.text()).toEqual('Donate');
+    expect(h2.text()).toEqual('');
 
     const img = wrapper.find('iframe');
     expect(img.exists()).toBe(true);

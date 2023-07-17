@@ -6,7 +6,6 @@ module.exports = {
     "vue"
   ],
   "moduleNameMapper": {
-    "axios": "axios/dist/node/axios.cjs",
     "^@/(.*)$": "<rootDir>/src/$1"
   },
   "testPathIgnorePatterns": [
@@ -14,18 +13,16 @@ module.exports = {
     "<rootDir>/node_modules/"
   ],
   "transform": {
-    "^.+\\.tsx?$": "ts-jest"
+    "^.+\\.tsx?$": ["ts-jest", {
+      babelConfig: true,
+    }]
   },
   "transformIgnorePatterns": ['/node_modules/'],
   "collectCoverage": true,
   "collectCoverageFrom": ["**/src/**/*.{ts,js,vue}", "!**/node_modules/**"],
   "testEnvironmentOptions": {
     url: "http://localhost/",
-  },
-  globals: {
-    'ts-jest': {
-      babelConfig: true,
-    },
+    customExportConditions: ["node", "node-addons"],
   },
   "preset": '@vue/cli-plugin-unit-jest/presets/typescript-and-babel'
 }
