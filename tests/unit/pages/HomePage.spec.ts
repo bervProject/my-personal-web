@@ -5,7 +5,14 @@ describe('HomePage.vue', () => {
   it('Render correctly', () => {
     const wrapper = shallowMount(HomePage, {
       global: {
-        stubs: ['router-link', 'router-view'],
+        stubs: [
+          'router-link',
+          'router-view',
+          'o-icon',
+          'o-button',
+          'o-dropdown',
+          'o-dropdown-item'
+        ],
       }
     });
 

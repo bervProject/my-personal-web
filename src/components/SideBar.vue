@@ -7,6 +7,11 @@
       <router-link to="/"
         ><h2 class="subtitle">Bervianto Leo P</h2></router-link
       >
+      <o-select v-model="$i18n.locale" placeholder="Select a name">
+        <option v-for="option in $i18n.availableLocales" :value="option" :key="`locale-${option}`">
+          {{ option }}
+        </option>
+      </o-select>
       <p class="menu-label">{{ $t('navigation.experience') }}</p>
       <ul class="menu-list">
         <li>

@@ -34,6 +34,21 @@
           </div>
         </div>
       </div>
+      <o-dropdown>
+        <template #trigger="{ active }">
+          <o-button variant="primary">
+            <span>Notification</span>
+            <o-icon :icon="active ? 'caret-up' : 'caret-down'"></o-icon>
+          </o-button>
+        </template>
+        <o-dropdown-item
+          aria-role="listitem"
+          v-for="(announcement, index) in announcements"
+          :key="index"
+        >
+          <div v-html="announcement.main" />
+        </o-dropdown-item>
+      </o-dropdown>
     </section>
   </div>
 </template>
