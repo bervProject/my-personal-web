@@ -22,7 +22,8 @@ describe('PortofolioItem.vue', () => {
                 }]
             }
         });
-        expect(wrapper.text()).toContain(msg);
         expect(wrapper.text()).toContain('Hello World!');
+        const columns = wrapper.findAll('.column');
+        expect(columns.length).toBe(1);
     });
 });
