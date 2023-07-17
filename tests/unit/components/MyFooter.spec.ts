@@ -7,7 +7,12 @@ describe('MyFooter.vue', () => {
     const msg = currentVersion;
     const wrapper = shallowMount(MyFooter, {
       global: {
-        stubs: ['router-link', 'router-view']
+        stubs: [
+          'router-link',
+          'router-view',
+          'o-icon',
+          'o-button'
+        ]
       }
     });
     expect(wrapper.text()).toContain(msg);
@@ -18,7 +23,12 @@ describe('MyFooter.vue', () => {
     const msg = '0';
     const wrapper = shallowMount(MyFooter, {
       global: {
-        stubs: ['router-link', 'router-view']
+        stubs: [
+          'router-link',
+          'router-view',
+          'o-icon',
+          'o-button'
+        ]
       }
     });
     expect(wrapper.text()).toContain(msg);

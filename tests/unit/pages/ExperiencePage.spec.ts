@@ -10,7 +10,9 @@ describe('ExperiencePage.vue', () => {
           'router-view',
           'o-loading',
           'o-table',
-          'o-table-column'
+          'o-table-column',
+          'o-icon',
+          'o-button'
         ],
         mocks: {
           $t: () => {}

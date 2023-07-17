@@ -6,7 +6,11 @@ describe('PortofolioItem.vue', () => {
         const msg = 'Github';
         const wrapper = shallowMount(PortofolioItem, {
             global: {
-                stubs: ['router-link', 'router-view'],
+                stubs: [
+                    'router-link',
+                    'router-view',
+                    'o-button'
+                ],
             },
             props: {
                 items: [{
