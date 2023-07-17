@@ -3,38 +3,38 @@
     <h2 class="title">
       Blogs
     </h2>
-    <b-table
+    <o-table
       :data="blogs"
       :loading="isLoading"
     >
-      <b-table-column
+      <o-table-column
         v-slot="props"
         field="link"
         label="Link"
       >
-        <a :href="props.row.link"><b-icon
+        <a :href="props.row.link"><o-icon
           pack="fab"
           :icon="props.row.icon"
-          size="is-large"
+          size="large"
         /></a>
-      </b-table-column>
+      </o-table-column>
 
-      <b-table-column
+      <o-table-column
         v-slot="props"
         field="title"
         label="Title"
       >
         {{ props.row.title }}
-      </b-table-column>
+      </o-table-column>
 
-      <b-table-column
+      <o-table-column
         v-slot="props"
         field="description"
         label="Description"
       >
         {{ props.row.description }}
-      </b-table-column>
-    </b-table>
+      </o-table-column>
+    </o-table>
     <h2 class="title">
       Dev.to Posts
     </h2>

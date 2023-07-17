@@ -1,6 +1,6 @@
 <template>
   <div class="columns is-multiline">
-    <b-loading v-model="isLoading"></b-loading>
+    <o-loading v-model="isLoading"></o-loading>
     <div v-for="(post, index) in posts" class="column is-4" :key="index">
       <div class="card">
         <div class="card-image">
@@ -11,25 +11,25 @@
         <div class="card-content">
           <div class="content">
             <a :href="post.url"><h5 class="subtitle">{{ post.title }}</h5></a>
-            <p>
-              <b-tag-taglist>
-                <b-tag
-                  type="is-info"
+            <div>
+              <div class="tags">
+                <span
+                  class="tag is-info"
                   v-for="(tag, index) in post.tag_list"
                   :key="index"
-                  >{{ tag }}</b-tag
+                  >{{ tag }}</span
                 >
-              </b-tag-taglist>
-            </p>
+              </div>
+            </div>
             <p>{{ new Date(post.published_timestamp).toLocaleDateString() }}</p>
           </div>
         </div>
       </div>
     </div>
     <div class="column is-12">
-      <b-button tag="a" expanded href="https://dev.to/berviantoleo">
+      <o-button tag="a" expanded href="https://dev.to/berviantoleo">
         Show More
-      </b-button>
+      </o-button>
     </div>
   </div>
 </template>

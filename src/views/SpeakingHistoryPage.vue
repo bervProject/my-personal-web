@@ -4,22 +4,22 @@
             Public Speaking Histories
         </h2>
         <div class="columns">
-            <b-table :data="speakingData" >
-                <b-table-column field="event" label="Event" v-slot="props">
+            <o-table :data="speakingData" >
+                <o-table-column field="event" label="Event" v-slot="props">
                     {{ props.row.event }}
-                </b-table-column>
-                <b-table-column field="topics" label="Topics" v-slot="props">
+                </o-table-column>
+                <o-table-column field="topics" label="Topics" v-slot="props">
                     {{ props.row.topics }}
-                </b-table-column>
-                <b-table-column field="date" label="Date" v-slot="props">
+                </o-table-column>
+                <o-table-column field="date" label="Date" v-slot="props">
                     {{ showDate(props.row.date) }}
-                </b-table-column>
-                <b-table-column field="link" label="Link" v-slot="props">
+                </o-table-column>
+                <o-table-column field="link" label="Link" v-slot="props">
                     <a class="button is-primary" :href="props.row.link">Visit</a>
-                </b-table-column>
-            </b-table>
+                </o-table-column>
+            </o-table>
         </div>
-        <b-button tag="a" type="is-primary" href="https://berviantoleo.notion.site/Speaker-Experiences-e2a28dba41c94e158d5dc3d901d8bb17">More Details</b-button>
+        <o-button tag="a" variant="primary" href="https://berviantoleo.notion.site/Speaker-Experiences-e2a28dba41c94e158d5dc3d901d8bb17">More Details</o-button>
     </div>
 </template>
 <script lang="ts">

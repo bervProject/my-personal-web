@@ -59,11 +59,10 @@
                   <a
                     :href="`https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/${accredible}`"
                   >
-                    <b-image
+                    <img
                       :src="`https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/${accredible}`"
                       :alt="`Badge ${accredible}`"
-                      ratio="150by150"
-                    ></b-image>
+                    />
                   </a>
                 </div>
               </div>
@@ -79,11 +78,6 @@
         >
       </footer>
     </div>
-    <script
-      type="application/javascript"
-      defer
-      src="https://cdn.credly.com/assets/utilities/embed.js"
-    />
   </div>
 </template>
 

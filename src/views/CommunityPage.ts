@@ -1,5 +1,10 @@
+import { defineComponent } from "vue"
 
-export default {
+export default defineComponent({
+    setup() {
+        const { useScriptTag } = require('@vueuse/core');
+        useScriptTag('https://cdn.credly.com/assets/utilities/embed.js');
+    },
     data() {
         return {
             contributionList: [
@@ -18,4 +23,4 @@ export default {
             ]
         }
     }
-}
+});

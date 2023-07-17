@@ -1,16 +1,17 @@
-import { Component, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 import services from '@/services';
 
-@Component({
+export default defineComponent({
   name: 'AboutPage',
   metaInfo: {
     title: 'About Me',
   },
-})
-export default class AboutPage extends Vue {
-  public contacts: object[] = [];
-  public isLoading: boolean = false;
-
+  data() {
+    return {
+      contacts: [],
+      isLoading: false,
+    };
+  },
   mounted(): void {
     this.isLoading = true;
     services.get('classes/Contact')
@@ -24,4 +25,4 @@ export default class AboutPage extends Vue {
         this.isLoading = false;
       });
   }
-}
+});

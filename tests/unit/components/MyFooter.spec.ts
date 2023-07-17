@@ -1,17 +1,4 @@
-import messages from '@/messages';
-import { createLocalVue, shallowMount } from '@vue/test-utils';
-import Buefy from 'buefy';
-import VueI18n from 'vue-i18n';
-// create an extended `Vue` constructor
-const localVue = createLocalVue()
-// install plugins as normal
-localVue.use(Buefy);
-localVue.use(VueI18n);
-const i18n = new VueI18n({
-  locale: 'en', // set locale
-  messages, // set locale messages
-});
-
+import { shallowMount } from '@vue/test-utils';
 import MyFooter from '@/components/MyFooter.vue';
 
 describe('MyFooter.vue', () => {
@@ -19,9 +6,14 @@ describe('MyFooter.vue', () => {
     const currentVersion = process.env.VUE_APP_VERSION;
     const msg = currentVersion;
     const wrapper = shallowMount(MyFooter, {
-      localVue,
-      i18n,
-      stubs: ['router-link', 'router-view']
+      global: {
+        stubs: [
+          'router-link',
+          'router-view',
+          'o-icon',
+          'o-button'
+        ]
+      }
     });
     expect(wrapper.text()).toContain(msg);
   });
@@ -30,9 +22,14 @@ describe('MyFooter.vue', () => {
     process.env.VUE_APP_VERSION = undefined;
     const msg = '0';
     const wrapper = shallowMount(MyFooter, {
-      localVue,
-      i18n,
-      stubs: ['router-link', 'router-view']
+      global: {
+        stubs: [
+          'router-link',
+          'router-view',
+          'o-icon',
+          'o-button'
+        ]
+      }
     });
     expect(wrapper.text()).toContain(msg);
   });

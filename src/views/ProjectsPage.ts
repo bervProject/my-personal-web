@@ -1,7 +1,7 @@
-import { Component, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 import GithubList from '@/components/GithubList.vue';
 
-@Component({
+export default defineComponent({
   components: {
     GithubList,
   },
@@ -9,5 +9,4 @@ import GithubList from '@/components/GithubList.vue';
   metaInfo: {
     title: 'Projects'
   },
-})
-export default class ProjectsPage extends Vue {}
+});

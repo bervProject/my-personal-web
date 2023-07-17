@@ -4,8 +4,8 @@
       <h2 class="title">
         Soundcloud
       </h2>
-      <b-field label="Item">
-        <b-select
+      <o-field label="Item">
+        <o-select
           v-model="perPage"
           expanded
         >
@@ -16,11 +16,11 @@
           >
             {{ option }}
           </option>
-        </b-select>
-      </b-field>
-      <b-pagination
-        v-model="currentPage"
-        order="is-centered"
+        </o-select>
+      </o-field>
+      <o-pagination
+        v-model:current="currentPage"
+        order="centered"
         :total="total"
         :per-page="perPage"
       />

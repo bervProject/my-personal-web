@@ -82,3 +82,11 @@ dist/
 
 tests/e2e/videos
 tests/e2e/screenshots
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

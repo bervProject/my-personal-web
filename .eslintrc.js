@@ -11,7 +11,8 @@ module.exports = {
   rules: {
     // override/add rules settings here, such as:
     // 'vue/no-unused-vars': 'error'
-    'vue/multi-word-component-names': 'warn'
+    'vue/multi-word-component-names': 'warn',
+    'vue/no-v-model-argument': 'warn'
   },
 
   parser: "vue-eslint-parser",

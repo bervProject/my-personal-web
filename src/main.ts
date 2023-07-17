@@ -1,28 +1,28 @@
-import Vue from 'vue';
-import VueI18n from 'vue-i18n';
-import Buefy from 'buefy';
+import { createApp } from 'vue';
+import Oruga from '@oruga-ui/oruga-next';
+import { createI18n } from 'vue-i18n';
+import { bulmaConfig } from '@oruga-ui/theme-bulma';
 import App from './App.vue';
 import router from './router';
 import store from './store';
 import messages from './messages';
 
-Vue.config.productionTip = false;
+const app = createApp(App);
 
-Vue.use(Buefy, {
-  defaultIconPack: 'fa',
-});
-
-Vue.use(VueI18n);
-
-const i18n = new VueI18n({
+const i18n = createI18n({
   locale: 'en', // set locale
   fallbackLocale: 'en',
   messages, // set locale messages
 });
 
-new Vue({
-  router,
-  store,
-  i18n,
-  render: h => h(App),
-}).$mount('#app');
+const customBulmaConfig = {
+  ...bulmaConfig,
+  iconPack: 'fas',
+}
+
+app.use(router);
+app.use(store);
+app.use(i18n);
+app.use(Oruga, customBulmaConfig);
+
+app.mount('#app');

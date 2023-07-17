@@ -1,12 +1,12 @@
 <template>
   <div>
-    <my-header />
-    <section class="section">
-      <div class="container">
+    <side-bar />
+    <div class="main">
+      <section class="section">
         <router-view />
-      </div>
-    </section>
-    <my-footer />
+      </section>
+      <my-footer />
+    </div>
   </div>
 </template>
 

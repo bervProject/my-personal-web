@@ -1,8 +1,8 @@
 import services from '@/services';
-import { Component, Vue } from 'vue-property-decorator';
 import DevToPost from '@/components/DevToPost.vue';
+import { defineComponent } from 'vue';
 
-@Component({
+export default defineComponent({
   name: 'BlogPage',
   metaInfo: {
     title: 'My Blogs'
@@ -10,11 +10,13 @@ import DevToPost from '@/components/DevToPost.vue';
   components: {
     DevToPost,
   },
-})
-export default class BlogPage extends Vue {
-  public blogs: object[] = []
-  public isLoading: boolean = false;
+  data() {
+    return {
 
+      blogs: [],
+      isLoading: false,
+    };
+  },
   mounted(): void {
     this.isLoading = true;
     services.get("classes/Blog").then(result => {
@@ -25,4 +27,4 @@ export default class BlogPage extends Vue {
       this.isLoading = false;
     })
   }
-}
+});
