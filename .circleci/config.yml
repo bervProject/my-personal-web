@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@5.0.2
+  node: circleci/node@5.1.0
   codecov: codecov/codecov@3.2.3
 jobs:
   test:
@@ -11,7 +11,7 @@ jobs:
           node-version: '18.12'
           install-yarn: true
       - node/install-packages:
-          pkg-manager: yarn
+          pkg-manager: yarn-berry
       - run:
           command: yarn lint
           name: Lint
