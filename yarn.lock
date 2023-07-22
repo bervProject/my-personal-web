@@ -2920,7 +2920,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.0.0, @typescript-eslint/parser@npm:^5.62.0":
+"@typescript-eslint/parser@npm:^5.0.0":
   version: 5.62.0
   resolution: "@typescript-eslint/parser@npm:5.62.0"
   dependencies:
@@ -2934,6 +2934,24 @@ __metadata:
     typescript:
       optional: true
   checksum: d168f4c7f21a7a63f47002e2d319bcbb6173597af5c60c1cf2de046b46c76b4930a093619e69faf2d30214c29ab27b54dcf1efc7046a6a6bd6f37f59a990e752
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@typescript-eslint/parser@npm:6.1.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": 6.1.0
+    "@typescript-eslint/types": 6.1.0
+    "@typescript-eslint/typescript-estree": 6.1.0
+    "@typescript-eslint/visitor-keys": 6.1.0
+    debug: ^4.3.4
+  peerDependencies:
+    eslint: ^7.0.0 || ^8.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: dc59cda4396ca09e3aa2bd5b99d8ef9526df56567d4a9b953668102116db975dfb2426c3369560a2b02e083d49e43b4cebb252144d175e900096eb0b17f7ae3c
   languageName: node
   linkType: hard
 
@@ -10199,7 +10217,7 @@ __metadata:
     "@oruga-ui/theme-bulma": ^0.2.11
     "@types/jest": ^29.5.3
     "@typescript-eslint/eslint-plugin": ^6.1.0
-    "@typescript-eslint/parser": ^5.62.0
+    "@typescript-eslint/parser": ^6.1.0
     "@vue/cli-plugin-babel": ^5.0.8
     "@vue/cli-plugin-e2e-cypress": ~5.0.8
     "@vue/cli-plugin-eslint": ^5.0.8
