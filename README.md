@@ -25,13 +25,9 @@ flowchart LR
 
 ## Next Roadmap
 
-- [ ] Upgrade Vue.js
+- [x] Upgrade Vue.js
 - [ ] Increate Unit Test (55% Coverage)
 - [ ] Increate E2E Test (1-3 pages)
-
-## Donate
-
-![QR Bitcoin](https://raw.githubusercontent.com/berviantoleo/mycapturepicrepo/master/frame.png)
 
 ## Release Notes
 
