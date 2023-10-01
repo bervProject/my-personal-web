@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '18.12'
+          node-version: '18.17'
           install-yarn: true
       - node/install-packages:
           pkg-manager: yarn-berry
@@ -23,6 +23,10 @@ jobs:
           command: yarn test:unit --ci --maxWorkers=2
           name: Unit Test
       - codecov/upload
+      - store_artifacts:
+          path: coverage
+      - store_artifacts:
+          path: build
 workflows:
   test_app:
     jobs:
