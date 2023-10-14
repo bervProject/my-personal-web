@@ -35,7 +35,7 @@
     "@babel/core": "^7.23.0",
     "@types/jest": "^29.5.5",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
-    "@typescript-eslint/parser": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.5",
     "@vue/babel-preset-app": "^5.0.8",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-e2e-cypress": "~5.0.8",
