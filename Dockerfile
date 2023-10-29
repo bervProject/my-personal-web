@@ -1,7 +1,7 @@
 FROM node:18-alpine3.15 as build
 WORKDIR /app
-RUN apk update && apk add yarn python3 g++ make && rm -rf /var/cache/apk/* && corepack enable && corepack prepare yarn@stable --activate
 COPY package.json yarn.lock .yarnrc.yml .yarn/releases/yarn-4.0.1.cjs ./
+RUN apk update && apk add yarn python3 g++ make && rm -rf /var/cache/apk/* && corepack enable && corepack prepare yarn@stable --activate
 RUN yarn --immutable
 COPY . .
 RUN IS_DOCKER=true yarn build
