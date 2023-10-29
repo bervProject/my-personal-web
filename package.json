@@ -22,6 +22,7 @@
     "@oruga-ui/theme-bulma": "^0.2.11",
     "@vueuse/core": "^10.5.0",
     "axios": "^1.6.0",
+    "buefy": "^0.9.25",
     "moment": "^2.29.4",
     "sass": "^1.69.5",
     "vue": "^3.3.7",
