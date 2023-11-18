@@ -21,7 +21,7 @@
     "@oruga-ui/oruga-next": "^0.7.0",
     "@oruga-ui/theme-bulma": "^0.2.11",
     "@vueuse/core": "^10.6.1",
-    "axios": "^1.6.1",
+    "axios": "^1.6.2",
     "buefy": "^0.9.25",
     "moment": "^2.29.4",
     "sass": "^1.69.5",
