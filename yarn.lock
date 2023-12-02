@@ -1773,10 +1773,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-free@npm:^6.4.2":
-  version: 6.4.2
-  resolution: "@fortawesome/fontawesome-free@npm:6.4.2"
-  checksum: 6bbfb492b0b139f77cddc54b64b3166739a9b46afd68a4b15664722808406a5cbe17820c40cf010a15ab1b5f18847886b5cd52a857ba79fa269981e1318265cb
+"@fortawesome/fontawesome-free@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "@fortawesome/fontawesome-free@npm:6.5.1"
+  checksum: ff6627084d550672235336b75d020d4e63b4089900cec844113f9f54d13c2c7edd7c5dc051eb8f547aeae8215ed542e46320636587a2d4fa69e547020effbb35
   languageName: node
   linkType: hard
 
@@ -10685,7 +10685,7 @@ __metadata:
   resolution: "my-personal-web@workspace:."
   dependencies:
     "@babel/core": "npm:^7.23.3"
-    "@fortawesome/fontawesome-free": "npm:^6.4.2"
+    "@fortawesome/fontawesome-free": "npm:^6.5.1"
     "@oruga-ui/oruga-next": "npm:^0.7.0"
     "@oruga-ui/theme-bulma": "npm:^0.2.11"
     "@types/jest": "npm:^29.5.10"
