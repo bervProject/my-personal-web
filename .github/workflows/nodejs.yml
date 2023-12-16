@@ -22,7 +22,7 @@ jobs:
         run: corepack enable && corepack prepare yarn@stable --activate && yarn install --immutable
       - name: Build
         run: yarn build
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ github.event_name == 'push' && matrix.node-version == '18.x' }}
         with:
           name: deployment
@@ -47,7 +47,7 @@ jobs:
       run: yarn test:unit --ci --maxWorkers=2
     - name: E2E Test
       run: yarn test:e2e --headless
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       if: ${{ matrix.node-version == '18.x' }}
       with:
         name: test-videos
