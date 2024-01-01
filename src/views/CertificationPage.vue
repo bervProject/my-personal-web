@@ -8,67 +8,7 @@
         </div>
       </div>
       <div class="card-content">
-        <div class="columns is-multiline">
-          <div class="column is-6">
-            <h4 class="subtitle">
-              {{ $t('common.certification') }} (Role Based)
-            </h4>
-            <div class="columns is-multiline is-centered">
-              <div
-                v-for="cert of certIdRoleBased"
-                :key="cert"
-                class="column is-4"
-              >
-                <div
-                  data-iframe-width="150"
-                  data-iframe-height="270"
-                  :data-share-badge-id="cert"
-                  data-share-badge-host="https://www.credly.com"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="column is-6">
-            <h4 class="subtitle">
-              {{ $t('common.certification') }} (Fundamental)
-            </h4>
-            <div class="columns is-multiline is-centered">
-              <div
-                v-for="cert of certIdFundamental"
-                :key="cert"
-                class="column is-4"
-              >
-                <div
-                  data-iframe-width="150"
-                  data-iframe-height="270"
-                  :data-share-badge-id="cert"
-                  data-share-badge-host="https://www.credly.com"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="column is-6">
-            <h4 class="subtitle">Google Cloud</h4>
-            <div class="columns is-multiline is-centered">
-              <div
-                class="column is-4"
-                v-for="accredible of accredibles"
-                :key="accredible"
-              >
-                <div style="width: 150px">
-                  <a
-                    :href="`https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/${accredible}`"
-                  >
-                    <img
-                      :src="`https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/${accredible}`"
-                      :alt="`Badge ${accredible}`"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p>This page is in maintenance mode. I want to integrate multiple certification platform credentials results into one place. I sincerely apologize for the cause. Temporarily, you may visit this <a target="_blank" href="https://berviantoleo.notion.site/ef316480dc26422288dfa4a7243148e4?v=e43417c72903440bb29cc534eadd95e4">notion page</a>, which I update the page manually.</p>
       </div>
       <footer class="card-footer">
         <a
