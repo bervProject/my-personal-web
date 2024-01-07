@@ -15,7 +15,7 @@ describe('CertificationPage.vue', () => {
       }
     });
 
-    expect(wrapper.text()).toContain('(Role Based)');
+    expect(wrapper.text()).toContain('This page is in maintenance mode');
 
     const footer = wrapper.find('footer');
 
