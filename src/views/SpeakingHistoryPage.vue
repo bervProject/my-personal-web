@@ -25,8 +25,8 @@
         </div>
         <div class="columns">
             <div class="column">
-                <h3 class="subtitle">Seasonize</h3>
-                <iframe src="./seasonize.html" width="100%" height="300" style="border:none;"></iframe>
+                <h3 class="subtitle">Sessionize</h3>
+                <iframe src="./sessionize.html" width="100%" height="300" style="border:none;"></iframe>
             </div>
         </div>
     </div>
