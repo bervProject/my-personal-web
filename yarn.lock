@@ -10832,7 +10832,7 @@ __metadata:
     jest-environment-jsdom: "npm:^29.7.0"
     moment: "npm:^2.30.1"
     sass: "npm:^1.71.1"
-    sass-loader: "npm:~14.1.0"
+    sass-loader: "npm:~14.1.1"
     ts-jest: "npm:~29.1.2"
     typescript: "npm:^5.3.3"
     vue: "npm:^3.4.19"
@@ -12579,9 +12579,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:~14.1.0":
-  version: 14.1.0
-  resolution: "sass-loader@npm:14.1.0"
+"sass-loader@npm:~14.1.1":
+  version: 14.1.1
+  resolution: "sass-loader@npm:14.1.1"
   dependencies:
     neo-async: "npm:^2.6.2"
   peerDependencies:
@@ -12601,7 +12601,7 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: ac5f8dc02b2b80cbad2499a079b03af190fa2fc715c158ef3236898e69ea97a222605cc62fe2e70a3cfbb5c1161fd30f23840429111f029e09923dd354a433f6
+  checksum: 6cc0cb8143d04cb462c10efffbab86e9c4ea971bbdbc22d8c01f4ebf774fcf9b4fed775aaec6af23aeb7d440b37dce76cf6f2746ae36421d16ad4182f2220bc8
   languageName: node
   linkType: hard
 
