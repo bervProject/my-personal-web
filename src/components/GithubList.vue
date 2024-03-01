@@ -46,6 +46,7 @@
           icon-left="github"
           tag="a"
           icon-pack="fab"
+          target="_blank"
           :href="props.row.svn_url"
           >Repository</o-button
         >
@@ -60,7 +61,7 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <a :href="props.row.owner.html_url"
+                <a :href="props.row.owner.html_url" target="_blank"
                   ><strong>@{{ props.row.owner.login }}</strong></a
                 >
                 <br />

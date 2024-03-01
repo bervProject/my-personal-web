@@ -13,6 +13,7 @@
       <footer class="card-footer">
         <a
           class="card-footer-item"
+          target="_blank"
           href="https://www.credly.com/users/bervianto-leo-pratama"
           >{{ $t('common.seemore') }}</a
         >

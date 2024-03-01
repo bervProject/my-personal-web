@@ -59,6 +59,7 @@
                   outlined
                   variant="info"
                   tag="a"
+                  target="_blank"
                   :href="props.row.departmentLink"
                 >
                   <span class="icon is-small">

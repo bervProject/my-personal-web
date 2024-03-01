@@ -10,7 +10,7 @@
         </div>
         <div class="card-content">
           <div class="content">
-            <a :href="post.url"><h5 class="subtitle">{{ post.title }}</h5></a>
+            <a :href="post.url" target="_blank"><h5 class="subtitle">{{ post.title }}</h5></a>
             <div>
               <div class="tags">
                 <span

@@ -17,10 +17,10 @@
                         {{ showDate(props.row.date) }}
                     </o-table-column>
                     <o-table-column field="link" label="Link" v-slot="props">
-                        <a class="button is-primary" :href="props.row.link">Visit</a>
+                        <a class="button is-primary" target="_blank" :href="props.row.link">Visit</a>
                     </o-table-column>
                 </o-table>
-                <o-button tag="a" variant="primary" href="https://berviantoleo.notion.site/Speaker-Experiences-e2a28dba41c94e158d5dc3d901d8bb17">More Details</o-button>
+                <o-button tag="a" target="_blank" variant="primary" href="https://berviantoleo.notion.site/Speaker-Experiences-e2a28dba41c94e158d5dc3d901d8bb17">More Details</o-button>
             </div>
         </div>
         <div class="columns">

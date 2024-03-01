@@ -44,6 +44,7 @@
                   v-for="contact in contacts"
                   :key="contact.id"
                   :href="contact.address"
+                  target="_blank"
                   class="button is-dark is-outlined"
                 >
                   <span class="icon">

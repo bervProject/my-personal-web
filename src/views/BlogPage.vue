@@ -12,7 +12,7 @@
         field="link"
         label="Link"
       >
-        <a :href="props.row.link"><o-icon
+        <a :href="props.row.link" target="_blank"><o-icon
           pack="fab"
           :icon="props.row.icon"
           size="large"
