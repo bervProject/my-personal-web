@@ -12,6 +12,8 @@ export default defineComponent({
         { image: 'assets/home/intro-5.jpg' },
       ],
       announcements: [],
+      contacts: [],
+      isLoading: false,
     }
   },
   name: 'HomePage',
@@ -22,12 +24,21 @@ export default defineComponent({
     ]
   },
   mounted(): void {
+    this.isLoading = true;
     const announcementPromise = services.get("classes/Announcement");
-    Promise.allSettled([announcementPromise]).then((result) => {
+    const contactPromise = services.get('classes/Contact')
+
+    Promise.allSettled([announcementPromise, contactPromise]).then((result) => {
       const announcementData = result[0];
+      const contactData = result[1];
       if (announcementData.status === 'fulfilled') {
         this.announcements = announcementData.value.data.results;
       }
+      if (contactData.status === 'fulfilled') {
+        this.contacts = contactData.value.data.results;
+      }
+    }).finally(() => {
+      this.isLoading = false;
     })
   }
 });

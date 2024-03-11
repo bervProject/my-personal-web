@@ -1,6 +1,6 @@
 <template>
   <div>
-    <side-bar />
+    <!--<side-bar />-->
     <div class="main">
       <section class="section">
         <router-view />
