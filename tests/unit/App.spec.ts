@@ -10,7 +10,14 @@ describe('App.vue', () => {
           'router-view',
           'my-footer',
           // 'side-bar'
-        ]
+          'o-notification',
+          'o-table',
+          'o-table-column',
+          'o-icon'
+        ],
+        mocks: {
+          $t: () => {}
+        }
       }
     });
 
