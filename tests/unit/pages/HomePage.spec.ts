@@ -10,9 +10,13 @@ describe('HomePage.vue', () => {
           'router-view',
           'o-icon',
           'o-button',
-          'o-dropdown',
-          'o-dropdown-item'
+          'o-notification',
+          'o-table',
+          'o-table-column',
         ],
+        mocks: {
+          $t: () => {}
+        }
       }
     });
 
