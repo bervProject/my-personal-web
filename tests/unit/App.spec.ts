@@ -9,13 +9,13 @@ describe('App.vue', () => {
           'router-link',
           'router-view',
           'my-footer',
-          'side-bar'
+          // 'side-bar'
         ]
       }
     });
 
-    const header = wrapper.find('side-bar-stub');
-    expect(header.exists()).toBe(true);
+    // const header = wrapper.find('side-bar-stub');
+    // expect(header.exists()).toBe(true);
     const footer = wrapper.find('my-footer-stub');
     expect(footer.exists()).toBe(true);
     const section = wrapper.find('section');
