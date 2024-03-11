@@ -57,7 +57,33 @@
         </div>
       </div>
           </section>
-
+    <section class="section">
+<h4 class="title">
+                {{ $t('navigation.community') }}
+            </h4>
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <div class="columns is-multiline">
+                        <div class="column is-12">
+                            <a target="_blank"
+                                href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=bervianto%2Bleo%2Bpratama&cb-cards.q_operator=AND">
+                                <figure class="image is-2by1">
+                                    <img src="../assets/images/community.png" alt="Community Builder" />
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="column is-6" v-for="community of communityList" :key="community">
+                            <div
+                              data-iframe-width="150"
+                              data-iframe-height="270"
+                              :data-share-badge-id="community"
+                              data-share-badge-host="https://www.credly.com"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 <section class="hero is-small is-info">
   <div class="hero-body">
     <div class="content">
@@ -88,6 +114,43 @@
             </div>
   </div>
 </section>
+  <section class="section">
+  <h2 class="title">
+      Blogs
+    </h2>
+<o-table
+      :data="blogs"
+      :loading="isLoading"
+    >
+      <o-table-column
+        v-slot="props"
+        field="link"
+        label="Link"
+      >
+        <a :href="props.row.link" target="_blank"><o-icon
+          pack="fab"
+          :icon="props.row.icon"
+          size="large"
+        /></a>
+      </o-table-column>
+
+      <o-table-column
+        v-slot="props"
+        field="title"
+        label="Title"
+      >
+        {{ props.row.title }}
+      </o-table-column>
+
+      <o-table-column
+        v-slot="props"
+        field="description"
+        label="Description"
+      >
+        {{ props.row.description }}
+      </o-table-column>
+    </o-table>
+  </section>
   </div>
 </template>
 

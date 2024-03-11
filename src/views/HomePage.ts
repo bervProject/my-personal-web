@@ -2,6 +2,10 @@ import { defineComponent } from 'vue';
 import services from '@/services';
 
 export default defineComponent({
+  setup() {
+    const { useScriptTag } = require('@vueuse/core');
+    useScriptTag('https://cdn.credly.com/assets/utilities/embed.js');
+  },
   data() {
     return {
       carousels: [
@@ -12,6 +16,11 @@ export default defineComponent({
         { image: 'assets/home/intro-5.jpg' },
       ],
       announcements: [],
+      blogs: [],
+      communityList: [
+        "4c1544dc-271b-404e-974a-f991320ab9d8",
+        "8cad11b0-12d7-4193-b51a-11a0c75de467"
+      ],
       contacts: [],
       isLoading: false,
     }
@@ -26,16 +35,21 @@ export default defineComponent({
   mounted(): void {
     this.isLoading = true;
     const announcementPromise = services.get("classes/Announcement");
-    const contactPromise = services.get('classes/Contact')
+    const contactPromise = services.get('classes/Contact');
+    const blogPromise = services.get("classes/Blog");
 
-    Promise.allSettled([announcementPromise, contactPromise]).then((result) => {
+    Promise.allSettled([announcementPromise, contactPromise, blogPromise]).then((result) => {
       const announcementData = result[0];
       const contactData = result[1];
+      const blogData = result[2];
       if (announcementData.status === 'fulfilled') {
         this.announcements = announcementData.value.data.results;
       }
       if (contactData.status === 'fulfilled') {
         this.contacts = contactData.value.data.results;
+      }
+      if (blogData.status === 'fulfilled') {
+        this.blogs = blogData.value.data.results;
       }
     }).finally(() => {
       this.isLoading = false;
