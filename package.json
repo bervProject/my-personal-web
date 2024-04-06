@@ -18,7 +18,7 @@
   "main": "src/main.ts",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
-    "@oruga-ui/oruga-next": "^0.8.6",
+    "@oruga-ui/oruga-next": "^0.8.7",
     "@oruga-ui/theme-bulma": "^0.3.0",
     "@vueuse/core": "^10.9.0",
     "axios": "^1.6.8",
