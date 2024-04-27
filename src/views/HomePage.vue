@@ -57,7 +57,7 @@
         {{ $t('navigation.community') }}
       </h4>
       <div class="columns is-multiline">
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="columns is-multiline">
             <div class="column is-12">
               <a target="_blank"
@@ -67,11 +67,12 @@
                 </figure>
               </a>
             </div>
-            <div class="column is-6" v-for="community of communityList" :key="community">
+            
+          </div>
+        </div>
+        <div class="column is-3" v-for="community of communityList" :key="community">
               <div data-iframe-width="150" data-iframe-height="270" :data-share-badge-id="community"
                 data-share-badge-host="https://www.credly.com" />
-            </div>
-          </div>
         </div>
       </div>
     </section>

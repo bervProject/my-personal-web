@@ -18,8 +18,9 @@ export default defineComponent({
       announcements: [],
       blogs: [],
       communityList: [
-        "4c1544dc-271b-404e-974a-f991320ab9d8",
-        "8cad11b0-12d7-4193-b51a-11a0c75de467"
+        "3b7ccdc9-6787-487c-957b-fa729f76520f",
+        "8cad11b0-12d7-4193-b51a-11a0c75de467",
+        "4c1544dc-271b-404e-974a-f991320ab9d8"
       ],
       contacts: [],
       isLoading: false,
