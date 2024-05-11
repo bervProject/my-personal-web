@@ -10,14 +10,14 @@ env:
   IMAGE_NAME: my-personal-web
 jobs:
   docker-build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     if: ${{ github.event_name == 'pull_request' }}
     steps:
       - uses: actions/checkout@v4
       - name: Run tests
         run: docker build . --file Dockerfile
   push:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v4
