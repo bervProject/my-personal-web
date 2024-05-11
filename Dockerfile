@@ -1,4 +1,4 @@
-FROM node:20-alpine3.15 as build
+FROM node:20-alpine3.18 as build
 WORKDIR /app
 COPY package.json yarn.lock .yarnrc.yml ./
 COPY .yarn/releases/yarn-4.0.1.cjs .yarn/releases/yarn-4.0.1.cjs
