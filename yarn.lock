@@ -6898,14 +6898,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "eslint-plugin-cypress@npm:3.2.0"
+"eslint-plugin-cypress@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "eslint-plugin-cypress@npm:3.3.0"
   dependencies:
     globals: "npm:^13.20.0"
   peerDependencies:
     eslint: ">=7"
-  checksum: 22e9450ddf989bfcfa2d71df2557afc0c0305ba9d5b418cebb8a82c188abbfc83c0619f2ff44c7132f83331e3a3ddd8563f9f834bd0e61e21eb0f213842dbb79
+  checksum: 168ea80fbc026b14eb67a29f19f558528fe7cfcac492bb1563df1bda49e96b9075727bee5231ba1eaf9f822f804c3fbdbc4bf1dd9753332203902c1e29b3ad06
   languageName: node
   linkType: hard
 
@@ -10940,7 +10940,7 @@ __metadata:
     buefy: "npm:^0.9.29"
     cypress: "npm:~13.10.0"
     eslint: "npm:~8.57.0"
-    eslint-plugin-cypress: "npm:^3.2.0"
+    eslint-plugin-cypress: "npm:^3.3.0"
     eslint-plugin-vue: "npm:^9.26.0"
     jest: "npm:~29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
