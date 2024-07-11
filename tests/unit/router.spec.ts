@@ -11,7 +11,7 @@ describe('router.ts', () => {
       // '/experience',
       // '/projects',
       // '/portofolio',
-      // '/songs',
+      '/songs',
       // '/favorite-audio',
       // '/about',
       // '/certification',
