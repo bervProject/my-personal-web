@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!--<side-bar />-->
     <div class="main">
+      <my-header />
       <section class="section">
         <router-view />
       </section>

@@ -7,18 +7,19 @@ export default defineComponent({
   data() {
     return {
       trackData: [
-        'https://open.spotify.com/embed/track/0ZUoF50WvrxucLmFKxuxv6',
-        'https://open.spotify.com/embed/track/4lu7xSX0x9gRmG1QAApWQN',
-        'https://open.spotify.com/embed/track/3NyxWuYU0s2GA6oZgDRQep',
-        'https://open.spotify.com/embed/track/3FYIfyziD8T4CvxnpLePb4',
-        'https://open.spotify.com/embed/track/7jLNptdHMIjgnd46Up3sx4',
+        'https://open.spotify.com/embed/track/3Ibi0uokAZfx3rdyP1AMaC',
+        'https://open.spotify.com/embed/track/6Yi4keGPfx2D77dDu2kSN0',
+        'https://open.spotify.com/embed/track/1zhP8lw0v5wAYJeKvyrhwu',
         'https://open.spotify.com/embed/track/7ePyrOcnlE6KPWgsy2ouQB',
         'https://open.spotify.com/embed/track/0zQE5JOKWYFg2hQWWhuChj',
         'https://open.spotify.com/embed/track/4q4Uzzu5VOOUFLjDDLsruS'
       ],
       youtubeData: [
-        'https://www.youtube.com/embed/CkQ8zSDlJmk',
-        'https://www.youtube.com/embed/2fissTmiQOU'
+        'https://www.youtube.com/embed/fzrdJRQcybo',
+        'https://www.youtube.com/embed/aUafSVi4oU4',
+        'https://www.youtube.com/embed/liOraEJkqgw',
+        'https://www.youtube.com/embed/z3MkcEIq7c0',
+        'https://www.youtube.com/embed/xouVF8Udk_s'
       ],
     };
   }

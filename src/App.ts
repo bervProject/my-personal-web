@@ -1,12 +1,14 @@
+import { defineComponent } from 'vue';
 import MyFooter from '@/components/MyFooter.vue';
 import SideBar from '@/components/SideBar.vue';
-import { defineComponent } from 'vue';
+import MyHeader from '@/components/MyHeader.vue';
 
 const allTitle = 'Bervianto Leo Pratama\'s Website';
 const allDescription = 'Bervianto Leo Pratama\'s Personal Website.';
 const imageSite = `${process.env.BASE_URL}assets/my-logo.png`
 export default defineComponent({
   components: {
+    MyHeader,
     MyFooter,
     SideBar,
   },
