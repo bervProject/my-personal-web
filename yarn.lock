@@ -2778,21 +2778,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/oruga-next@npm:^0.8.12":
-  version: 0.8.12
-  resolution: "@oruga-ui/oruga-next@npm:0.8.12"
+"@oruga-ui/oruga-next@npm:^0.9.0-pre.1":
+  version: 0.9.0-pre.2
+  resolution: "@oruga-ui/oruga-next@npm:0.9.0-pre.2"
   peerDependencies:
     vue: ^3.0.0
-  checksum: 9afb0f3963a7890db081adce5655a8a0a85a464d502940d9d4413368b8573eedfc88d76ee7d09c9e6e14b36202f2724276315e9387c69cc3eacd740d20024233
+  checksum: 707b3a03a9f1b8d6429c70b791335bb5acbe75a7292416c1b8a029858f133e807b5f00cdddfff408a14f753fd064ce4c0e97c9ccf6e656cfdc5b07f87664d27e
   languageName: node
   linkType: hard
 
-"@oruga-ui/theme-bulma@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@oruga-ui/theme-bulma@npm:0.3.0"
+"@oruga-ui/theme-bulma@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "@oruga-ui/theme-bulma@npm:0.4.2"
   dependencies:
-    bulma: "npm:0.9.4"
-  checksum: 37d6d64d64091e1b431a5b857a8cf0891b3f83577c8a37b4403c6fd7333cccc95fb52ec7747df1a47d8b788f3c60c468fd4fff0306044e4dcef1f8523b2613ed
+    bulma: "npm:1.0.2"
+  peerDependencies:
+    "@oruga-ui/oruga-next": 0.9.0-pre.1
+  checksum: 632c22431405c9b143fc94befc55daf5f03dacedf5dda07dd064d99c83adf91c07e4b5517e17d54caca480c66587f29650e326d71f01f3f5e87b69c375b368e8
   languageName: node
   linkType: hard
 
@@ -5329,6 +5331,13 @@ __metadata:
   version: 0.9.4
   resolution: "bulma@npm:0.9.4"
   checksum: d2696c3685d5f2389891c7b6d41be82c8de6deb5ed4ccbc9905383828089caf5d8c08ea7c4d09f4dec2df9358563440fd6c5e10492d1adf9e857e0d3d7b80c50
+  languageName: node
+  linkType: hard
+
+"bulma@npm:1.0.2":
+  version: 1.0.2
+  resolution: "bulma@npm:1.0.2"
+  checksum: af40425c61fedb88f34801a5a4d7e559bbf0c88ab437caa76a5d685419ce203ddbcaefa4a427ddfc3b4d493a1bbbca68ee549be1ad7684f4ee9ef52fbaece78a
   languageName: node
   linkType: hard
 
@@ -11181,8 +11190,8 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@fortawesome/fontawesome-free": "npm:^6.6.0"
-    "@oruga-ui/oruga-next": "npm:^0.8.12"
-    "@oruga-ui/theme-bulma": "npm:^0.3.0"
+    "@oruga-ui/oruga-next": "npm:^0.9.0-pre.1"
+    "@oruga-ui/theme-bulma": "npm:^0.4.2"
     "@types/jest": "npm:^29.5.13"
     "@typescript-eslint/eslint-plugin": "npm:^8.5.0"
     "@typescript-eslint/parser": "npm:^8.5.0"
