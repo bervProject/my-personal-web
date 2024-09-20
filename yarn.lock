@@ -2778,21 +2778,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/oruga-next@npm:^0.8.12":
-  version: 0.8.12
-  resolution: "@oruga-ui/oruga-next@npm:0.8.12"
+"@oruga-ui/oruga-next@npm:^0.9.0-pre.1":
+  version: 0.9.0-pre.2
+  resolution: "@oruga-ui/oruga-next@npm:0.9.0-pre.2"
   peerDependencies:
     vue: ^3.0.0
-  checksum: 9afb0f3963a7890db081adce5655a8a0a85a464d502940d9d4413368b8573eedfc88d76ee7d09c9e6e14b36202f2724276315e9387c69cc3eacd740d20024233
+  checksum: 707b3a03a9f1b8d6429c70b791335bb5acbe75a7292416c1b8a029858f133e807b5f00cdddfff408a14f753fd064ce4c0e97c9ccf6e656cfdc5b07f87664d27e
   languageName: node
   linkType: hard
 
-"@oruga-ui/theme-bulma@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "@oruga-ui/theme-bulma@npm:0.4.1"
+"@oruga-ui/theme-bulma@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "@oruga-ui/theme-bulma@npm:0.4.2"
   dependencies:
     bulma: "npm:1.0.2"
-  checksum: 1389a0f2fe8367f4d94a678ea56faf6515dbd350ea07740ca62ad0ee47d2d996f1514e965890d29d2bbddb87a204db04d97f8f02608bcc2fc844400ec836217e
+  peerDependencies:
+    "@oruga-ui/oruga-next": 0.9.0-pre.1
+  checksum: 632c22431405c9b143fc94befc55daf5f03dacedf5dda07dd064d99c83adf91c07e4b5517e17d54caca480c66587f29650e326d71f01f3f5e87b69c375b368e8
   languageName: node
   linkType: hard
 
@@ -11188,8 +11190,8 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@fortawesome/fontawesome-free": "npm:^6.6.0"
-    "@oruga-ui/oruga-next": "npm:^0.8.12"
-    "@oruga-ui/theme-bulma": "npm:^0.4.1"
+    "@oruga-ui/oruga-next": "npm:^0.9.0-pre.1"
+    "@oruga-ui/theme-bulma": "npm:^0.4.2"
     "@types/jest": "npm:^29.5.13"
     "@typescript-eslint/eslint-plugin": "npm:^8.5.0"
     "@typescript-eslint/parser": "npm:^8.5.0"
