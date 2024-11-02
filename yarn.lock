@@ -3436,21 +3436,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.11.0":
-  version: 8.11.0
-  resolution: "@typescript-eslint/parser@npm:8.11.0"
+"@typescript-eslint/parser@npm:^8.12.2":
+  version: 8.12.2
+  resolution: "@typescript-eslint/parser@npm:8.12.2"
   dependencies:
-    "@typescript-eslint/scope-manager": "npm:8.11.0"
-    "@typescript-eslint/types": "npm:8.11.0"
-    "@typescript-eslint/typescript-estree": "npm:8.11.0"
-    "@typescript-eslint/visitor-keys": "npm:8.11.0"
+    "@typescript-eslint/scope-manager": "npm:8.12.2"
+    "@typescript-eslint/types": "npm:8.12.2"
+    "@typescript-eslint/typescript-estree": "npm:8.12.2"
+    "@typescript-eslint/visitor-keys": "npm:8.12.2"
     debug: "npm:^4.3.4"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 518c70a61d79235b9ad744f1bc6313b389e1c947b3e104912d218d0e90cb03b8b2e4c7b7d8cf6348a840bbaff327dd8949961febf89bb5bf0f3c39b011adc5b6
+  checksum: 257cfbe13bd1a3a2c83e0b3fd2d441a51181ffd57f2e98112217668383fc28de995bfca6d7c4d2c04c6347ee6a376fe1d87eb6ce60d7383cda1044626d794185
   languageName: node
   linkType: hard
 
@@ -3461,16 +3461,6 @@ __metadata:
     "@typescript-eslint/types": "npm:7.1.1"
     "@typescript-eslint/visitor-keys": "npm:7.1.1"
   checksum: 74a1de52eebf8f6c050bd071ba580f00dbd104bd0a9a2bfc7a794fcf5019be4b208ab63c318695bb4347669b55abd03016fa46a775d97c9e25f43cb46e5889e0
-  languageName: node
-  linkType: hard
-
-"@typescript-eslint/scope-manager@npm:8.11.0":
-  version: 8.11.0
-  resolution: "@typescript-eslint/scope-manager@npm:8.11.0"
-  dependencies:
-    "@typescript-eslint/types": "npm:8.11.0"
-    "@typescript-eslint/visitor-keys": "npm:8.11.0"
-  checksum: 8f1e776fc0687f86cf7246c94098121224d0a69ffcaeb9a207b672889a4c42b94304664ed45d0b982c542bf7737bcec3649470d3db281b625a1e77736308ae37
   languageName: node
   linkType: hard
 
@@ -3523,13 +3513,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:8.11.0":
-  version: 8.11.0
-  resolution: "@typescript-eslint/types@npm:8.11.0"
-  checksum: 424986bae7c48677a843ff2dee5cb0fed293f7bebd71803901c8fc80ddeed65e4857f77083f17775d0bfd6dab5092ef556f354e7420ea4fd6c7861d0368d002e
-  languageName: node
-  linkType: hard
-
 "@typescript-eslint/types@npm:8.12.2":
   version: 8.12.2
   resolution: "@typescript-eslint/types@npm:8.12.2"
@@ -3553,25 +3536,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 6840f31ffe44072f0e20eb4acc091161eeac265fed44937d33064880269650ea63d68e8d79759f2dfaeff9a5803dcdf30e15a8b27e7db6cffbed42a02f9851e5
-  languageName: node
-  linkType: hard
-
-"@typescript-eslint/typescript-estree@npm:8.11.0":
-  version: 8.11.0
-  resolution: "@typescript-eslint/typescript-estree@npm:8.11.0"
-  dependencies:
-    "@typescript-eslint/types": "npm:8.11.0"
-    "@typescript-eslint/visitor-keys": "npm:8.11.0"
-    debug: "npm:^4.3.4"
-    fast-glob: "npm:^3.3.2"
-    is-glob: "npm:^4.0.3"
-    minimatch: "npm:^9.0.4"
-    semver: "npm:^7.6.0"
-    ts-api-utils: "npm:^1.3.0"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: cec7c5768c4e6cceb095fe8fbd57098d16d226a981143a335a62c6f30d8a1707974e86eeabe5ad33bfb4dd4eb582cba1d4f2e7cec65f71871d7d559ff9bec5f9
   languageName: node
   linkType: hard
 
@@ -3632,16 +3596,6 @@ __metadata:
     "@typescript-eslint/types": "npm:7.1.1"
     eslint-visitor-keys: "npm:^3.4.1"
   checksum: d0c6c0811f38186053679b8447469e9a5c040db639d59e710ce5c5f5fddf9554287eb01a7cfa7a31e06f274bbe261c3b89a51a8c42869b1157b2d90c08f79507
-  languageName: node
-  linkType: hard
-
-"@typescript-eslint/visitor-keys@npm:8.11.0":
-  version: 8.11.0
-  resolution: "@typescript-eslint/visitor-keys@npm:8.11.0"
-  dependencies:
-    "@typescript-eslint/types": "npm:8.11.0"
-    eslint-visitor-keys: "npm:^3.4.3"
-  checksum: 8d2bed15cc17c3de67414afb343a2b5974ab4120a9bb4759f3d42accbc3f247d14d3c824772da1d452b99fd42b3d9856c04fb836be50ffbff4aa7323eca197c6
   languageName: node
   linkType: hard
 
@@ -11282,7 +11236,7 @@ __metadata:
     "@oruga-ui/theme-bulma": "npm:^0.4.3"
     "@types/jest": "npm:^29.5.14"
     "@typescript-eslint/eslint-plugin": "npm:^8.12.2"
-    "@typescript-eslint/parser": "npm:^8.11.0"
+    "@typescript-eslint/parser": "npm:^8.12.2"
     "@vue/babel-preset-app": "npm:^5.0.8"
     "@vue/cli-plugin-babel": "npm:^5.0.8"
     "@vue/cli-plugin-e2e-cypress": "npm:~5.0.8"
