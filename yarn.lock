@@ -2678,14 +2678,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/theme-bulma@npm:^0.4.3":
-  version: 0.4.3
-  resolution: "@oruga-ui/theme-bulma@npm:0.4.3"
+"@oruga-ui/theme-bulma@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "@oruga-ui/theme-bulma@npm:0.5.1"
   dependencies:
     bulma: "npm:1.0.2"
   peerDependencies:
-    "@oruga-ui/oruga-next": 0.9.0-pre.2
-  checksum: 54d47b25de79e6735aeb3939c1c78d91b666ae1f3d05be49e5b8e17ace256d8c7559721450da6bface8986bbe2398bbf9f6b1110dee410dbe2aac15223687b15
+    "@oruga-ui/oruga-next": 0.9.0
+  checksum: e25e8dc61eeabd3897e157845eb198eda50967cc6e4345d01f19fec59f79e49f11ea8a692992cf36a897b71d96087cc1e2e5ef5ff5f2134d3eb69d5470c63725
   languageName: node
   linkType: hard
 
@@ -11229,7 +11229,7 @@ __metadata:
     "@babel/core": "npm:^7.26.0"
     "@fortawesome/fontawesome-free": "npm:^6.6.0"
     "@oruga-ui/oruga-next": "npm:^0.9.1"
-    "@oruga-ui/theme-bulma": "npm:^0.4.3"
+    "@oruga-ui/theme-bulma": "npm:^0.5.1"
     "@types/jest": "npm:^29.5.14"
     "@typescript-eslint/eslint-plugin": "npm:^8.14.0"
     "@typescript-eslint/parser": "npm:^8.14.0"
