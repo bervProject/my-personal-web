@@ -52,7 +52,7 @@ jobs:
       with:
         name: test-videos
         path: test/e2e/videos/*
-    - uses: codecov/codecov-action@v4
+    - uses: codecov/codecov-action@v5
       if: ${{ matrix.node-version == '20.x' }}
   publish:
     runs-on: ubuntu-24.04
