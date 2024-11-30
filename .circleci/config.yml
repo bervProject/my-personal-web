@@ -1,14 +1,14 @@
 version: 2.1
 orbs:
-  node: circleci/node@5.2.0
-  codecov: codecov/codecov@4.1.0
+  node: circleci/node@6.3.0
+  codecov: codecov/codecov@5.0.3
 jobs:
   test:
     executor: node/default
     steps:
       - checkout
       - node/install:
-          node-version: '20.13'
+          node-version: '22.11'
           install-yarn: true
       - node/install-packages:
           pkg-manager: yarn-berry
