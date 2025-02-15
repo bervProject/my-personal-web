@@ -4296,31 +4296,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^12.5.0":
-  version: 12.5.0
-  resolution: "@vueuse/core@npm:12.5.0"
+"@vueuse/core@npm:^12.6.1":
+  version: 12.6.1
+  resolution: "@vueuse/core@npm:12.6.1"
   dependencies:
     "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:12.5.0"
-    "@vueuse/shared": "npm:12.5.0"
+    "@vueuse/metadata": "npm:12.6.1"
+    "@vueuse/shared": "npm:12.6.1"
     vue: "npm:^3.5.13"
-  checksum: 10/c9bfe7f5e33ce57df2a2dea51a3e4c9b094f365e34e97348138f2ed831fb1a6b0af812c5259b7ddab22769f6ca6a6b9d04a357bcabd1d21cd14f22b5eb4b961f
+  checksum: 10/4f410b85747307e6fbcecf29252a8a4c5fbc16d6c6462180c27982d7cd2a679ab994ec843816985731fdf402f3573c55cb8cf050722d78b8c801512520611c44
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:12.5.0":
-  version: 12.5.0
-  resolution: "@vueuse/metadata@npm:12.5.0"
-  checksum: 10/f28b7a2ecbee1654e2c4171ccdca7eb6c255d57201add002762b8b93352059f2837d8b405a23f0efd2ce4f26070b45d3f3af395e247acfc6c30622b4222e24e6
+"@vueuse/metadata@npm:12.6.1":
+  version: 12.6.1
+  resolution: "@vueuse/metadata@npm:12.6.1"
+  checksum: 10/0a62a6671f140eeec4abdc53753253fd0f2e6e02305b3a75a2f0596bc4982b6f337c7a3eb87bcd5304793feafdf942e14b37c995799e3bf8b14df952be8855a5
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:12.5.0":
-  version: 12.5.0
-  resolution: "@vueuse/shared@npm:12.5.0"
+"@vueuse/shared@npm:12.6.1":
+  version: 12.6.1
+  resolution: "@vueuse/shared@npm:12.6.1"
   dependencies:
     vue: "npm:^3.5.13"
-  checksum: 10/276c2ae6e565dd5762a2b75023d8dfd4551a26abd3ad8c7bd8a5a1f8a64cd3747fc2b46c6914ef78ef9ebd17196b4ec1c70df043aa0b1ab6b630346a39dca150
+  checksum: 10/fb7ea951acd42c9f67a29c6909d0203611995fc2849d79ca03a4f260edaefa5f2de4ceacf76e90636f6d23473107176d952f31828a75814b98f13219a3dd42c6
   languageName: node
   linkType: hard
 
@@ -11305,7 +11305,7 @@ __metadata:
     "@vue/eslint-config-typescript": "npm:^13.0.0"
     "@vue/test-utils": "npm:^2.4.6"
     "@vue/vue3-jest": "npm:^29.2.6"
-    "@vueuse/core": "npm:^12.5.0"
+    "@vueuse/core": "npm:^12.6.1"
     axios: "npm:^1.7.9"
     babel-jest: "npm:~29.7.0"
     buefy: "npm:^0.9.29"
