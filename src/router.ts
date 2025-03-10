@@ -47,12 +47,6 @@ const anotherRoutes: RouteRecordRaw[] = [
       import(/* webpackChunkName: "about" */ './views/AboutPage.vue'),
   },
   {
-    path: '/certification',
-    name: 'certification',
-    component: () =>
-      import(/* webpackChunkName: "certification" */ './views/CertificationPage.vue'),
-  },
-  {
     path: '/community/speaking',
     name: 'speaking',
     component: () =>
@@ -72,6 +66,12 @@ const homeRoute: RouteRecordRaw[] = [
     name: 'home',
     component: () =>
       import(/* webpackChunkName: "home" */ './views/HomePage.vue'),
+  },
+  {
+    path: '/certification',
+    name: 'certification',
+    component: () =>
+      import(/* webpackChunkName: "certification" */ './views/CertificationPage.vue'),
   },
   {
     path: '/songs',

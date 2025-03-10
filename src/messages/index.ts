@@ -3,9 +3,11 @@ const messages = {
     common: {
       announcement: 'Announcement',
       active_certification: 'Active Certification',
+      badges: 'Badges',
       certification: 'Certification',
       certification_history: 'Certification History',
       donate: 'Donate',
+      home: 'Home',
       seemore: 'See More',
       todayverse: 'Today Verse',
       gallery: 'Gallery'
@@ -44,7 +46,9 @@ const messages = {
       active_certification: 'Sertifikasi Aktif',
       certification: 'Sertifikasi',
       certification_history: 'Riwayat Sertifikasi',
+      badges: 'Badges',
       donate: 'Donasi',
+      home: 'Beranda',
       seemore: 'Lihat Lebih Lanjut',
       todayverse: 'Ayat Hari Ini',
       gallery: 'Galeri'

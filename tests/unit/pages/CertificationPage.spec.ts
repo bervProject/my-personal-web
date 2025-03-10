@@ -8,6 +8,11 @@ describe('CertificationPage.vue', () => {
         stubs: [
           'router-link',
           'router-view',
+          'o-icon',
+          'o-button',
+          'o-notification',
+          'o-table',
+          'o-table-column',
         ],
         mocks: {
           $t: () => {}

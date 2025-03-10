@@ -11,6 +11,7 @@ import '@oruga-ui/theme-bulma/dist/bulma.css';
 const app = createApp(App);
 
 const i18n = createI18n({
+  legacy: false,
   locale: 'en', // set locale
   fallbackLocale: 'en',
   messages, // set locale messages
