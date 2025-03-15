@@ -4,7 +4,7 @@
       <h2 class="title">
         {{ $t('common.certification') }}
       </h2>
-      <o-table :data="certifications" :loading="isLoading">
+      <o-table :data="certifications" :loading="isLoading" paginated="true">
         
 
         <o-table-column v-slot="props" field="Name" label="Name">
