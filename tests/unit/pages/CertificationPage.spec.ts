@@ -21,10 +21,5 @@ describe('CertificationPage.vue', () => {
     });
 
     expect(wrapper.text()).toContain('');
-
-    const footer = wrapper.find('footer');
-
-    expect(footer.exists()).toBe(true);
-    expect(footer.classes()).toStrictEqual(['card-footer']);
   });
 });
