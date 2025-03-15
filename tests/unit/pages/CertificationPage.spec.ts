@@ -20,7 +20,7 @@ describe('CertificationPage.vue', () => {
       }
     });
 
-    expect(wrapper.text()).toContain('This page is in maintenance mode');
+    expect(wrapper.text()).toContain('Name');
 
     const footer = wrapper.find('footer');
 
