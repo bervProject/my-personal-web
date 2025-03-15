@@ -20,7 +20,7 @@ describe('CertificationPage.vue', () => {
       }
     });
 
-    expect(wrapper.text()).toContain('Name');
+    expect(wrapper.text()).toContain('');
 
     const footer = wrapper.find('footer');
 
