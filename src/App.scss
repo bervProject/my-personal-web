@@ -1,5 +1,5 @@
 $primary: #2fcdf5;
 
-@use '@oruga-ui/theme-bulma/dist/scss/bulma' with (
+@use '@oruga-ui/theme-bulma/dist/scss/bulma-build' with (
   $primary: $primary,
 );
