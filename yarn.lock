@@ -11489,7 +11489,7 @@ __metadata:
     jest: "npm:~29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     moment: "npm:^2.30.1"
-    sass: "npm:^1.86.0"
+    sass: "npm:^1.86.3"
     sass-loader: "npm:~16.0.5"
     ts-jest: "npm:~29.3.1"
     typescript: "npm:^5.8.2"
@@ -13291,9 +13291,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.86.0":
-  version: 1.86.0
-  resolution: "sass@npm:1.86.0"
+"sass@npm:^1.86.3":
+  version: 1.86.3
+  resolution: "sass@npm:1.86.3"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -13304,7 +13304,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/d943e114340781d1d77bf8dc09c7daa8e1310bbdcdcf9cdd798e3d67c339132b19f6a88838800d11f48fc32e6726266fb87528d4aa087682a95abe690af1009c
+  checksum: 10/97c1c06aa6eab34b732fc1ce0c6816c0d63c4b68e1f5927981fdeba6d5b69765c318e455db2111f4ee616ae0b5015cc5c25f05db68ad03a052fd043ec97624c1
   languageName: node
   linkType: hard
 
