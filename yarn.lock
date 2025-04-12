@@ -7299,14 +7299,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "eslint-plugin-cypress@npm:4.2.0"
+"eslint-plugin-cypress@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "eslint-plugin-cypress@npm:4.2.1"
   dependencies:
-    globals: "npm:^15.11.0"
+    globals: "npm:^15.15.0"
   peerDependencies:
     eslint: ">=9"
-  checksum: 10/f2c428d5918ef548dee623ce2ba90100d135575521b81363c5b90c316e6ebc242d9419498fd844597ca4e838d5c8e4b0572ad5dacd3e33921cf57ac85be52317
+  checksum: 10/14e9a46e1f58ec2a3a08f6f526fb71693fa72e4f9670e6d4e953b51dca3d726ef07d4fe65cb5cf38af2bbd0b99ae74de03efc292b5537b24590b0623df16cdd7
   languageName: node
   linkType: hard
 
@@ -8381,10 +8381,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.11.0":
-  version: 15.13.0
-  resolution: "globals@npm:15.13.0"
-  checksum: 10/ba84d0612d516bcc1dabdd9ce66667956e1a87401fb53be6c379f8f6a04f8e6ce415b584801ae2689a90e788e89bb38adfafc854a8a50ae8e322bb4dd35a2105
+"globals@npm:^15.15.0":
+  version: 15.15.0
+  resolution: "globals@npm:15.15.0"
+  checksum: 10/7f561c87b2fd381b27fc2db7df8a4ea7a9bb378667b8a7193e61fd2ca3a876479174e2a303a74345fbea6e1242e16db48915c1fd3bf35adcf4060a795b425e18
   languageName: node
   linkType: hard
 
@@ -11484,7 +11484,7 @@ __metadata:
     buefy: "npm:^0.9.29"
     cypress: "npm:~14.3.0"
     eslint: "npm:~8.57.0"
-    eslint-plugin-cypress: "npm:^4.2.0"
+    eslint-plugin-cypress: "npm:^4.2.1"
     eslint-plugin-vue: "npm:^10.0.0"
     jest: "npm:~29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
