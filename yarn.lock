@@ -7265,9 +7265,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "eslint-plugin-vue@npm:10.0.0"
+"eslint-plugin-vue@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "eslint-plugin-vue@npm:10.1.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.4.0"
     natural-compare: "npm:^1.4.0"
@@ -7278,7 +7278,7 @@ __metadata:
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
     vue-eslint-parser: ^10.0.0
-  checksum: 10/ed86ef50bbe73f9e98dbde5f117f2f157537ae67de2b61a77d638db45ce988903a89d1daeee02918a0413e78c2db9d198f0c0c242f2c96e60ca6f26e4fe1b89e
+  checksum: 10/8e9701e1997e93ebbb5c832ced3bb522f858226004cbfd0b775417a21c218c277ea5179f3c3b73bd4c20a5f5ca6622e2363fc2b2863d79d6a7095197707820cc
   languageName: node
   linkType: hard
 
@@ -11440,7 +11440,7 @@ __metadata:
     cypress: "npm:~14.3.2"
     eslint: "npm:~8.57.0"
     eslint-plugin-cypress: "npm:^4.3.0"
-    eslint-plugin-vue: "npm:^10.0.0"
+    eslint-plugin-vue: "npm:^10.1.0"
     jest: "npm:~29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     moment: "npm:^2.30.1"
