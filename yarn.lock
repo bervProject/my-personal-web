@@ -2660,14 +2660,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/oruga-next@npm:^0.10.4":
-  version: 0.10.4
-  resolution: "@oruga-ui/oruga-next@npm:0.10.4"
+"@oruga-ui/oruga-next@npm:^0.10.5":
+  version: 0.10.5
+  resolution: "@oruga-ui/oruga-next@npm:0.10.5"
   dependencies:
     vue-component-type-helpers: "npm:^2.2.8"
   peerDependencies:
     vue: ^3.0.0
-  checksum: 10/625e4544f7de3f556d2ca1af86d1fd96253c4e6aaf91ebc2a202d8c52bb61b8559f964542fbc6e8ceca05440662c8d49e9cbbd6c6a7d123a2f4b08cbb9906c8f
+  checksum: 10/5db21bf7d016acae5a84e3c4fc4e61418a3d92fd90b157b5a38e6a82c42184682ff61f006e934d9461a8edaa5de2eb932ebe54997e66708466ab63a54967241c
   languageName: node
   linkType: hard
 
@@ -11370,7 +11370,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.27.1"
     "@fortawesome/fontawesome-free": "npm:^6.7.2"
-    "@oruga-ui/oruga-next": "npm:^0.10.4"
+    "@oruga-ui/oruga-next": "npm:^0.10.5"
     "@oruga-ui/theme-bulma": "npm:^0.6.2"
     "@types/jest": "npm:^29.5.14"
     "@typescript-eslint/eslint-plugin": "npm:^8.31.1"
