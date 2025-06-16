@@ -12,7 +12,7 @@
     "noUncheckedSideEffectImports": true,
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
     },
   },
