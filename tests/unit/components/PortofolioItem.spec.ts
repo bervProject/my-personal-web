@@ -1,3 +1,4 @@
+import { expect, describe, it } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
 import PortofolioItem from '@/components/PortofolioItem.vue';
 

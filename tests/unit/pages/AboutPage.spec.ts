@@ -1,3 +1,4 @@
+import { expect, describe, it } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
 
 import AboutPage from '@/views/AboutPage.vue';
