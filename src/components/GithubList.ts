@@ -31,12 +31,13 @@ export default defineComponent({
             per_page: 100,
           },
         })
-        .then(response => {
+        .then((response : any) => {
           this.isLoading = false;
           this.myData = response.data;
         })
-        .catch(reason => {
+        .catch((reason : Error) => {
           this.isLoading = false;
+          console.error(reason);
         });
     },
     showComplete(date: string): string {

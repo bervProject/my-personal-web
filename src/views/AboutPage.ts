@@ -7,18 +7,19 @@ export default defineComponent({
     title: 'About Me',
   },
   data() {
+    const contacts : any[] = [];
     return {
-      contacts: [],
+      contacts,
       isLoading: false,
     };
   },
   mounted(): void {
     this.isLoading = true;
     services.get('classes/Contact')
-      .then(result => {
+      .then((result : any) => {
         this.contacts = result.data.results;
       })
-      .catch(err => {
+      .catch((err: Error) => {
         console.error(err);
       })
       .finally(() => {
