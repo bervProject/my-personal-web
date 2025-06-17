@@ -3,6 +3,10 @@ import services from '@/services';
 
 export default defineComponent({
   data() {
+    const announcements : any[] = [];
+    const blogs : any[] = [];
+    const contacts : any[] = [];
+
     return {
       carousels: [
         { image: 'assets/home/intro.jpg' },
@@ -11,15 +15,15 @@ export default defineComponent({
         { image: 'assets/home/intro-3.jpg' },
         { image: 'assets/home/intro-5.jpg' },
       ],
-      announcements: [],
-      blogs: [],
+      announcements,
+      blogs,
       communityList: [
         "3b7ccdc9-6787-487c-957b-fa729f76520f",
         "23c0a13f-9538-4d2b-a2a1-f07710242860",
         "8cad11b0-12d7-4193-b51a-11a0c75de467",
         "4c1544dc-271b-404e-974a-f991320ab9d8"
       ],
-      contacts: [],
+      contacts,
       isLoading: false,
     }
   },

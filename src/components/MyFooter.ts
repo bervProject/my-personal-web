@@ -4,7 +4,7 @@ export default defineComponent({
   name: 'MyFooter',
   data() {
     return {
-      version: process.env.VUE_APP_VERSION || '0',
+      version: import.meta.env.VITE_APP_VERSION || '0',
     };
   },
 });

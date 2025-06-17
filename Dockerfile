@@ -1,12 +1,12 @@
-FROM node:22-alpine3.18 as build
+FROM node:lts-alpine AS build
 WORKDIR /app
 COPY package.json yarn.lock .yarnrc.yml ./
-COPY .yarn/releases/yarn-4.5.3.cjs .yarn/releases/yarn-4.5.3.cjs
+COPY .yarn/releases/yarn-*.cjs .yarn/releases/
 RUN apk update && apk add yarn python3 g++ make && rm -rf /var/cache/apk/* && corepack enable && corepack prepare yarn@stable --activate && yarn install --immutable 
 COPY . .
 RUN IS_DOCKER=true yarn build
 
-FROM nginx:stable-alpine as run
+FROM nginx:stable-alpine AS run
 RUN mkdir /app
 COPY --from=build /app/dist /app
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template

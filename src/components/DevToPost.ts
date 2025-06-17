@@ -7,16 +7,17 @@ export default defineComponent({
     username: String,
   },
   data() {
+    const posts : any[] = [];
     return {
       isLoading: false,
-      posts: [],
+      posts,
     };
   }
   , mounted() {
     this.isLoading = true;
     axios.get(`https://dev.to/api/articles?username=${this.username}&per_page=9`).then(result => {
       this.posts = result.data;
-    }).catch(error => {
+    }).catch((error: Error) => {
       console.error(error);
     }).finally(() => {
       this.isLoading = false;

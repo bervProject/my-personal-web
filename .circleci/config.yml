@@ -20,7 +20,7 @@ jobs:
           command: yarn build
           name: Build
       - run:
-          command: yarn test:unit --ci --maxWorkers=2
+          command: yarn coverage
           name: Unit Test
       - codecov/upload
       - store_artifacts:

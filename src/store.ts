@@ -1,7 +1,3 @@
-import { createStore } from 'vuex';
+import { createPinia } from 'pinia';
 
-export default createStore({
-  state: {},
-  mutations: {},
-  actions: {},
-});
+export default createPinia();

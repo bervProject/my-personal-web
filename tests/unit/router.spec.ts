@@ -1,3 +1,5 @@
+import { expect, describe, it } from 'vitest';
+
 import router from '@/router';
 
 describe('router.ts', () => {
