@@ -26,5 +26,5 @@
       ]
     },
   },
-  "include": ["vite.config.ts", "cypress.config.ts", "cypress/**/*.ts"]
+  "include": ["vite.config.ts"]
 }
