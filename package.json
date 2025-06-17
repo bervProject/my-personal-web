@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run -tsconfig tsconfig.node.json",
     "test:e2e": "start-server-and-test dev http://localhost:5173 cy:run"
   },
   "dependencies": {
