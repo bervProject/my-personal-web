@@ -684,14 +684,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/theme-bulma@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "@oruga-ui/theme-bulma@npm:0.6.2"
+"@oruga-ui/theme-bulma@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@oruga-ui/theme-bulma@npm:0.7.0"
   dependencies:
-    bulma: "npm:1.0.3"
+    bulma: "npm:1.0.4"
   peerDependencies:
-    "@oruga-ui/oruga-next": ^0.10.0
-  checksum: 10/090fc200cbd770918aff5a2ba5fc0e5f08780dfc076d0d685f347e3b0e9f72197e29a30e0b1da83af9493a2b91172ba780826f1a40a9275862f619c9adcfb4c8
+    "@oruga-ui/oruga-next": ^0.11.0
+  checksum: 10/4f064a56f18f4eb06f5bf3ca17601778a54437ad3aa1fd02a941093dbb6bc48bfe8f063f3f26891eb3a5ed636bd2201bf152a7ffcd6d213cf77fcb25891af866
   languageName: node
   linkType: hard
 
@@ -2039,10 +2039,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bulma@npm:1.0.3":
-  version: 1.0.3
-  resolution: "bulma@npm:1.0.3"
-  checksum: 10/099ea71a1718a614b3d33eb8b25953c815183a523d91453831c2b254870a5889a0549db981c95c0198106fd6d21eefb817c63a775116e99470aa28826ce2351b
+"bulma@npm:1.0.4":
+  version: 1.0.4
+  resolution: "bulma@npm:1.0.4"
+  checksum: 10/5d6cbbf95a6b22ab151efcb02cb4d30faedcdcd2d7dafcf353dc06d281bbec044fe4de7cb397c42c549a1a338fb0441428eab73a936d794075ad4bf55efc69a5
   languageName: node
   linkType: hard
 
@@ -4617,7 +4617,7 @@ __metadata:
   dependencies:
     "@fortawesome/fontawesome-free": "npm:^6.7.2"
     "@oruga-ui/oruga-next": "npm:^0.11.0"
-    "@oruga-ui/theme-bulma": "npm:^0.6.2"
+    "@oruga-ui/theme-bulma": "npm:^0.7.0"
     "@vitejs/plugin-vue": "npm:^5.2.4"
     "@vitest/coverage-v8": "npm:^3.2.4"
     "@vue/eslint-config-prettier": "npm:^10.2.0"
