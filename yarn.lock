@@ -1198,7 +1198,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.34.1, @typescript-eslint/utils@npm:^8.26.0":
+"@typescript-eslint/utils@npm:8.34.1, @typescript-eslint/utils@npm:^8.34.1":
   version: 8.34.1
   resolution: "@typescript-eslint/utils@npm:8.34.1"
   dependencies:
@@ -1490,14 +1490,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/eslint-config-typescript@npm:^14.5.0":
-  version: 14.5.0
-  resolution: "@vue/eslint-config-typescript@npm:14.5.0"
+"@vue/eslint-config-typescript@npm:^14.5.1":
+  version: 14.5.1
+  resolution: "@vue/eslint-config-typescript@npm:14.5.1"
   dependencies:
-    "@typescript-eslint/utils": "npm:^8.26.0"
+    "@typescript-eslint/utils": "npm:^8.34.1"
     fast-glob: "npm:^3.3.3"
-    typescript-eslint: "npm:^8.26.0"
-    vue-eslint-parser: "npm:^10.1.1"
+    typescript-eslint: "npm:^8.34.1"
+    vue-eslint-parser: "npm:^10.1.3"
   peerDependencies:
     eslint: ^9.10.0
     eslint-plugin-vue: ^9.28.0 || ^10.0.0
@@ -1505,7 +1505,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/83b50be595738dd25b515ad53775d4ae570d7750385f12b8f136853df34f7b953ea83241b234c9b4736cb4687baa2df96c3476123fed844e45b6e5036c17b749
+  checksum: 10/3f202a7834da8e0708084d468bb16da239be74dfa76225baccc8433ba73e43e6a7cb569a88de7d3ae1d18a2d8d73d9851c0bfd40efb1c563c1ed448b46409db5
   languageName: node
   linkType: hard
 
@@ -4621,7 +4621,7 @@ __metadata:
     "@vitejs/plugin-vue": "npm:^5.2.4"
     "@vitest/coverage-v8": "npm:^3.2.4"
     "@vue/eslint-config-prettier": "npm:^10.2.0"
-    "@vue/eslint-config-typescript": "npm:^14.5.0"
+    "@vue/eslint-config-typescript": "npm:^14.5.1"
     "@vue/test-utils": "npm:^2.4.6"
     "@vue/tsconfig": "npm:^0.7.0"
     "@vueuse/core": "npm:^13.4.0"
@@ -6008,7 +6008,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.26.0":
+"typescript-eslint@npm:^8.34.1":
   version: 8.34.1
   resolution: "typescript-eslint@npm:8.34.1"
   dependencies:
@@ -6326,7 +6326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-eslint-parser@npm:^10.1.1":
+"vue-eslint-parser@npm:^10.1.3":
   version: 10.1.3
   resolution: "vue-eslint-parser@npm:10.1.3"
   dependencies:
