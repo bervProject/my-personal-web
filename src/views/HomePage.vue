@@ -61,7 +61,7 @@
           <div class="columns is-multiline">
             <div class="column is-12">
               <a target="_blank"
-                href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=bervianto%2Bleo%2Bpratama&cb-cards.q_operator=AND">
+                href="https://builder.aws.com/connect/community/community-builders">
                 <figure class="image is-2by1">
                   <img src="../assets/images/community.png" alt="Community Builder" />
                 </figure>
