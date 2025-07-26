@@ -15,7 +15,7 @@
     "test:e2e": "start-server-and-test dev http://localhost:5173 cy:run"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-free": "^7.0.0",
     "@oruga-ui/oruga-next": "^0.11.3",
     "@oruga-ui/theme-bulma": "^0.7.3",
     "@vueuse/core": "^13.5.0",
