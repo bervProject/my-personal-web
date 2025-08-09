@@ -2568,9 +2568,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^14.5.3":
-  version: 14.5.3
-  resolution: "cypress@npm:14.5.3"
+"cypress@npm:^14.5.4":
+  version: 14.5.4
+  resolution: "cypress@npm:14.5.4"
   dependencies:
     "@cypress/request": "npm:^3.0.9"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -2618,7 +2618,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 10/24896ae650d2ed783d657c4582d1b03f548750cad409af8977a6b3ce45304be35bd344089b13592d7af8a98a39c031c30b4cf085e97587a10b168eddb8c33b6e
+  checksum: 10/7ddd789f58c633c75181d31dedf75056910dea146b093d4d935802cb17924648a0b7a6f736cb484baf75c105df6c9fbaa54780ed328a98ff2e114d8abcea4168
   languageName: node
   linkType: hard
 
@@ -4837,7 +4837,7 @@ __metadata:
     autoprefixer: "npm:^10.4.21"
     axios: "npm:^1.11.0"
     buefy: "npm:^1.0.2"
-    cypress: "npm:^14.5.3"
+    cypress: "npm:^14.5.4"
     eslint: "npm:^9.33.0"
     eslint-plugin-vue: "npm:^10.4.0"
     jsdom: "npm:^26.1.0"
