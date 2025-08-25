@@ -35,6 +35,6 @@ describe('HomePage.vue', () => {
       }
     });
 
-    expect(subtitles).toStrictEqual(['Focus Topics', 'Technology Stacks', '']);
+    expect(subtitles).toStrictEqual(['Focus Topics', 'Technology Stacks', 'navigation.community']);
   });
 });

@@ -19,7 +19,7 @@ describe('DonatePage.vue', () => {
     const h2 = wrapper.find('h2');
     expect(h2.exists()).toBe(true);
     expect(h2.classes()).toStrictEqual(['title']);
-    expect(h2.text()).toEqual('');
+    expect(h2.text()).toEqual('common.donate');
 
     const img = wrapper.find('iframe');
     expect(img.exists()).toBe(true);
