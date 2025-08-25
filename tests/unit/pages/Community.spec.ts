@@ -25,6 +25,6 @@ describe('CommunityPage.vue', () => {
       }
     });
 
-    expect(subtitles).toStrictEqual(['', 'Contributions']);
+    expect(subtitles).toStrictEqual(['navigation.community', 'Contributions']);
   });
 });

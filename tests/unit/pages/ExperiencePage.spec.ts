@@ -35,6 +35,6 @@ describe('ExperiencePage.vue', () => {
       expect(subs.classes()).toStrictEqual(['subtitle']);
       allSubs.push(subs.text());
     });
-    expect(allSubs).toStrictEqual(['', '', '']);
+    expect(allSubs).toStrictEqual(['experience.workexperience', 'experience.education', 'experience.research_list']);
   });
 });

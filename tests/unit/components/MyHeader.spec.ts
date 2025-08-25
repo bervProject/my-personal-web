@@ -16,7 +16,9 @@ describe('MyHeader.vue', () => {
       }
     });
     const renderedClasses = wrapper.classes();
-    expect(renderedClasses).toContain('container');
+    expect(renderedClasses).toContain('navbar');
+    expect(renderedClasses).toContain('has-shadow');
+    expect(renderedClasses).toContain('has-background-primary');
     expect(renderedClasses).toContain('mt-4');
   });
  
