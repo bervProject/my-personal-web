@@ -1,4 +1,4 @@
-import { expect, describe, it, beforeEach } from 'vitest';
+import { expect, describe, it } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
 import { createPinia } from 'pinia';
 import App from '@/App.vue';
