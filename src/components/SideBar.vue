@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidenav menu has-background-white-ter">
+  <aside class="sidenav menu">
     <div class="section">
       <figure class="image is-128x128">
         <img class="is-rounded" src="../assets/images/me.jpg" />
@@ -92,7 +92,7 @@ export default defineComponent({});
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
+  background-color: var(--surface-color);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }

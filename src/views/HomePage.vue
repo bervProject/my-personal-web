@@ -63,7 +63,7 @@
               <a target="_blank"
                 href="https://builder.aws.com/connect/community/community-builders">
                 <figure class="image is-2by1">
-                  <img src="../assets/images/community.png" alt="Community Builder" />
+                  <img :src="communityImage" alt="Community Builder" />
                 </figure>
               </a>
             </div>

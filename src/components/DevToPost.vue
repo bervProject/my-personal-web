@@ -14,7 +14,7 @@
             <div>
               <div class="tags">
                 <span
-                  class="tag is-info"
+                  class="tag is-primary"
                   v-for="(tag, index) in post.tag_list"
                   :key="index"
                   >{{ tag }}</span
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="column is-12">
-      <o-button tag="a" expanded href="https://dev.to/berviantoleo">
+      <o-button tag="a" expanded variant="primary" href="https://dev.to/berviantoleo">
         Show More
       </o-button>
     </div>

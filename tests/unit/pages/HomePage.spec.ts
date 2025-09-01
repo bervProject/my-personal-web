@@ -1,12 +1,14 @@
 import { expect, describe, it } from 'vitest';
-
 import { shallowMount } from '@vue/test-utils';
+import { createPinia } from 'pinia';
 import HomePage from '@/views/HomePage.vue';
 
 describe('HomePage.vue', () => {
   it('Render correctly', () => {
+    const pinia = createPinia();
     const wrapper = shallowMount(HomePage, {
       global: {
+        plugins: [pinia],
         stubs: [
           'router-link',
           'router-view',

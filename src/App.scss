@@ -1,5 +1,258 @@
-$primary: #2fcdf5;
+// Blue theme colors
+$primary: #3b82f6;
+$primary-light: #60a5fa;
+$primary-dark: #1d4ed8;
 
 @use '@oruga-ui/theme-bulma/dist/scss/bulma-build' with (
   $primary: $primary,
 );
+
+// Theme variables
+:root {
+  --primary-color: #{$primary};
+  --primary-light: #{$primary-light};
+  --primary-dark: #{$primary-dark};
+  --bg-color: #ffffff;
+  --surface-color: #f8fafc;
+  --text-color: #1f2937;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+// Manual light mode class (higher priority)
+.light-mode {
+  --bg-color: #ffffff !important;
+  --surface-color: #f8fafc !important;
+  --text-color: #111827 !important;
+  --border-color: #e5e7eb !important;
+  --card-bg: #ffffff !important;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+  --gradient-1: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+  --gradient-2: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%) !important;
+  --gradient-3: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%) !important;
+}
+
+// Manual dark mode class (higher priority)
+.dark-mode {
+  --bg-color: #1f2937 !important;
+  --surface-color: #374151 !important;
+  --text-color: #f9fafb !important;
+  --border-color: #4b5563 !important;
+  --card-bg: #374151 !important;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) !important;
+  --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
+  --gradient-2: linear-gradient(135deg, #1e40af 0%, #2563eb 100%) !important;
+  --gradient-3: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.dark-mode):not(.light-mode) {
+    --bg-color: #1f2937;
+    --surface-color: #374151;
+    --text-color: #f9fafb;
+    --border-color: #4b5563;
+    --card-bg: #374151;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+// Global theme application
+body {
+  background: var(--gradient-1);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+.section {
+  background: transparent;
+}
+
+.section:nth-child(even) {
+  background: var(--gradient-2);
+}
+
+.section:nth-child(odd) {
+  background: var(--gradient-3);
+}
+
+// Heading colors
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+  color: var(--text-color) !important;
+}
+
+// Link colors
+a {
+  color: var(--primary-color) !important;
+}
+
+a:hover {
+  color: var(--primary-dark) !important;
+}
+
+// Content text
+.content, p, span, div {
+  color: var(--text-color) !important;
+}
+
+// Strong text
+strong, b {
+  color: var(--text-color) !important;
+}
+
+// Component theming
+.card, .box {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.navbar {
+  background-color: var(--surface-color) !important;
+  border: none !important;
+}
+
+.navbar-item, .navbar-link {
+  color: var(--text-color) !important;
+}
+
+.navbar-item:hover, .navbar-link:hover {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.navbar-item.is-active {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.navbar-burger span {
+  background-color: var(--text-color) !important;
+}
+
+.navbar .button {
+  color: var(--text-color) !important;
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+.navbar .button:hover {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.footer {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.button:not(.is-primary):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger) {
+  background-color: var(--surface-color) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.button.is-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-color: var(--primary-color) !important;
+}
+
+.button.is-primary.is-outlined {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.input, .textarea, .select select {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.table {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.table th {
+  background-color: var(--surface-color) !important;
+  color: var(--text-color) !important;
+}
+
+.table td {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.modal-card {
+  background-color: var(--card-bg);
+}
+
+.modal-card-head, .modal-card-foot {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+// Oruga specific theming
+.o-table {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.o-table__wrapper {
+  background-color: var(--card-bg) !important;
+}
+
+.o-table tr {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.o-table th, .o-table td {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.o-notification {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.notification {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.o-dropdown__menu {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.o-dropdown__item {
+  color: var(--text-color);
+}
+
+.o-dropdown__item:hover {
+  background-color: var(--surface-color);
+}
+
+// Menu theming
+.menu-list a {
+  color: var(--text-color);
+}
+
+.menu-list a:hover {
+  background-color: var(--surface-color);
+}
+
+.menu-list a.is-active {
+  background-color: var(--primary-color);
+  color: white;
+}

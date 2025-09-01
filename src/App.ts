@@ -1,11 +1,13 @@
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted } from 'vue';
 import MyFooter from '@/components/MyFooter.vue';
 import SideBar from '@/components/SideBar.vue';
 import MyHeader from '@/components/MyHeader.vue';
+import { useThemeStore } from '@/stores/theme';
 
 const allTitle = 'Bervianto Leo Pratama\'s Website';
 const allDescription = 'Bervianto Leo Pratama\'s Personal Website.';
 const imageSite = `${import.meta.env.BASE_URL}assets/my-logo.png`
+
 export default defineComponent({
   components: {
     MyHeader,
@@ -13,6 +15,15 @@ export default defineComponent({
     SideBar,
   },
   name: "App",
+  setup() {
+    const themeStore = useThemeStore();
+    
+    onMounted(() => {
+      themeStore.initTheme();
+    });
+
+    return {};
+  },
   metaInfo: {
     title: 'Home',
     titleTemplate: '%s | Bervianto Leo Pratama\'s Website',

@@ -1,7 +1,24 @@
-import { defineComponent } from 'vue';
+import { defineComponent, computed } from 'vue';
+import { useThemeStore } from '@/stores/theme';
+import { storeToRefs } from 'pinia';
 import services from '@/services';
+import communityLight from '@/assets/images/community.png';
+import communityDark from '@/assets/images/community-dark.png';
 
 export default defineComponent({
+  setup() {
+    const themeStore = useThemeStore();
+    const { isDark } = storeToRefs(themeStore);
+    
+    const communityImage = computed(() => {
+      return isDark.value ? communityDark : communityLight;
+    });
+    
+    return {
+      isDark,
+      communityImage
+    };
+  },
   data() {
     const announcements : any[] = [];
     const blogs : any[] = [];

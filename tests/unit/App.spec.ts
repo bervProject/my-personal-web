@@ -1,12 +1,29 @@
-import { expect, describe, it } from 'vitest';
-
+import { expect, describe, it, beforeEach } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
+import { createPinia } from 'pinia';
 import App from '@/App.vue';
+
+// Mock window.matchMedia
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: (query: string) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: () => {},
+    removeListener: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    dispatchEvent: () => {},
+  }),
+});
 
 describe('App.vue', () => {
   it('Render correctly', () => {
+    const pinia = createPinia();
     const wrapper = shallowMount(App, {
       global: {
+        plugins: [pinia],
         stubs: [
           'router-link',
           'router-view',
