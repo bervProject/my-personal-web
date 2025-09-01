@@ -1,5 +1,7 @@
 import { defineComponent, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useThemeStore } from '@/stores/theme';
+import { storeToRefs } from 'pinia';
 
 export default defineComponent({
   name: 'MyHeader',
@@ -19,12 +21,23 @@ export default defineComponent({
       currentLocale.value = lang;
     };
 
+    // Theme management
+    const themeStore = useThemeStore();
+    const { isDark } = storeToRefs(themeStore);
+    
+    const toggleTheme = () => {
+      themeStore.toggleTheme();
+      themeStore.saveTheme();
+    };
+
     return {
       isMenuActive,
       toggleMenu,
       availableLocales,
       currentLocale,
-      switchLanguage
+      switchLanguage,
+      isDark,
+      toggleTheme
     };
   },
   data() {

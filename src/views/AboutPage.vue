@@ -33,7 +33,7 @@
               <p class="buttons are-small">
                 <a
                   href="mailto:bervianto.leo@gmail.com"
-                  class="button is-dark is-outlined"
+                  class="button is-primary is-outlined"
                 >
                   <span class="icon">
                     <o-icon pack="fa" icon="envelope" />
@@ -45,7 +45,7 @@
                   :key="contact.id"
                   :href="contact.address"
                   target="_blank"
-                  class="button is-dark is-outlined"
+                  class="button is-primary is-outlined"
                 >
                   <span class="icon">
                     <o-icon pack="fab" :icon="contact.icon" />

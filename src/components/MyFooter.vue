@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer has-background-white-ter">
+  <footer class="footer">
     <div class="container">
       <div class="columns">
         <div class="column">
@@ -29,7 +29,7 @@
             <p>
               <a href="https://bulma.io">
                 <img
-                  src="https://bulma.io/assets/images/made-with-bulma--black.png"
+                  :src="isDark ? 'https://bulma.io/assets/images/made-with-bulma--white.png' : 'https://bulma.io/assets/images/made-with-bulma--black.png'"
                   alt="Made with Bulma"
                   width="128"
                   height="24"
@@ -39,7 +39,7 @@
             <o-button
               icon-pack="fab"
               icon-left="github"
-              variant="light"
+              variant="primary"
               tag="a"
               href="https://github.com/bervProject/my-personal-web"
             >

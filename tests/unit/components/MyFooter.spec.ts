@@ -1,14 +1,14 @@
 import { expect, describe, it } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
+import { createPinia } from 'pinia';
 import MyFooter from '@/components/MyFooter.vue';
 
 describe('MyFooter.vue', () => {
   it('Render correctly the version', () => {
-    import.meta.env.VITE_APP_VERSION = "2";
-    const currentVersion = import.meta.env.VITE_APP_VERSION;
-    const msg = currentVersion;
+    const pinia = createPinia();
     const wrapper = shallowMount(MyFooter, {
       global: {
+        plugins: [pinia],
         stubs: [
           'router-link',
           'router-view',
@@ -17,14 +17,14 @@ describe('MyFooter.vue', () => {
         ]
       }
     });
-    expect(wrapper.text()).toContain(msg);
+    expect(wrapper.text()).toContain('1.0.0');
   });
 
-  it('Render 0 when not have VITE_APP_VERSION', () => {
-    import.meta.env.VITE_APP_VERSION = undefined;
-    const msg = '0';
+  it('Render version from package.json', () => {
+    const pinia = createPinia();
     const wrapper = shallowMount(MyFooter, {
       global: {
+        plugins: [pinia],
         stubs: [
           'router-link',
           'router-view',
@@ -33,6 +33,6 @@ describe('MyFooter.vue', () => {
         ]
       }
     });
-    expect(wrapper.text()).toContain(msg);
+    expect(wrapper.text()).toContain('1.0.0');
   });
 });

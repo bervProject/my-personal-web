@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar has-shadow has-background-primary mt-4" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item">
         <img src="@/assets/my-logo.png" alt="Logo" style="max-height: 3rem;" />
@@ -27,6 +27,14 @@
       </div>
       <div class="navbar-end is-flex is-align-items-center" style="flex-wrap: wrap; gap: 0.5rem;">
         <div class="navbar-item">
+          <o-button
+            size="small"
+            @click="toggleTheme"
+          >
+            <o-icon pack="fas" :icon="isDark ? 'moon' : 'sun'" /><span>{{ isDark ? 'Dark' : 'Light' }}</span>
+          </o-button>
+        </div>
+        <div class="navbar-item">
           <o-dropdown
             position="auto"
             :max-height="'200px'"
@@ -34,7 +42,6 @@
           >
             <template #trigger>
               <o-button
-                variant="primary"
                 size="small"
               >
                 🌐 {{ currentLocale.toUpperCase() }}
