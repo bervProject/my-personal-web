@@ -2102,6 +2102,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^1.12.1":
+  version: 1.12.1
+  resolution: "axios@npm:1.12.1"
+  dependencies:
+    follow-redirects: "npm:^1.15.6"
+    form-data: "npm:^4.0.4"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: 10/928e88cba180a48451a7872cfd7e7072f39e3e797c69960a048eae90f456d1de44ef0d7929325939140cd4d03b06fe2ee0d29f3f4d5873b4a7584cbe6d0d3080
+  languageName: node
+  linkType: hard
+
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -4840,7 +4851,7 @@ __metadata:
     "@vue/tsconfig": "npm:^0.8.1"
     "@vueuse/core": "npm:^13.9.0"
     autoprefixer: "npm:^10.4.21"
-    axios: "npm:^1.11.0"
+    axios: "npm:^1.12.1"
     buefy: "npm:^3.0.2"
     cypress: "npm:^15.1.0"
     eslint: "npm:^9.35.0"
