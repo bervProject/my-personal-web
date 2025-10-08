@@ -67,12 +67,12 @@
                 </figure>
               </a>
             </div>
-            
+
           </div>
         </div>
         <div class="column is-3" v-for="community of communityList" :key="community">
-              <div data-iframe-width="150" data-iframe-height="270" :data-share-badge-id="community"
-                data-share-badge-host="https://www.credly.com" />
+          <div :data-iframe-width="150" :data-iframe-height="270" :data-share-badge-id="community"
+            data-share-badge-host="https://www.credly.com"></div>
         </div>
       </div>
     </section>

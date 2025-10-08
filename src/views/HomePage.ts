@@ -9,11 +9,11 @@ export default defineComponent({
   setup() {
     const themeStore = useThemeStore();
     const { isDark } = storeToRefs(themeStore);
-    
+
     const communityImage = computed(() => {
       return isDark.value ? communityDark : communityLight;
     });
-    
+
     return {
       isDark,
       communityImage
@@ -35,10 +35,12 @@ export default defineComponent({
       announcements,
       blogs,
       communityList: [
-        "3b7ccdc9-6787-487c-957b-fa729f76520f",
-        "23c0a13f-9538-4d2b-a2a1-f07710242860",
-        "8cad11b0-12d7-4193-b51a-11a0c75de467",
-        "4c1544dc-271b-404e-974a-f991320ab9d8"
+        "640476f4-dbc9-4797-af0d-eca54c7740b4", // HashiCorp Ambassador 2025
+        "b2427b20-4ced-4a13-8331-06d90dd3c6e6", // CDF Ambassador 2025
+        "3b7ccdc9-6787-487c-957b-fa729f76520f",  // 2024
+        "23c0a13f-9538-4d2b-a2a1-f07710242860", // 2024
+        "8cad11b0-12d7-4193-b51a-11a0c75de467", // HashiCorp Ambassador 2023
+        "4c1544dc-271b-404e-974a-f991320ab9d8" // CDF Ambassador 2023
       ],
       contacts,
       isLoading: false,
@@ -50,6 +52,13 @@ export default defineComponent({
     meta: [
       { name: 'description', content: 'Bervianto Leo Pratama\'s Personal Website.' },
     ]
+  },
+  updated(): void {
+    this.$nextTick(() => {
+      if ((window as any).credlyBadge) {
+        (window as any).credlyBadge.init();
+      }
+    });
   },
   mounted(): void {
     this.isLoading = true;
@@ -72,6 +81,18 @@ export default defineComponent({
       }
     }).finally(() => {
       this.isLoading = false;
+      // Load Credly script dynamically
+      const script = document.createElement('script');
+      script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
+      script.async = true;
+      script.onload = () => {
+        this.$nextTick(() => {
+          if ((window as any).credlyBadge) {
+            (window as any).credlyBadge.init();
+          }
+        });
+      };
+      document.head.appendChild(script);
     })
   }
 });
