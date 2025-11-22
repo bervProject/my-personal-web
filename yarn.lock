@@ -732,14 +732,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/theme-bulma@npm:^0.7.3":
-  version: 0.7.3
-  resolution: "@oruga-ui/theme-bulma@npm:0.7.3"
+"@oruga-ui/theme-bulma@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "@oruga-ui/theme-bulma@npm:0.8.1"
   dependencies:
     bulma: "npm:1.0.4"
   peerDependencies:
-    "@oruga-ui/oruga-next": ^0.11.0
-  checksum: 10/bc4fb8c7ba7232c3b6dd53c0c83932a47b1989c4be5b2ba33b14dd4438591dd439b1d071db5644eaf8784f36b4238f6b1490b99181b3dff41f20f9657e27b099
+    "@oruga-ui/oruga-next": ^0.12.0
+  checksum: 10/689f0eb3d912fb870a7ec9062413ee8e185ed79a5eab0f72ec4a7f6cd26f6b7ac12c5cfb389c477b3910f1d1a4b8e05e197efab3e4c99cdcad91e8f3af7fa369
   languageName: node
   linkType: hard
 
@@ -4651,7 +4651,7 @@ __metadata:
   dependencies:
     "@fortawesome/fontawesome-free": "npm:^7.1.0"
     "@oruga-ui/oruga-next": "npm:^0.12.1"
-    "@oruga-ui/theme-bulma": "npm:^0.7.3"
+    "@oruga-ui/theme-bulma": "npm:^0.8.1"
     "@vitejs/plugin-vue": "npm:^6.0.2"
     "@vitest/coverage-v8": "npm:^4.0.13"
     "@vue/eslint-config-prettier": "npm:^10.2.0"

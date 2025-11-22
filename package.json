@@ -17,7 +17,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@oruga-ui/oruga-next": "^0.12.1",
-    "@oruga-ui/theme-bulma": "^0.7.3",
+    "@oruga-ui/theme-bulma": "^0.8.1",
     "@vueuse/core": "^14.0.0",
     "axios": "^1.13.2",
     "buefy": "^3.0.3",
