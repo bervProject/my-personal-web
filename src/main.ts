@@ -6,7 +6,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import messages from './messages';
-import '@oruga-ui/theme-bulma/dist/bulma.css';
+import '@oruga-ui/theme-bulma/style.css';
 
 const app = createApp(App);
 
