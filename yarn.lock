@@ -4363,7 +4363,7 @@ __metadata:
     vue: "npm:^3.5.25"
     vue-i18n: "npm:^11.2.2"
     vue-meta: "npm:^2.4.0"
-    vue-router: "npm:^4.6.3"
+    vue-router: "npm:^4.6.4"
     vue-tsc: "npm:^3.1.8"
   languageName: unknown
   linkType: soft
@@ -5956,14 +5956,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^4.6.3":
-  version: 4.6.3
-  resolution: "vue-router@npm:4.6.3"
+"vue-router@npm:^4.6.4":
+  version: 4.6.4
+  resolution: "vue-router@npm:4.6.4"
   dependencies:
     "@vue/devtools-api": "npm:^6.6.4"
   peerDependencies:
     vue: ^3.5.0
-  checksum: 10/b4e69b5047dc86640cdcceabd9859cc1ba000ef7b364b0725f1a3b307410daadba840b0637a511ca32b68e58cb6d4a275a165407ba76cf7ad012ed57cf254e66
+  checksum: 10/7c13a10cc0509ed615b58b5268dbc8caabf76936dd33897aa6f0ed6f5b347cac2e2420cf3ccf293f2addcdfacdf4adcaad00bdee125cdc5526c8f41147679ec3
   languageName: node
   linkType: hard
 
