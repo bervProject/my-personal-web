@@ -1529,9 +1529,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/language-core@npm:3.1.6":
-  version: 3.1.6
-  resolution: "@vue/language-core@npm:3.1.6"
+"@vue/language-core@npm:3.1.8":
+  version: 3.1.8
+  resolution: "@vue/language-core@npm:3.1.8"
   dependencies:
     "@volar/language-core": "npm:2.4.26"
     "@vue/compiler-dom": "npm:^3.5.0"
@@ -1545,7 +1545,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/489f5afe00597a657c12137bf1f2920852c1fb0ee7e438a8a6f4d9c778f209108b3894d1e8ad0d94ec15aaf1271790c61d1abdb902e8711fcaf9c43b2cf15d39
+  checksum: 10/4ab08429f4e373d35312a3ba45db7154fd62bbf8e70a25cad7a5f9076b841777ebfdffc20976fed0d28e6e445a793d69e0146dc845e99f4897bcce94c0f87abe
   languageName: node
   linkType: hard
 
@@ -4364,7 +4364,7 @@ __metadata:
     vue-i18n: "npm:^11.2.2"
     vue-meta: "npm:^2.4.0"
     vue-router: "npm:^4.6.3"
-    vue-tsc: "npm:^3.1.6"
+    vue-tsc: "npm:^3.1.8"
   languageName: unknown
   linkType: soft
 
@@ -5967,17 +5967,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-tsc@npm:^3.1.6":
-  version: 3.1.6
-  resolution: "vue-tsc@npm:3.1.6"
+"vue-tsc@npm:^3.1.8":
+  version: 3.1.8
+  resolution: "vue-tsc@npm:3.1.8"
   dependencies:
     "@volar/typescript": "npm:2.4.26"
-    "@vue/language-core": "npm:3.1.6"
+    "@vue/language-core": "npm:3.1.8"
   peerDependencies:
     typescript: ">=5.0.0"
   bin:
     vue-tsc: ./bin/vue-tsc.js
-  checksum: 10/bb9856db2d80b0394c29277a67f41946d27064802c7261d3049a63ea6b098bcb43a83cdbfaca273862ffe9dc7ca04c18f567ce00714c093e818bae217eebf465
+  checksum: 10/367f138a2768b0809200b46f5b8e43abf72353df138ca57c28b06797957305af249adbe69a67e2ddc1b96a1ed21ec0ef62a8c8973d74e36793037607da470128
   languageName: node
   linkType: hard
 
