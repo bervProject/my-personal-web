@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
-    "@oruga-ui/oruga-next": "^0.12.4",
+    "@oruga-ui/oruga-next": "^0.12.6",
     "@oruga-ui/theme-bulma": "^0.8.3",
     "@vueuse/core": "^14.1.0",
     "axios": "^1.13.2",
