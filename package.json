@@ -19,7 +19,7 @@
     "@oruga-ui/oruga-next": "^0.12.6",
     "@oruga-ui/theme-bulma": "^0.8.3",
     "@vueuse/core": "^14.1.0",
-    "axios": "^1.13.2",
+    "axios": "^1.13.4",
     "buefy": "^3.0.4",
     "moment": "^2.30.1",
     "pinia": "^3.0.4",
