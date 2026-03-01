@@ -76,46 +76,6 @@
         </div>
       </div>
     </section>
-    <section class="hero is-small is-info">
-      <div class="hero-body">
-        <div class="content">
-          <h3 class="title">Social Media</h3>
-          <p class="buttons are-small">
-            <a href="mailto:bervianto.leo@gmail.com" class="button is-outlined">
-              <span class="icon">
-                <o-icon pack="fa" icon="envelope" />
-              </span>
-              <span>Email</span>
-            </a>
-            <a v-for="contact in contacts" :key="contact.id" :href="contact.address" target="_blank"
-              class="button is-outlined">
-              <span class="icon">
-                <o-icon pack="fab" :icon="contact.icon" />
-              </span>
-              <span>{{ contact.title }}</span>
-            </a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <h2 class="title">
-        Blogs
-      </h2>
-      <o-table :data="blogs" :loading="isLoading">
-        <o-table-column v-slot="props" field="link" label="Link">
-          <a :href="props.row.link" target="_blank"><o-icon pack="fab" :icon="props.row.icon" size="large" /></a>
-        </o-table-column>
-
-        <o-table-column v-slot="props" field="title" label="Title">
-          {{ props.row.title }}
-        </o-table-column>
-
-        <o-table-column v-slot="props" field="description" label="Description">
-          {{ props.row.description }}
-        </o-table-column>
-      </o-table>
-    </section>
   </div>
 </template>
 

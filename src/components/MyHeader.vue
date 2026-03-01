@@ -21,6 +21,16 @@
         <router-link to="/certification" class="navbar-item has-text-weight-semibold">
           {{ $t('common.certification') }}
         </router-link>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link has-text-weight-semibold">
+            {{ $t('navigation.blog') }}
+          </a>
+          <div class="navbar-dropdown">
+            <a v-for="blog in blogs" :key="blog.objectId" :href="blog.link" target="_blank" class="navbar-item">
+              {{ blog.title }}
+            </a>
+          </div>
+        </div>
         <router-link to="/songs" class="navbar-item has-text-weight-semibold">
           {{ $t('navigation.favoritesong') }}
         </router-link>

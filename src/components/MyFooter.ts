@@ -2,6 +2,7 @@ import { defineComponent } from 'vue';
 import { useThemeStore } from '@/stores/theme';
 import { storeToRefs } from 'pinia';
 import packageJson from '../../package.json';
+import services from '@/services';
 
 export default defineComponent({
   name: 'MyFooter',
@@ -16,6 +17,18 @@ export default defineComponent({
   data() {
     return {
       version: packageJson.version,
+      contacts: [],
+      isLoadingContacts: false,
     };
+  },
+  mounted() {
+    this.isLoadingContacts = true;
+    services.get('classes/Contact').then(result => {
+      this.contacts = result.data.results;
+    }).catch(err => {
+      console.error(err);
+    }).finally(() => {
+      this.isLoadingContacts = false;
+    })
   },
 });

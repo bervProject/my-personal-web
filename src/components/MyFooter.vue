@@ -4,6 +4,26 @@
       <div class="columns">
         <div class="column">
           <div class="content has-text-centered">
+            <h3 class="title">Social Media</h3>
+            <p class="buttons are-small">
+              <a href="mailto:bervianto.leo@gmail.com" class="button is-outlined">
+                <span class="icon">
+                  <o-icon pack="fa" icon="envelope" />
+                </span>
+                <span>Email</span>
+              </a>
+              <a v-for="contact in contacts" :key="contact.id" :href="contact.address" target="_blank"
+                class="button is-outlined">
+                <span class="icon">
+                  <o-icon pack="fab" :icon="contact.icon" />
+                </span>
+                <span>{{ contact.title }}</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
             <p>
               ©
               <strong>My Personal Web</strong> made with
@@ -22,10 +42,6 @@
               Version
               <strong>{{ version }}</strong>
             </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content has-text-centered">
             <p>
               <a href="https://bulma.io">
                 <img

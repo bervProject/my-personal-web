@@ -21,8 +21,6 @@ export default defineComponent({
   },
   data() {
     const announcements : any[] = [];
-    const blogs : any[] = [];
-    const contacts : any[] = [];
 
     return {
       carousels: [
@@ -33,7 +31,6 @@ export default defineComponent({
         { image: 'assets/home/intro-5.jpg' },
       ],
       announcements,
-      blogs,
       communityList: [
         "640476f4-dbc9-4797-af0d-eca54c7740b4", // HashiCorp Ambassador 2025
         "b2427b20-4ced-4a13-8331-06d90dd3c6e6", // CDF Ambassador 2025
@@ -42,7 +39,6 @@ export default defineComponent({
         "8cad11b0-12d7-4193-b51a-11a0c75de467", // HashiCorp Ambassador 2023
         "4c1544dc-271b-404e-974a-f991320ab9d8" // CDF Ambassador 2023
       ],
-      contacts,
       isLoading: false,
     }
   },
@@ -63,21 +59,11 @@ export default defineComponent({
   mounted(): void {
     this.isLoading = true;
     const announcementPromise = services.get("classes/Announcement");
-    const contactPromise = services.get('classes/Contact');
-    const blogPromise = services.get("classes/Blog");
 
-    Promise.allSettled([announcementPromise, contactPromise, blogPromise]).then((result) => {
+    Promise.allSettled([announcementPromise]).then((result) => {
       const announcementData = result[0];
-      const contactData = result[1];
-      const blogData = result[2];
       if (announcementData.status === 'fulfilled') {
         this.announcements = announcementData.value.data.results;
-      }
-      if (contactData.status === 'fulfilled') {
-        this.contacts = contactData.value.data.results;
-      }
-      if (blogData.status === 'fulfilled') {
-        this.blogs = blogData.value.data.results;
       }
     }).finally(() => {
       this.isLoading = false;

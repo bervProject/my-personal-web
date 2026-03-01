@@ -2,6 +2,7 @@ import { defineComponent, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useThemeStore } from '@/stores/theme';
 import { storeToRefs } from 'pinia';
+import services from '@/services';
 
 export default defineComponent({
   name: 'MyHeader',
@@ -41,6 +42,19 @@ export default defineComponent({
     };
   },
   data() {
-    return {};
+    return {
+      blogs: [],
+      isLoadingBlogs: false,
+    };
   },
+  mounted() {
+    this.isLoadingBlogs = true;
+    services.get("classes/Blog").then(result => {
+      this.blogs = result.data.results;
+    }).catch(err => {
+      console.error(err);
+    }).finally(() => {
+      this.isLoadingBlogs = false;
+    })
+  }
 });
