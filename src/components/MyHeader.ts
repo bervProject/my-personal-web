@@ -43,7 +43,7 @@ export default defineComponent({
   },
   data() {
     return {
-      blogs: [],
+      blogs: [] as Array<any>,
       isLoadingBlogs: false,
     };
   },
