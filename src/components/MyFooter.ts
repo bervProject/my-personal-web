@@ -17,7 +17,7 @@ export default defineComponent({
   data() {
     return {
       version: packageJson.version,
-      contacts: [],
+      contacts: [] as Array<any>,
       isLoadingContacts: false,
     };
   },
