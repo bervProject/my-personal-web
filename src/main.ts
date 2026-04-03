@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import Oruga from '@oruga-ui/oruga-next';
+import Oruga, { createOruga, OrugaComponentPlugins } from '@oruga-ui/oruga-next';
 import { createI18n } from 'vue-i18n';
 import { bulmaConfig } from '@oruga-ui/theme-bulma';
 import App from './App.vue';
@@ -25,6 +25,6 @@ const customBulmaConfig = {
 app.use(router);
 app.use(store);
 app.use(i18n);
-app.use(Oruga, customBulmaConfig);
+app.use(createOruga(customBulmaConfig, OrugaComponentPlugins));
 
 app.mount('#app');
