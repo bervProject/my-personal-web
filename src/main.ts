@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import Oruga, { createOruga, OrugaComponentPlugins } from '@oruga-ui/oruga-next';
+import { createOruga, OrugaComponentPlugins } from '@oruga-ui/oruga-next';
 import { createI18n } from 'vue-i18n';
 import { bulmaConfig } from '@oruga-ui/theme-bulma';
 import App from './App.vue';
