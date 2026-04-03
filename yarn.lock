@@ -545,7 +545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/oruga-next@npm:^0.13.1":
+"@oruga-ui/oruga-next@npm:^0.13.2":
   version: 0.13.2
   resolution: "@oruga-ui/oruga-next@npm:0.13.2"
   dependencies:
@@ -4175,7 +4175,7 @@ __metadata:
   resolution: "my-personal-web@workspace:."
   dependencies:
     "@fortawesome/fontawesome-free": "npm:^7.2.0"
-    "@oruga-ui/oruga-next": "npm:^0.13.1"
+    "@oruga-ui/oruga-next": "npm:^0.13.2"
     "@oruga-ui/theme-bulma": "npm:^0.9.0"
     "@vitejs/plugin-vue": "npm:^6.0.5"
     "@vitest/coverage-v8": "npm:^4.1.2"
