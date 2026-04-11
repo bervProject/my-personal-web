@@ -545,14 +545,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oruga-ui/oruga-next@npm:^0.13.2":
-  version: 0.13.2
-  resolution: "@oruga-ui/oruga-next@npm:0.13.2"
+"@oruga-ui/oruga-next@npm:^0.13.4":
+  version: 0.13.4
+  resolution: "@oruga-ui/oruga-next@npm:0.13.4"
   dependencies:
-    vue-component-type-helpers: "npm:^3.2.5"
+    vue-component-type-helpers: "npm:^3.2.6"
   peerDependencies:
     vue: ^3.0.0
-  checksum: 10/85cfb23db3252be79e603422e537ede573574b2ab4bb40cd61a8788907d47bc85bb42365a399e1b0db316a445a770e0466127ba82aa5e762b377f53705016fa8
+  checksum: 10/cfc2e22c382ce17375ef6bbf86223a28c0509c5f68438d9db019181c0283f3ba255574edb4472da7cccd1c585c0f1f73ed056f037946540fdad4931fd4c5f1e0
   languageName: node
   linkType: hard
 
@@ -4175,7 +4175,7 @@ __metadata:
   resolution: "my-personal-web@workspace:."
   dependencies:
     "@fortawesome/fontawesome-free": "npm:^7.2.0"
-    "@oruga-ui/oruga-next": "npm:^0.13.2"
+    "@oruga-ui/oruga-next": "npm:^0.13.4"
     "@oruga-ui/theme-bulma": "npm:^0.9.0"
     "@vitejs/plugin-vue": "npm:^6.0.5"
     "@vitest/coverage-v8": "npm:^4.1.2"
@@ -5723,7 +5723,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-component-type-helpers@npm:^3.2.5":
+"vue-component-type-helpers@npm:^3.2.6":
   version: 3.2.6
   resolution: "vue-component-type-helpers@npm:3.2.6"
   checksum: 10/9f23109aa42dfc006a117c7885c66978981ade62dbaf83eb1ac0bbe3fbfc418d78b77d31c487486ea5753f6de235053af7d62b04d4272cf657d4f5beeca867ff
