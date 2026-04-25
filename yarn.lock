@@ -2562,9 +2562,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^10.8.0":
-  version: 10.8.0
-  resolution: "eslint-plugin-vue@npm:10.8.0"
+"eslint-plugin-vue@npm:^10.9.0":
+  version: 10.9.0
+  resolution: "eslint-plugin-vue@npm:10.9.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.4.0"
     natural-compare: "npm:^1.4.0"
@@ -2582,7 +2582,7 @@ __metadata:
       optional: true
     "@typescript-eslint/parser":
       optional: true
-  checksum: 10/22bd993e7159119d15ddc14a6434a26d95ab1ec1175535f8b6fd0e41d58316385d362a107f2ed7d7d5d7ebc487b3f3a443571bccbd26494dfa7053140ca1cd1d
+  checksum: 10/2c9e90ea9735e0348b015c91d3d59d232aa98344944e0d68c318f6c643c02b7f1e0e2baa988762f232efc67b1e4de171385001ac2f35661c75041029b874723e
   languageName: node
   linkType: hard
 
@@ -4189,7 +4189,7 @@ __metadata:
     buefy: "npm:^3.0.4"
     cypress: "npm:^15.13.0"
     eslint: "npm:^10.2.0"
-    eslint-plugin-vue: "npm:^10.8.0"
+    eslint-plugin-vue: "npm:^10.9.0"
     jsdom: "npm:^29.0.1"
     moment: "npm:^2.30.1"
     pinia: "npm:^3.0.4"
