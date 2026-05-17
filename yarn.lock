@@ -2108,14 +2108,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buefy@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "buefy@npm:3.0.4"
+"buefy@npm:^3.0.7":
+  version: 3.0.7
+  resolution: "buefy@npm:3.0.7"
   dependencies:
     bulma: "npm:^1.0.4"
   peerDependencies:
     vue: ^3.0.0
-  checksum: 10/a379987a3a89978fc975ee8ead2bf216018c7146b852f91f327f56ab94f1fb2090a890cc639f75ee07afc46c862c35326f5bf8a2a618fef750efdf5327547c57
+  checksum: 10/c59a1f67ce41383b5f4bb1a038a1fcd6b413e20c6c2389fd7d266b8ccc7f365ea97f6a4af9a634b0189d1b85cccb5ccae064d7cc3f3aed15881ab87ebe0980aa
   languageName: node
   linkType: hard
 
@@ -4402,7 +4402,7 @@ __metadata:
     "@vueuse/core": "npm:^14.3.0"
     autoprefixer: "npm:^10.4.27"
     axios: "npm:^1.16.1"
-    buefy: "npm:^3.0.4"
+    buefy: "npm:^3.0.7"
     cypress: "npm:^15.15.0"
     eslint: "npm:^10.2.0"
     eslint-plugin-vue: "npm:^10.9.1"
