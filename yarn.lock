@@ -1908,18 +1908,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.14.0":
-  version: 1.14.0
-  resolution: "axios@npm:1.14.0"
-  dependencies:
-    follow-redirects: "npm:^1.15.11"
-    form-data: "npm:^4.0.5"
-    proxy-from-env: "npm:^2.1.0"
-  checksum: 10/c3444e9e3da1714916e4ddd7cda05bb41a5d5d80e3e27b099a116439684c63f2280c88503d1acd65841698b63af0b542b4d5780454e28fd0aed2d783ef90943e
-  languageName: node
-  linkType: hard
-
-"axios@npm:^1.16.0":
+"axios@npm:^1.16.0, axios@npm:^1.16.1":
   version: 1.16.1
   resolution: "axios@npm:1.16.1"
   dependencies:
@@ -3084,16 +3073,6 @@ __metadata:
   version: 3.4.2
   resolution: "flatted@npm:3.4.2"
   checksum: 10/a9e78fe5c2c1fcd98209a015ccee3a6caa953e01729778e83c1fe92e68601a63e1e69cd4e573010ca99eaf585a581b80ccf1018b99283e6cbc2117bcba1e030f
-  languageName: node
-  linkType: hard
-
-"follow-redirects@npm:^1.15.11":
-  version: 1.15.11
-  resolution: "follow-redirects@npm:1.15.11"
-  peerDependenciesMeta:
-    debug:
-      optional: true
-  checksum: 10/07372fd74b98c78cf4d417d68d41fdaa0be4dcacafffb9e67b1e3cf090bc4771515e65020651528faab238f10f9b9c0d9707d6c1574a6c0387c5de1042cde9ba
   languageName: node
   linkType: hard
 
@@ -4352,7 +4331,7 @@ __metadata:
     "@vue/tsconfig": "npm:^0.9.1"
     "@vueuse/core": "npm:^14.2.1"
     autoprefixer: "npm:^10.4.27"
-    axios: "npm:^1.14.0"
+    axios: "npm:^1.16.1"
     buefy: "npm:^3.0.4"
     cypress: "npm:^15.15.0"
     eslint: "npm:^10.2.0"
