@@ -10,9 +10,9 @@ jobs:
   build:
     strategy:
       matrix:
-        node-version: ['24.x', '25.x']
+        node-version: ['24.x', '26.x']
       fail-fast: false
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7
       - name: Use Node.js ${{ matrix.node-version }}
@@ -29,11 +29,11 @@ jobs:
           name: deployment
           path: dist/*
   test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     if: ${{ github.event_name == 'pull_request' }}
     strategy:
       matrix:
-        node-version: [24.x, 25.x]
+        node-version: [24.x, 26.x]
       fail-fast: false
     steps:
     - uses: actions/checkout@v7
@@ -57,7 +57,7 @@ jobs:
     - uses: codecov/codecov-action@v7
       if: ${{ matrix.node-version == '24.x' }}
   publish:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     needs: build
     if: ${{ github.event_name == 'push' }}
     steps:

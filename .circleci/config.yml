@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '24.13'
+          node-version: '26.4'
           install-yarn: true
       - node/install-packages:
           pkg-manager: yarn-berry
