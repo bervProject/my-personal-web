@@ -953,6 +953,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^26.1.1":
+  version: 26.1.1
+  resolution: "@types/node@npm:26.1.1"
+  dependencies:
+    undici-types: "npm:~8.3.0"
+  checksum: 10/df6555a94c6b4cf74e6238373e2881e72dc91058cf2ba173be77ea3974aaa8f459c2f10fbb7eb644fb1e5189dd8407097f5d39506fad39c89bde18acb3b90316
+  languageName: node
+  linkType: hard
+
 "@types/sinonjs__fake-timers@npm:8.1.1":
   version: 8.1.1
   resolution: "@types/sinonjs__fake-timers@npm:8.1.1"
@@ -3938,6 +3947,7 @@ __metadata:
     "@fortawesome/fontawesome-free": "npm:^7.3.1"
     "@oruga-ui/oruga-next": "npm:^0.13.6"
     "@oruga-ui/theme-bulma": "npm:^0.9.1"
+    "@types/node": "npm:^26.1.1"
     "@vitejs/plugin-vue": "npm:^6.0.8"
     "@vitest/coverage-v8": "npm:^4.1.10"
     "@vue/eslint-config-prettier": "npm:^10.2.0"
@@ -5116,6 +5126,13 @@ __metadata:
   version: 1.6.4
   resolution: "ufo@npm:1.6.4"
   checksum: 10/dbf85425e00dd106abb852c0ea4cef6e58b395b9a43858049a8be0b0825e5cc4b53cf58a41da695c3c2a9ab4f8605923b64812be1358c39a56b3920504759d3a
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~8.3.0":
+  version: 8.3.0
+  resolution: "undici-types@npm:8.3.0"
+  checksum: 10/6681d2837ac75a75ac1cc46090aa2b8ddc7c6b8ecc295a6cdb06838752a730da3d8afeecf05e5ab7903160eafad3a8b6ffa1927e5ded260590f4d4fef18646d5
   languageName: node
   linkType: hard
 
