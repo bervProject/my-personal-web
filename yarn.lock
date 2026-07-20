@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 8
+  version: 10
   cacheKey: 10
 
 "@asamuzakjp/css-color@npm:^5.1.11":
@@ -1262,8 +1262,8 @@ __metadata:
   linkType: hard
 
 "@vue-macros/common@npm:^3.1.3":
-  version: 3.1.4
-  resolution: "@vue-macros/common@npm:3.1.4"
+  version: 3.1.3
+  resolution: "@vue-macros/common@npm:3.1.3"
   dependencies:
     "@vue/compiler-sfc": "npm:^3.5.22"
     ast-kit: "npm:^2.1.2"
@@ -1275,7 +1275,7 @@ __metadata:
   peerDependenciesMeta:
     vue:
       optional: true
-  checksum: 10/823814a79809ddf97595dc27b01b423385448e50e13eedf2db311d99cfd0f944df519bcf463033749c40364a581d5f114a11334efd220aa011b456642d8ae45d
+  checksum: 10/cd70886f2f5c4c13cfed9a629db07adccfb2de4c303e4955ff3686355d59cb754eea0903663d166d87003dd43edc42d0bb2fbaac1a9aa7e61c85ddf8d73d3fc7
   languageName: node
   linkType: hard
 
@@ -3968,7 +3968,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"nanoid@npm:^3.3.16":
+"nanoid@npm:^3.3.12":
   version: 3.3.16
   resolution: "nanoid@npm:3.3.16"
   bin:
@@ -4308,13 +4308,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.5.17, postcss@npm:^8.5.19":
-  version: 8.5.20
-  resolution: "postcss@npm:8.5.20"
+  version: 8.5.19
+  resolution: "postcss@npm:8.5.19"
   dependencies:
-    nanoid: "npm:^3.3.16"
+    nanoid: "npm:^3.3.12"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10/bcae7818094f88030cb410f17efc312f24ee8f9bbc46483ac6536df5a9270f693c5fc41dcf0ccc254ab3fa6853d48468ee8707999ad1cc434a6084ed0a0e7a47
+  checksum: 10/f51162887cd683afc02fa6c1f06b6485ebc18c62eec7dc2841c8fe0a0c4b53b9a834cc26aa1a233e87f0e3a10179db916a276464c0ee1d00354d1670ebc32953
   languageName: node
   linkType: hard
 
