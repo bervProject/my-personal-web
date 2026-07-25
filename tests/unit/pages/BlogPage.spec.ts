@@ -1,38 +1,48 @@
-import { expect, describe, it } from 'vitest';
-import { shallowMount } from '@vue/test-utils';
+import { expect, describe, it, vi, beforeEach } from 'vitest';
+import { flushPromises, shallowMount } from '@vue/test-utils';
+import services from '@/services';
 import BlogPage from '@/views/BlogPage.vue';
 
+vi.mock('@/services', () => ({
+  default: {
+    get: vi.fn(),
+  },
+}));
+
 describe('BlogPage.vue', () => {
-  it('Render correctly', () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  it('loads blog entries and clears loading state', async () => {
+    vi.mocked(services.get).mockResolvedValue({ data: { results: [{ title: 'Blog' }] } });
+
     const wrapper = shallowMount(BlogPage, {
       global: {
-        stubs: [
-          'router-link',
-          'router-view',
-          'o-table',
-          'o-table-column',
-          'o-icon'
-        ],
-      }
+        stubs: ['router-link', 'router-view', 'o-table', 'o-table-column', 'o-icon'],
+      },
     });
 
-    expect(wrapper.text()).toContain('Blogs');
+    expect(services.get).toHaveBeenCalledWith('classes/Blog');
 
-    expect(wrapper.classes()).toStrictEqual(['section']);
+    await flushPromises();
 
-    const bTable = wrapper.find('o-table-stub');
+    expect(wrapper.vm.blogs).toEqual([{ title: 'Blog' }]);
+    expect(wrapper.vm.isLoading).toBe(false);
+  });
 
-    const bTableAttr = bTable.attributes();
-    expect(bTableAttr['data']).toBe('');
-    expect(bTableAttr['columns']).toBe(undefined);
+  it('handles request failures without crashing', async () => {
+    vi.mocked(services.get).mockRejectedValue(new Error('boom'));
+    const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
 
-    const allTitles = wrapper.findAll('h2');
-    expect(allTitles.length).toBeGreaterThan(0);
-    const titles : string[] = [];
-    allTitles.forEach(title => {
-      expect(title.classes()).toStrictEqual(['title']);
-      titles.push(title.text());
+    shallowMount(BlogPage, {
+      global: {
+        stubs: ['router-link', 'router-view', 'o-table', 'o-table-column', 'o-icon'],
+      },
     });
-    expect(titles).toStrictEqual(['Blogs', 'Dev.to Posts']);
+
+    await flushPromises();
+
+    expect(consoleErrorSpy).toHaveBeenCalled();
   });
 });

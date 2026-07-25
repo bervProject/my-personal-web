@@ -1,0 +1,137 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Add i18n keys for all new user-facing strings": [
+      {
+        "executionId": "76b69505-3d8b-42e0-bc92-dd8fc1758f21",
+        "chatSessionId": "sess_597f941a-467b-4f45-a083-9faf9cf75979",
+        "timestamp": 1784955467866
+      },
+      {
+        "executionId": "76b69505-3d8b-42e0-bc92-dd8fc1758f21",
+        "chatSessionId": "sess_597f941a-467b-4f45-a083-9faf9cf75979",
+        "timestamp": 1784955577244
+      }
+    ],
+    "2. Create the `useTypingEffect` composable": [
+      {
+        "executionId": "507be9b6-4115-402a-8426-bd9e40aae42d",
+        "chatSessionId": "sess_b0a5625a-094a-4c9a-802e-86b62c479bf7",
+        "timestamp": 1784955594245
+      },
+      {
+        "executionId": "507be9b6-4115-402a-8426-bd9e40aae42d",
+        "chatSessionId": "sess_b0a5625a-094a-4c9a-802e-86b62c479bf7",
+        "timestamp": 1784955706676
+      }
+    ],
+    "3. Update the Hero section in `HomePage.vue` and `HomePage.ts`": [
+      {
+        "executionId": "cee129e2-cf69-43a5-9341-3382a163bd30",
+        "chatSessionId": "sess_a88b609f-68bb-45b9-bec3-c56bd000c3a6",
+        "timestamp": 1784955718475
+      },
+      {
+        "executionId": "cee129e2-cf69-43a5-9341-3382a163bd30",
+        "chatSessionId": "sess_a88b609f-68bb-45b9-bec3-c56bd000c3a6",
+        "timestamp": 1784955831634
+      }
+    ],
+    "4. Create the `FeaturedProjects` component": [
+      {
+        "executionId": "e0b7f9ec-fb6b-445d-bef9-b57ffcde5bf1",
+        "chatSessionId": "sess_d5fc682b-c2a7-4d03-a1b2-de669efce06c",
+        "timestamp": 1784955844791
+      },
+      {
+        "executionId": "e0b7f9ec-fb6b-445d-bef9-b57ffcde5bf1",
+        "chatSessionId": "sess_d5fc682b-c2a7-4d03-a1b2-de669efce06c",
+        "timestamp": 1784955970588
+      }
+    ],
+    "5. Add the Featured Projects section to `HomePage.vue`": [
+      {
+        "executionId": "3a3486a3-f99d-43c0-9017-863eb454e328",
+        "chatSessionId": "sess_b6b16103-6577-4410-a5f0-094521d824bb",
+        "timestamp": 1784955985022
+      },
+      {
+        "executionId": "3a3486a3-f99d-43c0-9017-863eb454e328",
+        "chatSessionId": "sess_b6b16103-6577-4410-a5f0-094521d824bb",
+        "timestamp": 1784956052801
+      }
+    ],
+    "6. Add `limit` prop to `DevToPost` component": [
+      {
+        "executionId": "2ca04a6d-5687-45d0-bbc1-04890d6dc917",
+        "chatSessionId": "sess_8ca0d89d-3a59-45bc-898e-65d4b8623fcb",
+        "timestamp": 1784956066841
+      },
+      {
+        "executionId": "2ca04a6d-5687-45d0-bbc1-04890d6dc917",
+        "chatSessionId": "sess_8ca0d89d-3a59-45bc-898e-65d4b8623fcb",
+        "timestamp": 1784956154137
+      }
+    ],
+    "7. Add the Latest Blog Posts section to `HomePage.vue`": [
+      {
+        "executionId": "143675ac-57e7-4294-8ab4-1fb2ba802a7d",
+        "chatSessionId": "sess_975a6f64-834a-4d5d-a585-b275e29ccaf3",
+        "timestamp": 1784956165398
+      },
+      {
+        "executionId": "143675ac-57e7-4294-8ab4-1fb2ba802a7d",
+        "chatSessionId": "sess_975a6f64-834a-4d5d-a585-b275e29ccaf3",
+        "timestamp": 1784956252733
+      }
+    ],
+    "8. Replace Focus Topics and Technology Stack lists with interactive tags": [
+      {
+        "executionId": "a8e4fa9e-2dcf-4f92-b1a2-e240e09be8e9",
+        "chatSessionId": "sess_35b26b10-dc49-4dc6-8cc9-63e745870d35",
+        "timestamp": 1784956263170
+      },
+      {
+        "executionId": "a8e4fa9e-2dcf-4f92-b1a2-e240e09be8e9",
+        "chatSessionId": "sess_35b26b10-dc49-4dc6-8cc9-63e745870d35",
+        "timestamp": 1784956348589
+      }
+    ],
+    "9. Reorganise the Community & Credentials section": [
+      {
+        "executionId": "9bb2d2ea-70d1-4667-ab5c-6343676495dc",
+        "chatSessionId": "sess_f18dadab-2bbf-429b-b2a8-f114e22f6abc",
+        "timestamp": 1784956359701
+      },
+      {
+        "executionId": "9bb2d2ea-70d1-4667-ab5c-6343676495dc",
+        "chatSessionId": "sess_f18dadab-2bbf-429b-b2a8-f114e22f6abc",
+        "timestamp": 1784956470467
+      }
+    ],
+    "10. Final integration check and build verification": [
+      {
+        "executionId": "04da6325-ee36-490a-8436-730f3d7f6d65",
+        "chatSessionId": "sess_5751807a-50b7-4a06-b7a3-896f3df06c1e",
+        "timestamp": 1784956495079
+      },
+      {
+        "executionId": "04da6325-ee36-490a-8436-730f3d7f6d65",
+        "chatSessionId": "sess_5751807a-50b7-4a06-b7a3-896f3df06c1e",
+        "timestamp": 1784956636858
+      }
+    ],
+    "Hero: updated tagline, typing animation cycles, both CTA buttons work.": [
+      {
+        "executionId": "9fc1e2e3-9a37-42c2-8828-0222205f7677",
+        "chatSessionId": "sess_0f116a0f-dc7f-4c6f-bb86-2be5fa32dc13",
+        "timestamp": 1784956681414
+      },
+      {
+        "executionId": "9fc1e2e3-9a37-42c2-8828-0222205f7677",
+        "chatSessionId": "sess_0f116a0f-dc7f-4c6f-bb86-2be5fa32dc13",
+        "timestamp": 1784956803979
+      }
+    ]
+  }
+}

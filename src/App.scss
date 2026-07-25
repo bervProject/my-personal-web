@@ -239,6 +239,23 @@ strong, b {
   background-color: var(--surface-color);
 }
 
+// Tag theming — Bulma's .tag uses hardcoded light backgrounds that vanish in dark mode
+.tag:not(.is-primary):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger) {
+  background-color: var(--surface-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color);
+}
+
+.tag.is-primary {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+}
+
+.tag.is-primary.is-light {
+  background-color: rgba(59, 130, 246, 0.15) !important;
+  color: var(--primary-light) !important;
+}
+
 // Menu theming
 .menu-list a {
   color: var(--text-color);

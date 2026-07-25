@@ -18,10 +18,22 @@ const messages = {
       visitcompanypage: 'Visit Company Page',
       workexperience: 'Work Experience'
     },
+    hero: {
+      tagline: 'A Software Engineer specializing in seamless system migration, modernisation, and building resilient cloud architectures.',
+      ctaBlog: 'Read My Blog',
+      ctaGitHub: 'View GitHub',
+    },
     home: {
       welcome: "Welcome to {name}'s site!",
       whoami: 'Who am I?',
       contactme: 'Contact me <a href="{email}"> here </a>',
+      featuredProjects: 'Featured Projects',
+      latestThoughts: 'Latest Thoughts',
+      pastHonours: 'Past Honours',
+    },
+    projects: {
+      viewProject: 'View Project',
+      viewRepo: 'View Repo',
     },
     navigation: {
       aboutme: 'About Me',
@@ -58,10 +70,22 @@ const messages = {
       visitcompanypage: 'Kunjungi Laman Perusahaan',
       workexperience: 'Pengalaman Berkerja'
     },
+    hero: {
+      tagline: 'Seorang Software Engineer yang berspesialisasi dalam migrasi sistem yang mulus, modernisasi, dan membangun arsitektur cloud yang tangguh.',
+      ctaBlog: 'Baca Blog Saya',
+      ctaGitHub: 'Lihat GitHub',
+    },
     home: {
       welcome: 'Selamat datang ke website {name}',
       whoami: 'Siapa saya?',
       contactme: 'Hubungi saya <a href="{email}"> di sini </a>',
+      featuredProjects: 'Proyek Unggulan',
+      latestThoughts: 'Tulisan Terbaru',
+      pastHonours: 'Penghargaan Masa Lalu',
+    },
+    projects: {
+      viewProject: 'Lihat Proyek',
+      viewRepo: 'Lihat Repositori',
     },
     navigation: {
       aboutme: 'Tentang Saya',

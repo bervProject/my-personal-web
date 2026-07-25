@@ -4,6 +4,9 @@ import { storeToRefs } from 'pinia';
 import services from '@/services';
 import communityLight from '@/assets/images/community.png';
 import communityDark from '@/assets/images/community-dark.png';
+import { useTypingEffect } from '@/composables/useTypingEffect';
+import FeaturedProjects from '@/components/FeaturedProjects.vue';
+import DevToPost from '@/components/DevToPost.vue';
 
 export default defineComponent({
   setup() {
@@ -14,9 +17,18 @@ export default defineComponent({
       return isDark.value ? communityDark : communityLight;
     });
 
+    const { displayText } = useTypingEffect([
+      'Navigating Backend Development...',
+      'Deploying Microservices...',
+      'Executing Cloud Migrations...',
+      'Designing Resilient Cloud Architectures...',
+      'Strengthening Systems with DevSecOps...',
+    ]);
+
     return {
       isDark,
-      communityImage
+      communityImage,
+      displayText,
     };
   },
   data() {
@@ -31,18 +43,40 @@ export default defineComponent({
         { image: 'assets/home/intro-5.jpg' },
       ],
       announcements,
-      communityList: [
+      activeCommunityList: [
         "640476f4-dbc9-4797-af0d-eca54c7740b4", // HashiCorp Ambassador 2025
         "b2427b20-4ced-4a13-8331-06d90dd3c6e6", // CDF Ambassador 2025
+      ],
+      pastCommunityList: [
         "3b7ccdc9-6787-487c-957b-fa729f76520f",  // 2024
         "23c0a13f-9538-4d2b-a2a1-f07710242860", // 2024
         "8cad11b0-12d7-4193-b51a-11a0c75de467", // HashiCorp Ambassador 2023
-        "4c1544dc-271b-404e-974a-f991320ab9d8" // CDF Ambassador 2023
+        "4c1544dc-271b-404e-974a-f991320ab9d8", // CDF Ambassador 2023
       ],
       isLoading: false,
+      focusTopics: [
+        'Backend Development',
+        'DevOps',
+        'Microservices',
+        'Cloud Computing',
+        'Cyber Security',
+        'DevSecOps',
+        'Software Architecture',
+        'Cloud Architecture',
+      ],
+      techStacks: [
+        '.NET',
+        'SQL Server',
+        'PostgreSQL',
+        'Node.js',
+      ],
     }
   },
   name: 'HomePage',
+  components: {
+    FeaturedProjects,
+    DevToPost,
+  },
   metaInfo: {
     title: 'Home',
     meta: [

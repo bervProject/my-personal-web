@@ -4,22 +4,17 @@ import { shallowMount } from '@vue/test-utils';
 import DonatePage from '@/views/DonatePage.vue';
 
 describe('DonatePage.vue', () => {
-  it('Render correctly', () => {
+  it('renders the donate page iframe and title', () => {
     const wrapper = shallowMount(DonatePage, {
       global: {
         stubs: ['router-link', 'router-view'],
-        mocks: {
-          $t: () => {}
-        }
       }
     });
-
-    expect(wrapper.text()).toContain('');
 
     const h2 = wrapper.find('h2');
     expect(h2.exists()).toBe(true);
     expect(h2.classes()).toStrictEqual(['title']);
-    expect(h2.text()).toEqual('common.donate');
+    expect(h2.text()).toEqual('Donate');
 
     const img = wrapper.find('iframe');
     expect(img.exists()).toBe(true);

@@ -27,8 +27,11 @@
       </div>
     </div>
     <div class="column is-12">
-      <o-button tag="a" expanded variant="primary" href="https://dev.to/berviantoleo">
+      <o-button v-if="!isPreviewMode" tag="a" expanded variant="primary" href="https://dev.to/berviantoleo">
         Show More
+      </o-button>
+      <o-button v-else tag="a" expanded variant="primary" href="https://dev.to/berviantoleo">
+        {{ $t('home.latestThoughts') }} →
       </o-button>
     </div>
   </div>

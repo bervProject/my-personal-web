@@ -4,27 +4,15 @@ import { shallowMount } from '@vue/test-utils';
 import HomePage from '@/views/CommunityPage.vue';
 
 describe('CommunityPage.vue', () => {
-  it('Render correctly', () => {
+  it('renders the community page headings', () => {
     const wrapper = shallowMount(HomePage, {
       global: {
         stubs: ['router-link', 'router-view'],
-        mocks: {
-          $t: () => {}
-        }
       }
     });
 
-    const allSubtitles = wrapper.findAll('h4');
+    const subtitles = wrapper.findAll('h4').filter((subtitle) => subtitle.classes().includes('title')).map((subtitle) => subtitle.text());
 
-    const subtitles : string[] = [];
-
-    allSubtitles.forEach(subtitle => {
-      if (subtitle.classes().includes('title'))
-      {
-        subtitles.push(subtitle.text());
-      }
-    });
-
-    expect(subtitles).toStrictEqual(['navigation.community', 'Contributions']);
+    expect(subtitles).toStrictEqual(['Community', 'Contributions']);
   });
 });

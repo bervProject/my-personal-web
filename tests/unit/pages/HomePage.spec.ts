@@ -4,8 +4,9 @@ import { createPinia } from 'pinia';
 import HomePage from '@/views/HomePage.vue';
 
 describe('HomePage.vue', () => {
-  it('Render correctly', () => {
+  it('renders the main sections and translated labels', () => {
     const pinia = createPinia();
+
     const wrapper = shallowMount(HomePage, {
       global: {
         plugins: [pinia],
@@ -18,25 +19,13 @@ describe('HomePage.vue', () => {
           'o-table',
           'o-table-column',
         ],
-        mocks: {
-          $t: () => {}
-        }
       }
     });
 
-    expect(wrapper.text()).toContain('I\'m a Software Engineer.');
+    expect(wrapper.text()).toContain('A Software Engineer specializing in seamless system migration, modernisation, and building resilient cloud architectures.');
 
-    const allSubtitles = wrapper.findAll('h4');
+    const subtitles = wrapper.findAll('h4').filter((subtitle) => subtitle.classes().includes('title')).map((subtitle) => subtitle.text());
 
-    const subtitles : string[] = [];
-
-    allSubtitles.forEach(subtitle => {
-      if (subtitle.classes().includes('title'))
-      {
-        subtitles.push(subtitle.text());
-      }
-    });
-
-    expect(subtitles).toStrictEqual(['Focus Topics', 'Technology Stacks', 'navigation.community']);
+    expect(subtitles).toEqual(['Featured Projects', 'Latest Thoughts', 'Focus Topics', 'Technology Stacks', 'Community']);
   });
 });

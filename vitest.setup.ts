@@ -1,8 +1,15 @@
 import { config } from '@vue/test-utils'
 import { createI18n } from 'vue-i18n'
 import { beforeEach, vi } from 'vitest';
+import messages from '@/messages';
 
-const i18n = createI18n()
+const i18n = createI18n({
+  legacy: true,
+  locale: 'en',
+  fallbackLocale: 'en',
+  messages,
+});
+
 config.global.plugins = [i18n]
 
 beforeEach(() => {
