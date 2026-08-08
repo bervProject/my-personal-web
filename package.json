@@ -20,7 +20,7 @@
     "@oruga-ui/theme-bulma": "^0.9.1",
     "@vueuse/core": "^14.3.0",
     "axios": "^1.18.1",
-    "buefy": "^3.0.8",
+    "buefy": "^3.0.10",
     "moment": "^2.30.1",
     "pinia": "^4.0.2",
     "sass": "^1.101.0",
