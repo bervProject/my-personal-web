@@ -18,7 +18,7 @@
     "@fortawesome/fontawesome-free": "^7.3.1",
     "@oruga-ui/oruga-next": "^0.13.6",
     "@oruga-ui/theme-bulma": "^0.9.1",
-    "@vueuse/core": "^14.3.0",
+    "@vueuse/core": "^15.0.0",
     "axios": "^1.18.1",
     "buefy": "^3.0.8",
     "moment": "^2.30.1",
