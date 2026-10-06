@@ -44,10 +44,11 @@ export default defineComponent({
       ],
       announcements,
       activeCommunityList: [
-        "640476f4-dbc9-4797-af0d-eca54c7740b4", // HashiCorp Ambassador 2025
-        "b2427b20-4ced-4a13-8331-06d90dd3c6e6", // CDF Ambassador 2025
+        "3f717fd9-e65d-453f-8624-fdabf06e7ef8", // IBM Champions 2026
       ],
       pastCommunityList: [
+        "640476f4-dbc9-4797-af0d-eca54c7740b4", // HashiCorp Ambassador 2025
+        "b2427b20-4ced-4a13-8331-06d90dd3c6e6", // CDF Ambassador 2025
         "3b7ccdc9-6787-487c-957b-fa729f76520f",  // 2024
         "23c0a13f-9538-4d2b-a2a1-f07710242860", // 2024
         "8cad11b0-12d7-4193-b51a-11a0c75de467", // HashiCorp Ambassador 2023
