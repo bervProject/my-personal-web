@@ -3963,7 +3963,7 @@ __metadata:
     eslint-plugin-vue: "npm:^10.9.2"
     jsdom: "npm:^29.1.1"
     moment: "npm:^2.30.1"
-    pinia: "npm:^4.0.2"
+    pinia: "npm:^4.0.3"
     prettier: "npm:^3.9.5"
     sass: "npm:^1.101.0"
     start-server-and-test: "npm:^3.0.12"
@@ -4260,9 +4260,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "pinia@npm:4.0.2"
+"pinia@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "pinia@npm:4.0.3"
   dependencies:
     nostics: "npm:^1.1.4"
   peerDependencies:
@@ -4274,7 +4274,7 @@ __metadata:
       optional: false
     typescript:
       optional: true
-  checksum: 10/7360bd9c9cde49db7b188c4180b45cb4775f2a5ed3969a16e0396f8d1dd6335dc820d0aa703c4226f00ec8534bb0158c759eae9dd9c3cd36c8183cf5c03be01f
+  checksum: 10/345ed6db415a4bbd36e1c129817bbe6b2ba207ebeff7229d376486da834b25792115d05411d5be3675f48169308dfcac5640f61929b728d8b707f65f7a56837d
   languageName: node
   linkType: hard
 
