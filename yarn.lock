@@ -3984,7 +3984,7 @@ __metadata:
     moment: "npm:^2.30.1"
     pinia: "npm:^4.0.3"
     prettier: "npm:^3.9.5"
-    sass: "npm:^1.101.0"
+    sass: "npm:^1.107.1"
     start-server-and-test: "npm:^3.0.12"
     typescript: "npm:~6.0.3"
     vite: "npm:^8.1.5"
@@ -4592,9 +4592,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.101.0":
-  version: 1.101.0
-  resolution: "sass@npm:1.101.0"
+"sass@npm:^1.107.1":
+  version: 1.107.1
+  resolution: "sass@npm:1.107.1"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^5.0.0"
@@ -4605,7 +4605,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/d38ac48a0ca08bd37fdcdc3409aebde1da2bd3e8e9f9c3bff783720e6e9d4488f75e86c706c8bf01af6c2d5decdf31ecfb81b287627b81f191baf2f60037aa68
+  checksum: 10/d6799e29c66f223462dadf06366888f2c6320d30ea58028ed7861fd3edbbdfece55f39b75fe99ffa1b4c5531950632981053fbd7b29ddfec5505d4057a22d70a
   languageName: node
   linkType: hard
 
