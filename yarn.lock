@@ -2191,9 +2191,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^16.1.1":
-  version: 16.1.1
-  resolution: "cypress@npm:16.1.1"
+"cypress@npm:^16.3.0":
+  version: 16.3.0
+  resolution: "cypress@npm:16.3.0"
   dependencies:
     "@cypress/request": "npm:^4.0.0"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -2229,14 +2229,14 @@ __metadata:
     proxy-from-env: "npm:1.0.0"
     request-progress: "npm:^3.0.0"
     supports-color: "npm:^8.1.1"
-    systeminformation: "npm:^5.31.1"
+    systeminformation: "npm:^5.33.16"
     tmp: "npm:~0.2.4"
     tree-kill: "npm:1.2.2"
     untildify: "npm:^4.0.0"
     yauzl: "npm:^3.3.1"
   bin:
     cypress: bin/cypress
-  checksum: 10/24540e51294b0442ecc413e23903805ea987e69977b4a94d8ad7f5247f3456758745252eccd2f045780aae038a86a55ce8cbce4aa6c1248255e0bbc42338adbc
+  checksum: 10/be428af1981de356329acb4e35f6a9d05561a35e99cfc629d416a79f2085ca3dbfe42b8744a06c33af93ccfc1ae7455e5c3f2d2250cac92eaaea0d7a761185f0
   languageName: node
   linkType: hard
 
@@ -3977,7 +3977,7 @@ __metadata:
     autoprefixer: "npm:^10.5.4"
     axios: "npm:^1.18.1"
     buefy: "npm:^3.0.8"
-    cypress: "npm:^16.1.1"
+    cypress: "npm:^16.3.0"
     eslint: "npm:^10.7.0"
     eslint-plugin-vue: "npm:^10.9.2"
     jsdom: "npm:^29.1.1"
@@ -4902,12 +4902,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"systeminformation@npm:^5.31.1":
-  version: 5.32.0
-  resolution: "systeminformation@npm:5.32.0"
+"systeminformation@npm:^5.33.16":
+  version: 5.33.19
+  resolution: "systeminformation@npm:5.33.19"
   bin:
     systeminformation: lib/cli.js
-  checksum: 10/d612515d5f4c08f6ffeba9d87facea4558737ca7f62ee0d9c43b6b1f6024e68b2000bc929ff069ec86e982665dff3f066ce1c1818b21d252ad27f5bb1884ddb5
+  checksum: 10/d952b30f39fd8902f67fa6cc3ba97fec7d01877247fa86a11bea59c30b93986e04a9cbbd44a54b6893631210de7c8bf484966bcbfad5c4bfa00e979400265067
   conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
   languageName: node
   linkType: hard
